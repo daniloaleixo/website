@@ -32,3 +32,22 @@ div.videowrapper {
     width: 100%;
     border: none;
 }
+// Song lyrics (see layouts/shortcodes/lyrics.html)
+.song-lyrics {
+  max-width: 28rem;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.7;
+
+  .stanza {
+    margin: 0 0 1.75rem;
+  }
+
+  .refrain {
+    font-weight: 600;
+    font-style: italic;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(127, 127, 127, 0.08);
+  }
+}

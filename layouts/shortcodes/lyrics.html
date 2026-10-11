@@ -1,0 +1,22 @@
+{{/* Song lyrics block.
+     Usage in a song page:
+       {{< lyrics >}}
+       First verse line
+       Second verse line
+
+       [refrain]
+       Chorus line
+       Chorus line
+       {{< /lyrics >}}
+     Blank lines separate stanzas. A stanza starting with "[refrain]" is
+     highlighted as the chorus. */}}
+<div class="song-lyrics" lang="{{ .Get "lang" | default "pt" }}">
+{{- range split (trim .Inner "\n ") "\n\n" }}
+  {{- $lines := split (trim . "\n ") "\n" }}
+  {{- $refrain := eq (index $lines 0 | strings.TrimSpace) "[refrain]" }}
+  {{- if $refrain }}{{ $lines = after 1 $lines }}{{ end }}
+  <p class="stanza{{ if $refrain }} refrain{{ end }}">
+    {{- range $i, $l := $lines }}{{ if $i }}<br>{{ end }}{{ strings.TrimSpace $l | htmlEscape | safeHTML }}{{ end -}}
+  </p>
+{{- end }}
+</div>
