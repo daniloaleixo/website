@@ -4,6 +4,14 @@
 title:
 date: 2022-10-24
 type: landing
+# Site-wide banner (TEMPORARY – remove both `announcement` blocks after 13 Nov)
+announcement:
+  id: melo-closed-2026-11
+  text: 'Training location **MELO** is closed till **13th of November** due to construction. Please [contact us](/contact/) to learn details.'
+cascade:
+  announcement:
+    id: melo-closed-2026-11
+    text: 'Training location **MELO** is closed till **13th of November** due to construction. Please [contact us](/contact/) to learn details.'
 summary: 'Capoeira Berlin: Afro-Brazilian movement, acrobatics, music and martial-arts training for beginners, adults and kids in Schöneberg, Kreuzberg and Mitte. Your first month (Probetraining) is free.'
 seo:
   title: 'Capoeira Berlin – Movement, Acrobatics & Music for Adults & Kids | Simplesmente Capoeira e.V.'
