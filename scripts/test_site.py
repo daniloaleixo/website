@@ -174,5 +174,17 @@ class Tiles(unittest.TestCase):
         self.assertEqual(titles, ["Bewegung", "Die Roda", "Musik", "Gemeinschaft"])
 
 
+class Videos(unittest.TestCase):
+    def test_click_to_load(self):
+        for lang in ("en", "de"):
+            h = home(lang)
+            vids = by_class(h, "sc-video")
+            self.assertEqual(len(vids), 3)
+            self.assertTrue(all(v["attrs"].get("data-yt") for v in vids))
+            self.assertFalse([e for e in _elements(h) if e["tag"] == "iframe" and "youtube" in e["attrs"].get("src", "")])
+            scripts = "".join(e["text"] for e in _elements(h) if e["tag"] == "script")
+            self.assertIn("youtube-nocookie.com", scripts)
+
+
 if __name__ == "__main__":
     unittest.main()

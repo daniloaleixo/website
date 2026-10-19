@@ -72,6 +72,24 @@ sections:
             alt: 'Gruppenfoto von Simplesmente Capoeira Berlin – Kinder und Erwachsene in der Halle'
             position: 'center 60%'
 
+  - block: sc_videos
+    id: videos
+    content:
+      kicker: Anschauen
+      title: Capoeira in Aktion
+      lead: Von unseren Batizados und Rodas – mehr auf unserem YouTube-Kanal.
+      channel_url: https://www.youtube.com/@SimplesmenteCapoeiraBerlin
+      channel_text: Zum YouTube-Kanal →
+      videos:
+        - id: dm_Bwea-thM
+          title: Batizado e Troca de Cordas Berlin 2024
+        - id: 94x_-eeQqY4
+          title: First day welcome Roda
+        - id: orfPSga_t-c
+          title: Batizado e troca de cordas Berlin Germany 2025
+    design:
+      css_class: sc-section--grey
+
   - block: contact
     id: trainings
     content:

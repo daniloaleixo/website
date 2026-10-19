@@ -1,0 +1,34 @@
+{{/* Videos from our YouTube channel. Nothing loads from YouTube until a video is clicked:
+     the button shows a local still (assets/media/video/<id>.jpg) and is swapped for a
+     youtube-nocookie iframe on click. */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-videos">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  {{ with $c.lead }}<p class="sc-lead">{{ . }}</p>{{ end }}
+  <div class="sc-videos__grid">
+    {{ range $i, $v := $c.videos }}
+    <figure class="sc-videos__item{{ if eq $i 0 }} sc-videos__item--big{{ end }}">
+      <button type="button" class="sc-video" data-yt="{{ $v.id }}" data-title="{{ $v.title }}" aria-label="Play: {{ $v.title }}">
+        {{ partial "sc/img.html" (dict "src" (printf "video/%s.jpg" $v.id) "alt" "" "width" (cond (eq $i 0) 1280 640)) }}
+        <span class="sc-video__play" aria-hidden="true"></span>
+      </button>
+      <figcaption>{{ $v.title }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+  {{ with $c.channel_url }}<p class="sc-videos__more"><a href="{{ . }}" target="_blank" rel="noopener">{{ $c.channel_text }}</a></p>{{ end }}
+</div>
+<script>
+document.querySelectorAll('.sc-video').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(btn.dataset.yt) + '?autoplay=1';
+    f.title = btn.dataset.title;
+    f.allow = 'autoplay; encrypted-media; picture-in-picture';
+    f.allowFullscreen = true;
+    f.className = 'sc-video sc-video--playing';
+    btn.replaceWith(f);
+  });
+});
+</script>
