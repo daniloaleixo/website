@@ -1,0 +1,15 @@
+{{/* Homepage hero: headline on white with a 3-photo collage. Copy and images: front matter. */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-hero">
+  <div class="sc-hero__text">
+    {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+    <h1 class="sc-hero__title">{{ $c.title }} <mark class="sc-mark">{{ $c.highlight }}</mark></h1>
+    {{ with $c.text }}<p class="sc-hero__lead">{{ . }}</p>{{ end }}
+    {{ with $c.button }}<a class="sc-btn" href="{{ .url }}">{{ .text }}</a>{{ end }}
+  </div>
+  <div class="sc-hero__collage">
+    {{ range $i, $img := $c.images }}
+      {{ partial "sc/img.html" (dict "src" $img.src "alt" $img.alt "width" (cond (eq $i 0) 900 700) "class" "sc-hero__img" "eager" (eq $i 0) "position" $img.position) }}
+    {{ end }}
+  </div>
+</div>

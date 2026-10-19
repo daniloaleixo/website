@@ -1,0 +1,11 @@
+{{/* Responsive <img> for a file in assets/media/, resized to webp.
+     Usage: partial "sc/img.html" (dict "src" "home/au.jpg" "alt" "…" "width" 900
+                                        "class" "…" "eager" false "position" "60% center") */}}
+{{- $img := resources.Get (printf "media/%s" .src) -}}
+{{- if not $img -}}{{- errorf "sc/img.html: assets/media/%s not found" .src -}}{{- end -}}
+{{- $r := $img.Resize (printf "%dx webp" (int (.width | default 900))) -}}
+<img src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" alt="{{ .alt }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- with .position }} style="object-position: {{ . | safeCSS }}"{{ end }}
+  {{- if not .eager }} loading="lazy"{{ end }} decoding="async">
+{{- /**/ -}}

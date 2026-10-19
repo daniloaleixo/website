@@ -146,5 +146,16 @@ class Trainings(unittest.TestCase):
         self.assertEqual(got, expected)
 
 
+class Hero(unittest.TestCase):
+    def test_hero(self):
+        for lang, word in (("en", "fun."), ("de", "Spaß!")):
+            h = home(lang)
+            self.assertEqual(len(by_class(h, "sc-hero")), 1)
+            self.assertEqual(by_class(h, "sc-mark")[0]["text"].strip(), word)
+            self.assertEqual(len(by_class(h, "sc-hero__img")), 3)
+            self.assertTrue(all(i["attrs"].get("alt") for i in by_class(h, "sc-hero__img")))
+            self.assertEqual(len([t for t in by_class(h, "sc-hero__title") if t["tag"] == "h1"]), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

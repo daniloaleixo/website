@@ -19,17 +19,25 @@ seo:
 
 sections:
 
-  - block: hero
+  - block: sc_hero
     content:
-      title: |
-        Capoeira Berlin – Simplesmente Capoeira
-      image:
-        filename: sharing.jpg
-        alt_text: 'Capoeira Berlin – training group of Simplesmente Capoeira Berlin e.V. practising the Ginga, kicks and music'
-      text: |
-        <br>
-
-        Welcome to **Simplesmente Capoeira Berlin e.V.** – your club for **Capoeira in Berlin**. We are an international Berlin Capoeira group exploring the Afro-Brazilian art that mixes **movement, acrobatics, music and martial arts**. We train in the heart of Berlin in **Schöneberg**, **Kreuzberg** and **Mitte** – for [adults & beginners](#probetraining) and [kids](#kids). Your **first month** of training is **free** – just come to one of our [training times](#trainings).
+      kicker: Capoeira in Berlin
+      title: 'Dance, acrobatics, music, fight &'
+      highlight: 'fun.'
+      text: "That's capoeira. Kids and adults in Schöneberg, Kreuzberg and Mitte. Your first month is free."
+      button:
+        text: Try a free training
+        url: '#trainings'
+      images:
+        - src: home/au.jpg
+          alt: 'A capoeirista does an aú (cartwheel) in mid-air while the circle claps – Simplesmente Capoeira Berlin'
+          position: '60% center'
+        - src: home/roda-kick.jpg
+          alt: 'Two players in the roda: a high kick passes over a ducking player at our Batizado in Berlin'
+          position: center
+        - src: home/kids.jpg
+          alt: 'Kids of Simplesmente Capoeira Berlin in their club shirts'
+          position: center
 
   - block: sc_times_strip
 

@@ -18,17 +18,25 @@ seo:
 
 sections:
 
-  - block: hero
+  - block: sc_hero
     content:
-      title: |
-        Capoeira Berlin – Simplesmente Capoeira
-      image:
-        filename: sharing.jpg
-        alt_text: 'Capoeira Berlin – Trainingsgruppe von Simplesmente Capoeira Berlin e.V. übt Ginga, Tritte und Musik'
-      text: |
-        <br>
-        
-        Willkommen bei **Simplesmente Capoeira Berlin e.V.** – Deinem Verein für **Capoeira in Berlin**. Wir sind eine internationale Berlin-Capoeira-Gruppe und erforschen die afro-brasilianische Kunst aus **Bewegung, Akrobatik, Musik und Kampfkunst**. Wir trainieren mitten in Berlin in **Schöneberg**, **Kreuzberg** und **Mitte** – für [Erwachsene & Anfänger](#probetraining) und [Kinder](#kinder). Dein **erster Monat** Training ist **kostenlos** – komm einfach zu einem unserer [Trainingstermine](#trainings).
+      kicker: Capoeira in Berlin
+      title: 'Tanz, Akrobatik, Musik, Kampf und'
+      highlight: 'Spaß!'
+      text: 'Das ist Capoeira. Für Kinder und Erwachsene in Schöneberg, Kreuzberg und Mitte. Dein erster Monat ist kostenlos.'
+      button:
+        text: Kostenlos ausprobieren
+        url: '#trainings'
+      images:
+        - src: home/au.jpg
+          alt: 'Ein Capoeirista springt einen Aú (Rad) in der Luft, während der Kreis klatscht – Simplesmente Capoeira Berlin'
+          position: '60% center'
+        - src: home/roda-kick.jpg
+          alt: 'Zwei Spieler in der Roda: ein hoher Tritt geht über einen ausweichenden Spieler hinweg, beim Batizado in Berlin'
+          position: center
+        - src: home/kids.jpg
+          alt: 'Kinder von Simplesmente Capoeira Berlin in ihren Vereins-T-Shirts'
+          position: center
 
   - block: sc_times_strip
 
