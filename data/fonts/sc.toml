@@ -1,0 +1,7 @@
+# Simplesmente Capoeira font set: Archivo, self-hosted in static/fonts/ (see assets/scss/template.scss).
+name = "SC"
+google_fonts = ""
+heading_font = "Archivo"
+body_font = "Archivo"
+nav_font = "Archivo"
+mono_font = ""

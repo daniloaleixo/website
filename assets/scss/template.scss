@@ -1,3 +1,103 @@
+// ---------------------------------------------------------------------------
+// Simplesmente Capoeira design foundation (homepage redesign)
+// Archivo is self-hosted from static/fonts/; the font set is data/fonts/sc.toml.
+// ---------------------------------------------------------------------------
+
+@each $w in 400, 600, 800, 900 {
+  @font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: $w;
+    font-display: swap;
+    src: url('/fonts/archivo-#{$w}.woff2') format('woff2');
+  }
+}
+
+:root {
+  --sc-yellow: #F7E018;
+  --sc-black: #111;
+  --sc-blue: #1E88E5;
+  --sc-grey-bg: #fafafa;
+  --sc-radius: 18px;
+}
+
+body {
+  color: var(--sc-black);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.sc-btn {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  background: var(--sc-yellow);
+  color: var(--sc-black);
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-decoration: none;
+  border: 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus {
+    color: var(--sc-black);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.sc-btn--dark {
+  background: var(--sc-black);
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.sc-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sc-blue);
+}
+
+.sc-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0.5rem 0 0.4rem;
+}
+
+.sc-lead {
+  color: #555;
+  font-size: 1rem;
+  max-width: 560px;
+  margin: 0 0 1.5rem;
+}
+
+.sc-mark {
+  background: linear-gradient(transparent 58%, var(--sc-yellow) 58%);
+  color: inherit;
+  padding: 0;
+}
+
+.home-section.sc-section--grey {
+  background: var(--sc-grey-bg);
+}
+
+// ---------------------------------------------------------------------------
+// Existing site styles
+// ---------------------------------------------------------------------------
+
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;

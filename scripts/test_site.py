@@ -111,5 +111,22 @@ class Baseline(unittest.TestCase):
         self.assertIn("FAQPage", types)
 
 
+class Foundation(unittest.TestCase):
+    def css(self):
+        return "".join(p.read_text() for p in PUBLIC.glob("**/*.css"))
+
+    def test_archivo_self_hosted(self):
+        self.assertIn("archivo", self.css().lower())  # the minifier lowercases font names
+        self.assertTrue(list(PUBLIC.glob("fonts/archivo-*.woff2")))
+        self.assertNotIn("fonts.googleapis.com", home("en"))
+
+    def test_tokens_present(self):
+        self.assertIn("--sc-yellow", self.css())
+
+    def test_no_fixed_wide_widths(self):
+        import re
+        self.assertFalse(re.search(r"\.sc-[^{]*\{[^}]*(?<!max-)width:\s*(?:[5-9]\d\d|\d{4,})px", self.css()))
+
+
 if __name__ == "__main__":
     unittest.main()
