@@ -31,6 +31,8 @@ sections:
 
         Welcome to **Simplesmente Capoeira Berlin e.V.** – your club for **Capoeira in Berlin**. We are an international Berlin Capoeira group exploring the Afro-Brazilian art that mixes **movement, acrobatics, music and martial arts**. We train in the heart of Berlin in **Schöneberg**, **Kreuzberg** and **Mitte** – for [adults & beginners](#probetraining) and [kids](#kids). Your **first month** of training is **free** – just come to one of our [training times](#trainings).
 
+  - block: sc_times_strip
+
   - block: contact
     id: trainings
     content:

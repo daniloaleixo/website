@@ -1,0 +1,6 @@
+{{/* Slim strip of training sessions under the hero. Data: data/trainings.toml */}}
+<div class="sc-strip">
+  {{- range partial "sc/sessions.html" dict }}
+  <span class="sc-strip__item"><b>{{ partial "sc/days_short.html" .days }}</b> {{ .opens }} {{ i18n (printf "sc_group_%s" .group) }} · {{ .location.key }}</span>
+  {{- end }}
+</div>

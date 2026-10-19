@@ -94,58 +94,36 @@
         }
       ],
       "location": [
+        {{- range $i, $l := hugo.Data.trainings.locations }}{{ if $i }},{{ end }}
         {
           "@type": "Place",
-          "name": "MELO – Marie-Elisabeth-Lüders-Oberschule",
+          "name": {{ printf "%s – %s" $l.key $l.name }},
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Steinmetzstr. 79",
-            "postalCode": "10783",
+            "streetAddress": {{ $l.street }},
+            "postalCode": {{ $l.postal_code }},
             "addressLocality": "Berlin",
-            "addressRegion": "Schöneberg",
+            "addressRegion": {{ $l.district }},
             "addressCountry": "DE"
           },
+          {{- with $l.geo }}
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 52.499238779432005,
-            "longitude": 13.36469710838366
+            "latitude": {{ .lat }},
+            "longitude": {{ .lon }}
           },
+          {{- end }}
           "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",  "opens": "17:00", "closes": "18:30", "description": "Kids training" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "17:00", "closes": "18:30", "description": "Kids training" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",   "opens": "20:00", "closes": "21:30", "description": "Adults training" }
-          ]
-        },
-        {
-          "@type": "Place",
-          "name": "KSG – Kurt-Schumacher-Grundschule",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Puttkamerstr. 19",
-            "postalCode": "10969",
-            "addressLocality": "Berlin",
-            "addressRegion": "Kreuzberg",
-            "addressCountry": "DE"
-          },
-          "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "19:30", "description": "Adults training" }
-          ]
-        },
-        {
-          "@type": "Place",
-          "name": "TAM – Interkulturelles Familienzentrum tam",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Wilhelmstr. 116–117",
-            "postalCode": "10963",
-            "addressLocality": "Berlin",
-            "addressRegion": "Mitte",
-            "addressCountry": "DE"
-          },
-          "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "16:30", "closes": "18:00", "description": "Kids training" }
+            {{- $n := 0 }}
+            {{- range $s := where (partial "sc/sessions.html" dict) "location.key" $l.key }}
+            {{- $desc := cond (eq $s.group "kids") "Kids training" "Adults training" }}
+            {{- range .days }}{{ if $n }},{{ end }}{{ $n = add $n 1 }}
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": {{ . }}, "opens": {{ $s.opens }}, "closes": {{ $s.closes }}, "description": {{ $desc }} }
+            {{- end }}
+            {{- end }}
           ]
         }
+        {{- end }}
       ]
     },
     {
@@ -169,56 +147,34 @@
         "availability": "https://schema.org/InStock"
       },
       "hasCourseInstance": [
+        {{- range $i, $s := partial "sc/sessions.html" (dict "group" "kids") }}{{ if $i }},{{ end }}
+        {{- $l := $s.location }}
         {
           "@type": "CourseInstance",
-          "name": "Capoeira Kids – MELO Schöneberg",
+          "name": {{ printf "Capoeira Kids – %s %s" $l.key ($l.area | default $l.district) }},
           "courseMode": "onsite",
           "courseSchedule": {
             "@type": "Schedule",
             "scheduleTimezone": "Europe/Berlin",
-            "byDay": ["Tuesday", "Thursday"],
-            "startTime": "17:00",
-            "endTime": "18:30",
+            "byDay": {{ $s.days }},
+            "startTime": {{ $s.opens }},
+            "endTime": {{ $s.closes }},
             "repeatFrequency": "P1W"
           },
           "location": {
             "@type": "Place",
-            "name": "Marie-Elisabeth-Lüders-Oberschule (upper gym)",
+            "name": {{ with $l.room }}{{ printf "%s (%s)" $l.name .en }}{{ else }}{{ $l.name }}{{ end }},
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Steinmetzstr. 79",
-              "postalCode": "10783",
+              "streetAddress": {{ $l.street }},
+              "postalCode": {{ $l.postal_code }},
               "addressLocality": "Berlin",
-              "addressRegion": "Schöneberg",
-              "addressCountry": "DE"
-            }
-          }
-        },
-        {
-          "@type": "CourseInstance",
-          "name": "Capoeira Kids – TAM Mitte/Kreuzberg",
-          "courseMode": "onsite",
-          "courseSchedule": {
-            "@type": "Schedule",
-            "scheduleTimezone": "Europe/Berlin",
-            "byDay": ["Friday"],
-            "startTime": "16:30",
-            "endTime": "18:00",
-            "repeatFrequency": "P1W"
-          },
-          "location": {
-            "@type": "Place",
-            "name": "Interkulturelles Familienzentrum tam",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Wilhelmstr. 116–117",
-              "postalCode": "10963",
-              "addressLocality": "Berlin",
-              "addressRegion": "Mitte",
+              "addressRegion": {{ $l.district }},
               "addressCountry": "DE"
             }
           }
         }
+        {{- end }}
       ]
     },
     {
@@ -242,56 +198,34 @@
         "availability": "https://schema.org/InStock"
       },
       "hasCourseInstance": [
+        {{- range $i, $s := partial "sc/sessions.html" (dict "group" "adults") }}{{ if $i }},{{ end }}
+        {{- $l := $s.location }}
         {
           "@type": "CourseInstance",
-          "name": "Capoeira Adults – KSG Kreuzberg",
+          "name": {{ printf "Capoeira Adults – %s %s" $l.key ($l.area | default $l.district) }},
           "courseMode": "onsite",
           "courseSchedule": {
             "@type": "Schedule",
             "scheduleTimezone": "Europe/Berlin",
-            "byDay": ["Tuesday"],
-            "startTime": "18:00",
-            "endTime": "19:30",
+            "byDay": {{ $s.days }},
+            "startTime": {{ $s.opens }},
+            "endTime": {{ $s.closes }},
             "repeatFrequency": "P1W"
           },
           "location": {
             "@type": "Place",
-            "name": "Kurt-Schumacher-Grundschule (upper gym)",
+            "name": {{ with $l.room }}{{ printf "%s (%s)" $l.name .en }}{{ else }}{{ $l.name }}{{ end }},
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Puttkamerstr. 19",
-              "postalCode": "10969",
+              "streetAddress": {{ $l.street }},
+              "postalCode": {{ $l.postal_code }},
               "addressLocality": "Berlin",
-              "addressRegion": "Kreuzberg",
-              "addressCountry": "DE"
-            }
-          }
-        },
-        {
-          "@type": "CourseInstance",
-          "name": "Capoeira Adults – MELO Schöneberg",
-          "courseMode": "onsite",
-          "courseSchedule": {
-            "@type": "Schedule",
-            "scheduleTimezone": "Europe/Berlin",
-            "byDay": ["Friday"],
-            "startTime": "20:00",
-            "endTime": "21:30",
-            "repeatFrequency": "P1W"
-          },
-          "location": {
-            "@type": "Place",
-            "name": "Marie-Elisabeth-Lüders-Oberschule (upper gym)",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Steinmetzstr. 79",
-              "postalCode": "10783",
-              "addressLocality": "Berlin",
-              "addressRegion": "Schöneberg",
+              "addressRegion": {{ $l.district }},
               "addressCountry": "DE"
             }
           }
         }
+        {{- end }}
       ]
     },
     {

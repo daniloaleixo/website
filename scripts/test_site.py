@@ -128,5 +128,23 @@ class Foundation(unittest.TestCase):
         self.assertFalse(re.search(r"\.sc-[^{]*\{[^}]*(?<!max-)width:\s*(?:[5-9]\d\d|\d{4,})px", self.css()))
 
 
+class Trainings(unittest.TestCase):
+    def test_sessions_match_data(self):
+        n = len(data("trainings")["sessions"])
+        for lang in ("en", "de"):
+            self.assertEqual(len(by_class(home(lang), "sc-strip__item")), n)
+
+    def test_strip_localised(self):
+        self.assertTrue(any("Di" in i["text"] and "Kinder" in i["text"] for i in by_class(home("de"), "sc-strip__item")))
+
+    def test_jsonld_opening_hours_match_data(self):
+        d = data("trainings")
+        expected = sorted((day, s["opens"], s["closes"]) for s in d["sessions"] for day in s["days"])
+        g = [x for doc in jsonld(home("en")) for x in doc.get("@graph", [doc])]
+        org = next(x for x in g if "SportsClub" in x.get("@type", []))
+        got = sorted((o["dayOfWeek"], o["opens"], o["closes"]) for p in org["location"] for o in p["openingHoursSpecification"])
+        self.assertEqual(got, expected)
+
+
 if __name__ == "__main__":
     unittest.main()

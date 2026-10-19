@@ -94,6 +94,38 @@ h1, h2, h3, h4 {
   background: var(--sc-grey-bg);
 }
 
+// Homepage sections built from sc_* blocks
+.home-section[class*="wg-sc-"] {
+  padding: 4rem 0;
+}
+
+// Times strip (blocks/sc_times_strip.html)
+.home-section.wg-sc-times-strip {
+  padding: 0;
+  background: var(--sc-grey-bg);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.sc-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.4rem;
+  padding: 0.8rem 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #444;
+
+  b {
+    background: var(--sc-black);
+    color: var(--sc-yellow);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    margin-right: 0.2rem;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Existing site styles
 // ---------------------------------------------------------------------------

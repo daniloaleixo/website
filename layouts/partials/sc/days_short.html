@@ -1,0 +1,4 @@
+{{/* "Tue & Thu" for a list of schema.org day names, in the current language. */}}
+{{- $days := slice -}}
+{{- range . -}}{{- $days = $days | append (i18n (printf "sc_day_short_%s" .)) -}}{{- end -}}
+{{- return delimit $days " & " -}}

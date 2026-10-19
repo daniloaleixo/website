@@ -30,6 +30,8 @@ sections:
         
         Willkommen bei **Simplesmente Capoeira Berlin e.V.** – Deinem Verein für **Capoeira in Berlin**. Wir sind eine internationale Berlin-Capoeira-Gruppe und erforschen die afro-brasilianische Kunst aus **Bewegung, Akrobatik, Musik und Kampfkunst**. Wir trainieren mitten in Berlin in **Schöneberg**, **Kreuzberg** und **Mitte** – für [Erwachsene & Anfänger](#probetraining) und [Kinder](#kinder). Dein **erster Monat** Training ist **kostenlos** – komm einfach zu einem unserer [Trainingstermine](#trainings).
 
+  - block: sc_times_strip
+
   - block: contact
     id: trainings
     content:

@@ -1,0 +1,61 @@
+# Training locations and weekly sessions: the single source for training times.
+# Used by the homepage times strip, training cards, kids section, FAQ answers and
+# the JSON-LD in layouts/partials/custom_head.html. Change a time here, nowhere else.
+
+[[locations]]
+key = "MELO"
+name = "Marie-Elisabeth-Lüders-Oberschule"
+room = { en = "upper gym", de = "Gymnastikhalle (oben)" }
+street = "Steinmetzstr. 79"
+postal_code = "10783"
+district = "Schöneberg"
+maps = "https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7"
+geo = { lat = 52.499238779432005, lon = 13.36469710838366 }
+
+[[locations]]
+key = "KSG"
+name = "Kurt-Schumacher-Grundschule"
+room = { en = "upper gym", de = "Turnhalle (oben)" }
+street = "Puttkamerstr. 19"
+postal_code = "10969"
+district = "Kreuzberg"
+maps = "https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6"
+
+[[locations]]
+key = "TAM"
+name = "Interkulturelles Familienzentrum tam"
+street = "Wilhelmstr. 116–117"
+postal_code = "10963"
+district = "Mitte"
+area = "Mitte/Kreuzberg"   # optional: how the area is named in text, if not just the district
+maps = "https://maps.app.goo.gl/rQE4FopjV2LYNTX46"
+
+# group: "kids" | "adults"; days: schema.org day names; location: a key above.
+
+[[sessions]]
+group = "kids"
+location = "MELO"
+days = ["Tuesday", "Thursday"]
+opens = "17:00"
+closes = "18:30"
+
+[[sessions]]
+group = "kids"
+location = "TAM"
+days = ["Friday"]
+opens = "16:30"
+closes = "18:00"
+
+[[sessions]]
+group = "adults"
+location = "KSG"
+days = ["Tuesday"]
+opens = "18:00"
+closes = "19:30"
+
+[[sessions]]
+group = "adults"
+location = "MELO"
+days = ["Friday"]
+opens = "20:00"
+closes = "21:30"

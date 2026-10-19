@@ -1,0 +1,15 @@
+{{/* Training sessions from data/trainings.toml, each with its location map merged in.
+     Usage: partial "sc/sessions.html" (dict "group" "kids")  // group is optional */}}
+{{- $locations := dict -}}
+{{- range hugo.Data.trainings.locations -}}
+  {{- $locations = merge $locations (dict .key .) -}}
+{{- end -}}
+{{- $out := slice -}}
+{{- range hugo.Data.trainings.sessions -}}
+  {{- if or (not $.group) (eq .group $.group) -}}
+    {{- $loc := index $locations .location -}}
+    {{- if not $loc -}}{{- errorf "data/trainings.toml: session uses unknown location %q" .location -}}{{- end -}}
+    {{- $out = $out | append (dict "group" .group "days" .days "opens" .opens "closes" .closes "location" $loc) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}
