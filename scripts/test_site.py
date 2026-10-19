@@ -157,5 +157,22 @@ class Hero(unittest.TestCase):
             self.assertEqual(len([t for t in by_class(h, "sc-hero__title") if t["tag"] == "h1"]), 1)
 
 
+class Tiles(unittest.TestCase):
+    def test_four_tiles_with_alt(self):
+        for lang in ("en", "de"):
+            h = home(lang)
+            tiles = by_class(h, "sc-tile")
+            self.assertEqual(len(tiles), 4)
+            imgs = [e for e in by_class(h, "sc-tile__img") if e["tag"] == "img"]
+            self.assertEqual(len(imgs), 4)
+            self.assertTrue(all(i["attrs"].get("alt") for i in imgs))
+
+    def test_de_tile_titles(self):
+        h = home("de")
+        start = by_class(h, "sc-tiles")[0]["pos"]
+        titles = [e["text"].strip() for e in _elements(h) if e["tag"] == "h3" and e["pos"] > start][:4]
+        self.assertEqual(titles, ["Bewegung", "Die Roda", "Musik", "Gemeinschaft"])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,16 @@
+{{/* "What is capoeira": heading plus photo tiles. Copy and images: front matter. */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-tiles">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  {{ with $c.lead }}<p class="sc-lead">{{ . }}</p>{{ end }}
+  <div class="sc-tiles__grid">
+    {{ range $c.items }}
+    <div class="sc-tile">
+      {{ partial "sc/img.html" (dict "src" .image.src "alt" .image.alt "width" 600 "class" "sc-tile__img" "position" .image.position) }}
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>

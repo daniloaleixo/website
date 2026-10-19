@@ -40,6 +40,38 @@ sections:
 
   - block: sc_times_strip
 
+  - block: sc_tiles
+    id: was-ist-capoeira
+    content:
+      kicker: Was ist Capoeira?
+      title: Eine afro-brasilianische Kunst, die man spielt – nicht nur trainiert.
+      lead: Zwei Spieler begegnen sich in der Roda, einem Kreis aus singenden und klatschenden Menschen, angeführt vom Berimbau.
+      items:
+        - title: Bewegung
+          text: Ginga, Tritte und Ausweichbewegungen. Kraft, Beweglichkeit und Flow.
+          image:
+            src: home/au.jpg
+            alt: 'Capoeira-Bewegung: ein Aú (Rad) mitten in der Roda'
+            position: '55% center'
+        - title: Die Roda
+          text: Ein Spiel aus Frage und Antwort zwischen zwei Spielern.
+          image:
+            src: home/roda-kick.jpg
+            alt: 'Zwei Capoeiristas spielen in der Roda, die Gruppe schaut zu'
+            position: '58% center'
+        - title: Musik
+          text: Berimbau, Pandeiro, Atabaque und Lieder auf Portugiesisch.
+          image:
+            src: SC_example_horda.jpeg
+            alt: 'Berimbaus und ein Atabaque spielen beim Training für die Roda'
+            position: '85% center'
+        - title: Gemeinschaft
+          text: Eine internationale Gruppe – alle Altersstufen, alle Levels.
+          image:
+            src: welcome.jpg
+            alt: 'Gruppenfoto von Simplesmente Capoeira Berlin – Kinder und Erwachsene in der Halle'
+            position: 'center 60%'
+
   - block: contact
     id: trainings
     content:

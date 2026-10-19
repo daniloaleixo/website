@@ -159,6 +159,46 @@ h1, h2, h3, h4 {
   }
 }
 
+// "What is capoeira" tiles (blocks/sc_tiles.html)
+.sc-tiles__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sc-tile {
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0.75rem 0 0.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+}
+
+.sc-tile__img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--sc-radius);
+}
+
+@media (max-width: 991.98px) {
+  .sc-tiles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sc-tiles__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Times strip (blocks/sc_times_strip.html)
 .home-section.wg-sc-times-strip {
   padding: 0;
