@@ -103,38 +103,6 @@ sections:
           - Saubere Hallenschuhe
           - Wasser & gute Laune
 
-  - block: markdown
-    content:
-      title: Capoeira Training in Berlin – Probemonat gratis & Standorte
-      subtitle: Bewegung, Akrobatik, Musik – für Anfänger, Fortgeschrittene, Kinder und Erwachsene
-      text: |
-        ## Capoeira in Berlin – Bewegung, Akrobatik & Musik
-
-        Capoeira ist eine afro-brasilianische Kampfkunst, die **Bewegung, Akrobatik, Tanz, Musik und Kultur** in einer Praxis vereint. In unserem **Berlin-Capoeira-Verein** lernst Du die **Fundamente der Capoeira**: das grundlegende Bewegungsvokabular (Ginga, Esquiva, Au und weitere Floreios), Schläge und Tritte, **akrobatische Elemente**, Musikinstrumente (Berimbau, Pandeiro, Atabaque) und Lieder auf Portugiesisch. Capoeira trainiert Koordination, Kraft, Beweglichkeit, Rhythmus und Körpergefühl – und macht dabei richtig Spaß.
-
-        ## Capoeira Training in Berlin: Unsere Standorte
-
-        Wir bieten **Capoeira Training in Berlin** an drei Standorten in **Schöneberg, Kreuzberg und Mitte** an – alle [Trainingszeiten oben](#trainings):
-
-        - **MELO** – [Marie-Elisabeth-Lüders-Oberschule, Steinmetzstr. 79, **10783 Berlin-Schöneberg**](https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7)
-        - **KSG** – [Kurt-Schumacher-Grundschule, Puttkamerstr. 19, **10969 Berlin-Kreuzberg**](https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6)
-        - **TAM** – [Interkulturelles Familienzentrum tam, Wilhelmstr. 116–117, **10963 Berlin-Mitte / Kreuzberg**](https://maps.app.goo.gl/rQE4FopjV2LYNTX46)
-
-        Ob Du nach **Capoeira Kreuzberg**, **Capoeira Schöneberg**, **Capoeira Mitte**, einer **akrobatischen Bewegungspraxis** oder **[Capoeira für Kinder in Berlin](#kinder)** suchst – bei uns bist Du richtig.
-
-        ## Probemonat gratis: Einfach vorbeikommen!
-
-        Du möchtest Capoeira kennenlernen? **Komm zum Probetraining** – Gäste sind immer herzlich willkommen und der **erste Monat Training ist kostenlos**. Vorkenntnisse und Anmeldung sind **nicht** erforderlich.
-
-        **Was Du mitbringen solltest:**
-        - Bequeme Sportkleidung (lange Hose empfohlen)
-        - Saubere Hallenschuhe
-        - Eine Wasserflasche und gute Laune
-
-        Schreib uns über die [Kontaktseite](./contact/) oder komm einfach zu einem der [oben aufgeführten Trainingszeiten](#trainings) vorbei. Du suchst die Kindergruppe? Direkt zu **[Capoeira für Kinder in Berlin](#kinder)**.
-    design:
-      columns: '1'
-
   - block: sc_kids
     id: kinder
     content:
@@ -153,56 +121,53 @@ sections:
     design:
       css_class: sc-section--grey
 
-  - block: collection
+  - block: sc_events
     content:
-      title: Veranstaltungen 
-      subtitle:
-      text:
+      kicker: Demnächst
+      title: Events
       count: 2
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: event 
-    design:
-      view: card
-      columns: '2'
 
-  - block: collection
+  - block: sc_team
     content:
-      title: Neuigkeiten 
-      subtitle:
-      text:
-      count: 2
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+      kicker: Wer unterrichtet
+      title: Unser Team
+      user_groups:
+        - Trainer
+        - Supervision
+      link_text: Lerne das Team kennen →
     design:
-      view: card
-      columns: '2'
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the trainer →" %}}
-    design:
-      columns: '1'
+      css_class: sc-section--grey
 
   - block: sc_faq
     id: faq
     content:
       kicker: FAQ
       title: Fragen & Antworten
+
+  - block: markdown
+    id: about-capoeira
+    content:
+      text: |
+        <details class="sc-more">
+        <summary>Mehr über Capoeira in Berlin</summary>
+
+        ## Capoeira in Berlin – Bewegung, Akrobatik & Musik
+
+        Capoeira ist eine afro-brasilianische Kampfkunst, die **Bewegung, Akrobatik, Tanz, Musik und Kultur** in einer Praxis vereint. In unserem **Berlin-Capoeira-Verein** lernst Du die **Fundamente der Capoeira**: das grundlegende Bewegungsvokabular (Ginga, Esquiva, Au und weitere Floreios), Schläge und Tritte, **akrobatische Elemente**, Musikinstrumente (Berimbau, Pandeiro, Atabaque) und Lieder auf Portugiesisch. Capoeira trainiert Koordination, Kraft, Beweglichkeit, Rhythmus und Körpergefühl – und macht dabei richtig Spaß.
+
+        ## Capoeira Training in Berlin: Unsere Standorte
+
+        Wir bieten **Capoeira Training in Berlin** an drei Standorten in **Schöneberg, Kreuzberg und Mitte** an – alle [Trainingszeiten oben](#trainings):
+
+        Ob Du nach **Capoeira Kreuzberg**, **Capoeira Schöneberg**, **Capoeira Mitte**, einer **akrobatischen Bewegungspraxis** oder **[Capoeira für Kinder in Berlin](#kinder)** suchst – bei uns bist Du richtig.
+
+        ## Probemonat gratis: Einfach vorbeikommen!
+
+        Du möchtest Capoeira kennenlernen? **Komm zum Probetraining** – Gäste sind immer herzlich willkommen und der **erste Monat Training ist kostenlos**. Vorkenntnisse und Anmeldung sind **nicht** erforderlich.
+
+        Schreib uns über die [Kontaktseite](./contact/) oder komm einfach zu einem der [oben aufgeführten Trainingszeiten](#trainings) vorbei. Du suchst die Kindergruppe? Direkt zu **[Capoeira für Kinder in Berlin](#kinder)**.
+
+        </details>
+    design:
+      columns: '1'
 ---

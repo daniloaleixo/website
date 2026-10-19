@@ -1,0 +1,18 @@
+{{/* Latest events (content/<lang>/event/) as compact cards. */}}
+{{ $c := .wcBlock.content }}
+{{ $events := first ($c.count | default 2) (sort (where site.RegularPages "Type" "event") "Date" "desc") }}
+<div class="sc-events">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  <div class="sc-events__grid">
+    {{ range $events }}
+    <a class="sc-event" href="{{ .RelPermalink }}">
+      <span class="sc-event__date">{{ .Date.Year }}<small>{{ .Date | time.Format "Jan" }}</small></span>
+      <span class="sc-event__text">
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.location }}<p>{{ . }}</p>{{ end }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+</div>

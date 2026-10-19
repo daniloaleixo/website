@@ -253,5 +253,37 @@ class Chrome(unittest.TestCase):
             self.assertIsNotNone(by_id(read(p), "announcement"), p)
 
 
+class Page(unittest.TestCase):
+    ORDER = ["sc-hero", "sc-strip", "sc-tiles", "sc-videos", "sc-trainings", "sc-kids", "sc-events", "sc-team", "sc-faq-section", "sc-more"]
+
+    def test_section_order(self):
+        for lang in ("en", "de"):
+            h = home(lang)
+            found = {c: by_class(h, c) for c in self.ORDER}
+            self.assertTrue(all(found.values()), [c for c, v in found.items() if not v])
+            pos = [found[c][0]["pos"] for c in self.ORDER]
+            self.assertEqual(pos, sorted(pos))
+
+    def test_old_blocks_gone(self):
+        for lang in ("en", "de"):
+            self.assertFalse(by_class(home(lang), "wg-collection"))
+            self.assertFalse(by_class(home(lang), "wg-hero"))
+
+    def test_events_and_team(self):
+        self.assertEqual(len(by_class(home("en"), "sc-event")), 2)
+        self.assertGreaterEqual(len(by_class(home("de"), "sc-person")), 3)
+
+    def test_de_home_has_no_en_copy(self):
+        import re
+        h = re.sub(r"<script.*?</script>", "", home("de"), flags=re.S)  # JSON-LD keywords are bilingual on purpose
+        for s in ["Try a free training", "What is capoeira", "See it in action", "Where & when", "Capoeira for kids", "Our team", "Questions & answers", "More about capoeira"]:
+            self.assertNotIn(s, h)
+
+    def test_de_internal_links_prefixed(self):
+        links = [e["attrs"]["href"] for e in _elements(home("de")) if "href" in e["attrs"] and "hreflang" not in e["attrs"]]  # skip the EN switch
+        bad = [u for u in links if u.startswith("/") and not u.startswith(("/de/", "/css/", "/js/", "/fonts/", "/media/", "/#"))]
+        self.assertEqual(bad, [])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,22 @@
+{{/* Trainers: round avatars from content/<lang>/authors/, selected by user_groups like the theme's people block. */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-team">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  <div class="sc-team__people">
+    {{ range $c.user_groups }}
+      {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
+      {{ range sort $query "Params.last_name" }}
+      <div class="sc-person">
+        {{ with (.Resources.ByType "image").GetMatch "*avatar*" }}
+          {{ $img := .Fill "168x168 Center webp" }}
+          <img class="sc-person__avatar" src="{{ $img.RelPermalink }}" width="84" height="84" alt="" loading="lazy">
+        {{ end }}
+        <b>{{ .Title }}</b>
+        {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  {{ with $c.link_text }}<a class="sc-btn sc-btn--dark" href="{{ "people/" | relLangURL }}">{{ . }}</a>{{ end }}
+</div>
