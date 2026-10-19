@@ -26,7 +26,7 @@
 {{- $orgId := printf "%s#organization"  site.BaseURL -}}
 {{- $kidsId   := printf "%s#course-kids"   site.BaseURL -}}
 {{- $adultsId := printf "%s#course-adults" site.BaseURL -}}
-{{- $faqId    := printf "%s#faq"           site.BaseURL -}}
+{{- $faqId    := printf "%s#faq"           .Permalink -}}
 {{- $description := or site.Params.description site.Params.marketing.seo.description -}}
 
 {{ if eq .Kind "home" }}

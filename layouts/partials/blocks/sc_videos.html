@@ -9,7 +9,7 @@
   <div class="sc-videos__grid">
     {{ range $i, $v := $c.videos }}
     <figure class="sc-videos__item{{ if eq $i 0 }} sc-videos__item--big{{ end }}">
-      <button type="button" class="sc-video" data-yt="{{ $v.id }}" data-title="{{ $v.title }}" aria-label="Play: {{ $v.title }}">
+      <button type="button" class="sc-video" data-yt="{{ $v.id }}" data-title="{{ $v.title }}" aria-label="{{ i18n "sc_play" }}: {{ $v.title }}">
         {{ partial "sc/img.html" (dict "src" (printf "video/%s.jpg" $v.id) "alt" "" "width" (cond (eq $i 0) 1280 640)) }}
         <span class="sc-video__play" aria-hidden="true"></span>
       </button>

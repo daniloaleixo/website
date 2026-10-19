@@ -285,5 +285,30 @@ class Page(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class ReviewFixes(unittest.TestCase):
+    def test_events_kicker_does_not_promise_future(self):
+        # the block shows the newest events, which may be over already
+        for lang, word in (("en", "Coming up"), ("de", "Demnächst")):
+            kicker = [k["text"] for k in by_class(home(lang), "sc-kicker")
+                      if k["pos"] > by_class(home(lang), "sc-events")[0]["pos"]][0]
+            self.assertNotEqual(kicker.strip(), word)
+
+    def test_de_video_labels_german(self):
+        labels = [v["attrs"]["aria-label"] for v in by_class(home("de"), "sc-video")]
+        self.assertTrue(all(l.startswith("Abspielen") for l in labels), labels)
+
+    def test_h1_keeps_capoeira_berlin_keyword(self):
+        for lang in ("en", "de"):
+            h1 = [e for e in _elements(home(lang)) if e["tag"] == "h1" and "sc-hero__title" in e["attrs"].get("class", "")][0]
+            self.assertIn("Capoeira in Berlin", h1["text"])
+
+    def test_faq_ids_differ_per_language(self):
+        ids = []
+        for lang in ("en", "de"):
+            g = [x for d in jsonld(home(lang)) for x in d.get("@graph", [d])]
+            ids.append(next(x for x in g if x.get("@type") == "FAQPage")["@id"])
+        self.assertNotEqual(ids[0], ids[1])
+
+
 if __name__ == "__main__":
     unittest.main()

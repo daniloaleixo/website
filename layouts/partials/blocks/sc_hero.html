@@ -2,8 +2,8 @@
 {{ $c := .wcBlock.content }}
 <div class="sc-hero">
   <div class="sc-hero__text">
-    {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
-    <h1 class="sc-hero__title">{{ $c.title }} <mark class="sc-mark">{{ $c.highlight }}</mark></h1>
+    {{/* The kicker sits inside the h1 so the heading keeps "Capoeira in Berlin" for search engines. */}}
+    <h1 class="sc-hero__title">{{ with $c.kicker }}<span class="sc-kicker sc-hero__kicker">{{ . }}</span> {{ end }}{{ $c.title }} <mark class="sc-mark">{{ $c.highlight }}</mark></h1>
     {{ with $c.text }}<p class="sc-hero__lead">{{ . }}</p>{{ end }}
     {{ with $c.button }}<a class="sc-btn" href="{{ .url }}">{{ .text }}</a>{{ end }}
   </div>

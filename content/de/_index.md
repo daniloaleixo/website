@@ -123,7 +123,7 @@ sections:
 
   - block: sc_events
     content:
-      kicker: Demnächst
+      kicker: Aktuell
       title: Events
       count: 2
 

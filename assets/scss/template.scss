@@ -216,7 +216,13 @@ h1, h2, h3, h4 {
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   line-height: 1.02;
   font-weight: 900;
-  margin: 0.6rem 0 1rem;
+  margin: 0 0 1rem;
+}
+
+.sc-hero__kicker {
+  display: block;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
 }
 
 .sc-hero__lead {

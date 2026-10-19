@@ -124,7 +124,7 @@ sections:
 
   - block: sc_events
     content:
-      kicker: Coming up
+      kicker: Latest
       title: Events
       count: 2
 
