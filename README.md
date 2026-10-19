@@ -8,6 +8,13 @@ derived from [Hugo Research Group Theme](https://github.com/wowchemy/starter-hug
 For costumization add scss code in [./assets/scss/template.scss](./assets/scss/template.scss)
 * **failed attempt custom.scss**: I tried creating a new file `./assets/scss/costume.scss` but it is not imported even though according to `hugo mod graph` the github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5@ is used and according to their [assets/scss/main.scss](https://github.com/HugoBlox/hugo-blox-builder/blob/main/modules/blox-bootstrap/assets/scss/main.scss) `template` and `costum` are imported ... still `costum.scss` does not work
 
+## claude code
+
+[CLAUDE.md](./CLAUDE.md) holds the project instructions for [Claude Code](https://claude.com/claude-code). Project skills live in [.claude/skills/](./.claude/skills/); Claude uses them automatically when a request matches, or you can call them directly:
+
+* `/site-banner`: add, change or remove the site-wide announcement bar, keeping the EN and DE copies in sync
+* `/add-event`: create a new event page (e.g. a Batizado) in both English and German
+
 ## usefull links for developing 
 
 [![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
