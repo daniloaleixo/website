@@ -186,5 +186,20 @@ class Videos(unittest.TestCase):
             self.assertIn("youtube-nocookie.com", scripts)
 
 
+class TrainingSection(unittest.TestCase):
+    def test_training_cards(self):
+        n = len(data("trainings")["sessions"])
+        for lang in ("en", "de"):
+            h = home(lang)
+            self.assertIsNotNone(by_id(h, "trainings"))
+            self.assertIsNotNone(by_id(h, "probetraining"))
+            locs = by_class(h, "sc-loc")
+            self.assertEqual(len(locs), 3)
+            self.assertEqual(len(by_class(h, "sc-loc__row")), n)
+            ksg = next(l for l in locs if "KSG" in l["text"])
+            self.assertIn("18:00–19:30", ksg["text"])
+            self.assertNotIn("wg-contact", by_id(h, "trainings")["attrs"].get("class", ""))
+
+
 if __name__ == "__main__":
     unittest.main()

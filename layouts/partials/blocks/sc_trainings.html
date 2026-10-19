@@ -1,0 +1,30 @@
+{{/* Training: one card per location with its sessions, plus the free-month card.
+     Times and addresses: data/trainings.toml. Copy: front matter. */}}
+{{ $c := .wcBlock.content }}
+{{ $lang := .wcPage.Language.Lang }}
+{{ $sessions := partial "sc/sessions.html" dict }}
+<div class="sc-trainings">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  {{ with $c.lead }}<p class="sc-lead">{{ . }}</p>{{ end }}
+  <div class="sc-trainings__grid">
+    {{ range $l := hugo.Data.trainings.locations }}
+    <div class="sc-loc">
+      <div class="sc-loc__name">{{ $l.key }}</div>
+      <div class="sc-loc__place">{{ $l.name }}{{ with $l.room }}, {{ index . $lang }}{{ end }}</div>
+      <a class="sc-loc__addr" href="{{ $l.maps }}" target="_blank" rel="noopener">{{ $l.street }} · {{ $l.district }} ↗</a>
+      {{ range where $sessions "location.key" $l.key }}
+      <div class="sc-loc__row"><span>{{ i18n (printf "sc_group_%s" .group) }}</span><b>{{ partial "sc/days_short.html" .days }} {{ .opens }}–{{ .closes }}</b></div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ with $c.free }}
+    <div class="sc-free" id="probetraining">
+      <h3>{{ .title }}</h3>
+      <ul>
+        {{ range .items }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>

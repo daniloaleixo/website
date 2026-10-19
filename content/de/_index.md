@@ -90,35 +90,20 @@ sections:
     design:
       css_class: sc-section--grey
 
-  - block: contact
+  - block: sc_trainings
     id: trainings
     content:
-      title: Trainingsorte (MELO, KSG, TAM)
-      text: |-
-        Kommt zu unserem Training, Gäste sind immer willkommen und der **erste Monat ist kostenlos**. Zurzeit bieten wir je zwei [Trainingseinheiten für Erwachsene](#probetraining) und für [Kinder/Jugendliche](#kinder) in:
-          <br>**[MELO](https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7)**: Gymnastikhalle (oben) der **M**arie-**E**lisabeth-**L**üders-**O**berschule
-          <br>**[KSG](https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6)**: oberen Sporthalle der **K**urt-**S**chumacher-**G**rundschule
-          <br>**[TAM](https://maps.app.goo.gl/rQE4FopjV2LYNTX46)**: Sporthalle des Interkulturellen Familienzentrums **tam**
-
-        > **Neu bei Capoeira?** [Alles zum Probetraining (1. Monat gratis) & was Du mitbringen solltest 👇](#probetraining)
-      address:
-        street: 'MELO: <a href="https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7" target="_blank" rel="noopener">Steinmetzstr. 79 (10783)</a><br>KSG: <a href="https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6" target="_blank" rel="noopener">Puttkamerstr. 19 (10969)</a><br>TAM: <a href="https://maps.app.goo.gl/rQE4FopjV2LYNTX46" target="_blank" rel="noopener">Wilhelmstr. 116 – 117 (10963)</a>'
-        country: Germany
-        country_code: DE
-      office_hours:
-        - '**Kinder**'
-        - 'Dienstag und Donnerstag 17:00-18:30  MELO'
-        - 'Freitag 16:30-18:00  TAM'
-        - ''
-        - '**Erwachsene**'
-        - 'Dienstag 18:00-19:30  KSG'
-        - 'Freitag 20:00-21:30  MELO'
-      autolink: true
-    design:
-      columns: '2'
+      kicker: Trainiere mit uns
+      title: Wo & wann
+      lead: Komm einfach vorbei – ohne Anmeldung und ohne Vorerfahrung.
+      free:
+        title: Erster Monat kostenlos
+        items:
+          - Bequeme Sportkleidung (lange Hose empfohlen)
+          - Saubere Hallenschuhe
+          - Wasser & gute Laune
 
   - block: markdown
-    id: probetraining
     content:
       title: Capoeira Training in Berlin – Probemonat gratis & Standorte
       subtitle: Bewegung, Akrobatik, Musik – für Anfänger, Fortgeschrittene, Kinder und Erwachsene

@@ -284,6 +284,86 @@ h1, h2, h3, h4 {
   }
 }
 
+// Training locations (blocks/sc_trainings.html)
+.sc-trainings__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.sc-loc {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+}
+
+.sc-loc__name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sc-loc__place {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.15rem;
+}
+
+.sc-loc__addr {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0.75rem;
+}
+
+.sc-loc__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.45rem 0;
+  border-top: 1px dashed #e5e5e5;
+
+  b {
+    font-weight: 800;
+    text-align: right;
+  }
+}
+
+.sc-free {
+  background: var(--sc-yellow);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  scroll-margin-top: 90px;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sc-trainings__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sc-trainings__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Times strip (blocks/sc_times_strip.html)
 .home-section.wg-sc-times-strip {
   padding: 0;

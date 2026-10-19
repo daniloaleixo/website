@@ -91,35 +91,20 @@ sections:
     design:
       css_class: sc-section--grey
 
-  - block: contact
+  - block: sc_trainings
     id: trainings
     content:
-      title: Training Locations (MELO, KSG, TAM)
-      text: |-
-        Join us at the training, guests are always welcome and the **first month is free**. Currently we have two [adult training](#probetraining) sessions and two [kids training](#kids) sessions at:
-          <br>**[MELO](https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7)**: upper gym at **M**arie-**E**lisabeth-**L**üders-**O**berschule
-          <br>**[KSG](https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6)**: upper gym at **K**urt-**S**chumacher-**G**rundschule
-          <br>**[TAM](https://maps.app.goo.gl/rQE4FopjV2LYNTX46)**: gym at the **tam** Intercultural Family Center
-
-        > **New to Capoeira?** [Learn what to bring & how the free trial month works 👇](#probetraining)
-      address:
-        street: 'MELO: <a href="https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7" target="_blank" rel="noopener">Steinmetzstr. 79 (10783)</a><br>KSG: <a href="https://maps.app.goo.gl/MzPxUjBwu3oMrWGs6" target="_blank" rel="noopener">Puttkamerstr. 19 (10969)</a><br>TAM: <a href="https://maps.app.goo.gl/rQE4FopjV2LYNTX46" target="_blank" rel="noopener">Wilhelmstr. 116 – 117 (10963)</a>'
-        country: Germany
-        country_code: DE
-      office_hours:
-        - '**Kids**'
-        - 'Tuesday and Thursday 17:00-18:30  MELO'
-        - 'Friday 16:30-18:00  TAM'
-        - ''
-        - '**Adults**'
-        - 'Tuesday 18:00-19:30  KSG'
-        - 'Friday 20:00-21:30  MELO'
-      autolink: true
-    design:
-      columns: '2'
+      kicker: Train with us
+      title: Where & when
+      lead: Just come by – no registration and no experience needed.
+      free:
+        title: First month free
+        items:
+          - Comfortable sports clothes (long pants recommended)
+          - Clean indoor sports shoes
+          - Water & a good mood
 
   - block: markdown
-    id: probetraining
     content:
       title: Capoeira Training in Berlin – Free Trial Month & Locations
       subtitle: Movement, acrobatics, music – for beginners, advanced students, kids and adults
