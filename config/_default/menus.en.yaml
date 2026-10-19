@@ -1,0 +1,28 @@
+# English navigation. German: menus.de.yaml. Homepage anchors differ per language (#kids / #kinder).
+# An entry with `params: { cta: true }` is shown as the yellow button (layouts/partials/components/headers/sc_navbar.html).
+# News and Documents are linked from the footer (layouts/partials/components/footers/sc_footer.html).
+
+main:
+  - name: Training
+    url: /#trainings
+    weight: 10
+  - name: Kids
+    url: /#kids
+    weight: 20
+  - name: Events
+    url: event
+    weight: 30
+  - name: Songs
+    url: songs
+    weight: 40
+  - name: Team
+    url: people
+    weight: 50
+  - name: Contact
+    url: contact
+    weight: 60
+  - name: Free training
+    url: /#trainings
+    weight: 70
+    params:
+      cta: true

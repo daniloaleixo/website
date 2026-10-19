@@ -35,6 +35,7 @@ marketing:
 header:
   navbar:
     enable: true
+    block: sc_navbar
     align: r
     show_logo: true
     show_language: false
@@ -45,6 +46,7 @@ header:
 # Site footer
 
 footer:
+  block: sc_footer
   copyright:
     notice: '© {year} Simplesmente Capoeira e.V. This work is licensed under {license}'
     license:

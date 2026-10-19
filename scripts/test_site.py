@@ -226,5 +226,32 @@ class Faq(unittest.TestCase):
         self.assertIn("Tuesday and Thursday 17:00–18:30 at MELO (Schöneberg)", answer)
 
 
+INNER = ["event/index.html", "songs/index.html", "people/index.html", "contact/index.html", "post/index.html", "documents/index.html"]
+
+
+class Chrome(unittest.TestCase):
+    def test_inner_pages_use_new_chrome(self):
+        for p in INNER + ["de/" + p for p in INNER]:
+            h = read(p)
+            self.assertTrue(by_class(h, "sc-navbar"), p)
+            self.assertTrue(by_class(h, "sc-footer"), p)
+
+    def test_menus(self):
+        self.assertIn("/de/#kinder", hrefs(home("de")))
+        self.assertIn("/#kids", hrefs(home("en")))
+        self.assertEqual(len(by_class(home("de"), "sc-nav-cta")), 1)
+
+    def test_footer_links_localised(self):
+        f = by_class(home("de"), "sc-footer")[0]["text"]
+        self.assertIn("Dokumente", f)
+        self.assertNotIn("Impressum", f)
+
+    def test_announcement_still_rendered(self):
+        if "announcement:" not in (REPO / "content/en/_index.md").read_text():
+            self.skipTest("no banner set")
+        for p in ["index.html", "de/index.html", "event/index.html", "de/songs/index.html"]:
+            self.assertIsNotNone(by_id(read(p), "announcement"), p)
+
+
 if __name__ == "__main__":
     unittest.main()

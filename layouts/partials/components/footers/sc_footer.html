@@ -1,0 +1,18 @@
+{{/* Simplesmente Capoeira footer: club name, page links, social links, licence line.
+     Selected via `footer.block: sc_footer` in config/_default/params.yaml. */}}
+<div class="sc-footer">
+  <div class="sc-footer__club">
+    <b>{{ site.Title }}</b>
+    <span>© {{ now.Year }}</span>
+  </div>
+  <nav class="sc-footer__links" aria-label="Footer">
+    <a href="{{ "contact/" | relLangURL }}">{{ i18n "sc_footer_contact" }}</a>
+    <a href="{{ "post/" | relLangURL }}">{{ i18n "sc_footer_news" }}</a>
+    <a href="{{ "documents/" | relLangURL }}">{{ i18n "sc_footer_documents" }}</a>
+  </nav>
+  <div class="sc-footer__social">
+    <a href="https://www.youtube.com/@SimplesmenteCapoeiraBerlin" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/simplesmente_capoeira_berlin/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+{{ partial "site_footer_license" . }}
