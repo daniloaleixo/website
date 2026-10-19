@@ -1,0 +1,22 @@
+{{/* Kids: photo, highlights, kids sessions (data/trainings.toml) and the parents' FAQ (data/faq.toml). */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-kids">
+  <div class="sc-kids__main">
+    {{ with $c.image }}{{ partial "sc/img.html" (dict "src" .src "alt" .alt "width" 900 "class" "sc-kids__img" "position" .position) }}{{ end }}
+    <div class="sc-kids__text">
+      {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+      {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+      {{ with $c.lead }}<p class="sc-lead">{{ . | markdownify }}</p>{{ end }}
+      <ul class="sc-kids__list">
+        {{ range $c.items }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <div class="sc-kids__times">
+        {{ range partial "sc/sessions.html" (dict "group" "kids") }}
+        <span class="sc-chip"><b>{{ partial "sc/days_short.html" .days }}</b> {{ .opens }}–{{ .closes }} · {{ .location.key }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ with $c.faq_title }}<h3 class="sc-kids__faq-title">{{ . }}</h3>{{ end }}
+  {{ partial "sc/faq_list.html" (dict "page" $.wcPage "group" "kids") }}
+</div>

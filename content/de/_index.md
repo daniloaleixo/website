@@ -135,35 +135,23 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
+  - block: sc_kids
     id: kinder
     content:
-      title: Capoeira für Kinder in Berlin
-      subtitle: Spielerisch Bewegung, Akrobatik & Musik aus Brasilien für Kinder (ca. 6–14 Jahre)
-      text: |
-        Du suchst **Capoeira für Kinder in Berlin**? In unserem Kindertraining lernen Kinder Capoeira mit viel Freude in einer freundlichen Gruppe – eine afro-brasilianische Kunst aus **Bewegung, Akrobatik, Musik und Kampfkunst**. Wir fördern **Spaß, Koordination, Rhythmus, Gleichgewicht, Körpergefühl und Selbstvertrauen**.
-
-        ### Was Kinder bei uns lernen
-        - **Ginga, Grundtritte und Esquivas** – die Basis jeder Capoeira-**Bewegung**
-        - **Akrobatik und Gleichgewicht** (Rad / Au, einfache Floreios) – sicher und Schritt für Schritt
-        - **Musik & Instrumente** – Berimbau, Pandeiro, Atabaque und Lieder auf Portugiesisch
-        - **Roda-Etikette** – fair miteinander spielen im Capoeira-Kreis
-
-        ### Trainingszeiten Capoeira Kinder Berlin
-        Alle [Trainingszeiten oben](#trainings):
-
-        - **Dienstag & Donnerstag, 17:00–18:30 Uhr** – [MELO](https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7), Marie-Elisabeth-Lüders-Oberschule, Steinmetzstr. 79, **10783 Berlin-Schöneberg**
-        - **Freitag, 16:30–18:00 Uhr** – [TAM](https://maps.app.goo.gl/rQE4FopjV2LYNTX46), Interkulturelles Familienzentrum tam, Wilhelmstr. 116–117, **10963 Berlin-Mitte / Kreuzberg**
-
-        ### Häufige Fragen von Eltern
-        - **Ab welchem Alter kann mein Kind mitmachen?** Üblicherweise ab **ca. 6 Jahren**. Jüngere Geschwister können gerne mit einer Begleitperson schnuppern.
-        - **Ist die erste Einheit kostenlos?** Sogar besser – der **erste Monat Training (Probetraining) ist kostenlos**, ohne vorherige Anmeldung.
-        - **In welcher Sprache findet das Training statt?** Bilingual **Deutsch & Englisch** – Capoeira-Lieder werden auf Portugiesisch gesungen.
-        - **Was sollte mein Kind mitbringen?** Bequeme Sportkleidung (lange Hose empfohlen), saubere Hallenschuhe und eine Wasserflasche.
-
-        Komm einfach mit Deinem Kind zu einem der [oben genannten Trainingstermine](#trainings) vorbei oder [schreib uns](./contact/) – wir freuen uns auf Euch!
+      kicker: Für Kinder von ca. 6 bis 14
+      title: Capoeira für Kinder
+      lead: Du suchst **Capoeira für Kinder in Berlin**? In unserem Kindertraining lernen Kinder die afro-brasilianische Kunst aus Bewegung, Akrobatik, Musik und Kampfkunst mit viel Freude – mit Fokus auf Spaß, Koordination, Rhythmus und Selbstvertrauen.
+      items:
+        - Akrobatik und Balance – Schritt für Schritt
+        - Musik, Instrumente und Gesang
+        - Selbstvertrauen, Rhythmus und Fairness
+        - Unterricht auf Deutsch & Englisch
+      image:
+        src: home/kids-training.jpg
+        alt: 'Kinder beim gemeinsamen Capoeira-Training bei Simplesmente Capoeira Berlin'
+      faq_title: Häufige Fragen von Eltern
     design:
-      columns: '1'
+      css_class: sc-section--grey
 
   - block: collection
     content:
@@ -211,4 +199,10 @@ sections:
         {{% cta cta_link="./people/" cta_text="Meet the trainer →" %}}
     design:
       columns: '1'
+
+  - block: sc_faq
+    id: faq
+    content:
+      kicker: FAQ
+      title: Fragen & Antworten
 ---

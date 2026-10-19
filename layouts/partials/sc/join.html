@@ -1,0 +1,7 @@
+{{/* Joins a list as "a, b and c" in the current language. */}}
+{{- $n := len . -}}
+{{- $out := delimit . "" -}}
+{{- if gt $n 1 -}}
+  {{- $out = printf "%s %s %s" (delimit (first (sub $n 1) .) ", ") (i18n "sc_and") (index . (sub $n 1)) -}}
+{{- end -}}
+{{- return $out -}}

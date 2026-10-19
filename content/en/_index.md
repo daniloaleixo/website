@@ -136,35 +136,23 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
+  - block: sc_kids
     id: kids
     content:
-      title: Capoeira for Kids in Berlin
-      subtitle: Playful Afro-Brazilian movement, acrobatics & music for children (~6–14)
-      text: |
-        Looking for **Capoeira for kids in Berlin**? Our children's classes give kids a joyful, supportive way into Capoeira – an Afro-Brazilian art that mixes **movement, acrobatics, music and martial arts**. We focus on **fun, coordination, rhythm, balance, body awareness and self-confidence**.
-
-        ### What kids learn in our Berlin Capoeira classes
-        - **Ginga, basic kicks and esquivas** – the foundation of Capoeira **movement**
-        - **Acrobatics and balance** (cartwheel / Au, basic floreios) in a safe, progressive way
-        - **Music & instruments** – Berimbau, Pandeiro, Atabaque, plus singing in Portuguese
-        - **Roda etiquette** – playing fairly with a partner inside the Capoeira circle
-
-        ### Capoeira kids training times & locations in Berlin
-        See all [training times above](#trainings):
-
-        - **Tuesday & Thursday, 17:00–18:30** – [MELO](https://maps.app.goo.gl/BPBgbh3EvnWAD4Fo7), Marie-Elisabeth-Lüders-Oberschule, Steinmetzstr. 79, **10783 Berlin-Schöneberg**
-        - **Friday, 16:30–18:00** – [TAM](https://maps.app.goo.gl/rQE4FopjV2LYNTX46), Interkulturelles Familienzentrum tam, Wilhelmstr. 116–117, **10963 Berlin-Mitte / Kreuzberg**
-
-        ### Frequently asked questions from parents
-        - **From what age can my child join?** Children typically start from around **6 years old**. Younger siblings are welcome to try with a parent.
-        - **Is the first class free?** Even better – the **first month of training (Probetraining) is free**, no registration needed.
-        - **What language is the class in?** Bilingual **German & English** – Capoeira songs are sung in Portuguese.
-        - **What should my child wear?** Comfortable sports clothes (long pants recommended) and clean indoor sports shoes. Bring a water bottle.
-
-        Just bring your child along to one of the [training times above](#trainings), or [get in touch](./contact/) – we look forward to meeting you!
+      kicker: For kids, ~6 to 14
+      title: Capoeira for kids
+      lead: Looking for **Capoeira for kids in Berlin**? Our children's classes are a joyful way into the Afro-Brazilian art of movement, acrobatics, music and martial arts – with a focus on fun, coordination, rhythm and self-confidence.
+      items:
+        - Acrobatics and balance, step by step
+        - Music, instruments and singing
+        - Confidence, rhythm and playing fair
+        - Taught in German & English
+      image:
+        src: home/kids-training.jpg
+        alt: 'Kids training capoeira together at Simplesmente Capoeira Berlin'
+      faq_title: Questions from parents
     design:
-      columns: '1'
+      css_class: sc-section--grey
 
   - block: collection
     content:
@@ -212,4 +200,10 @@ sections:
         {{% cta cta_link="./people/" cta_text="Meet the trainer →" %}}
     design:
       columns: '1'
+
+  - block: sc_faq
+    id: faq
+    content:
+      kicker: FAQ
+      title: Questions & answers
 ---

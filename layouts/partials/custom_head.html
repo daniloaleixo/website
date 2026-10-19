@@ -233,62 +233,16 @@
       "@id": {{ $faqId }},
       "inLanguage": {{ site.Language.Lang }},
       "mainEntity": [
+        {{- range $i, $f := index hugo.Data.faq site.Language.Lang }}{{ if $i }},{{ end }}
         {
           "@type": "Question",
-          "name": "Where can I do Capoeira in Berlin?",
+          "name": {{ $f.q }},
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Simplesmente Capoeira Berlin e.V. trains at three locations in Berlin: MELO (Marie-Elisabeth-Lüders-Oberschule, Steinmetzstr. 79, 10783 Berlin-Schöneberg), KSG (Kurt-Schumacher-Grundschule, Puttkamerstr. 19, 10969 Berlin-Kreuzberg) and TAM (Interkulturelles Familienzentrum tam, Wilhelmstr. 116–117, 10963 Berlin-Mitte/Kreuzberg)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer Capoeira for kids in Berlin?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — we offer dedicated Capoeira classes for children in Berlin. Kids train Tuesday and Thursday 17:00–18:30 at MELO (Schöneberg) and Friday 16:30–18:00 at TAM (Mitte/Kreuzberg). Children typically join from around age 6. The first month of training is free."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the trial period really a whole month? (Probetraining)",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — your first month of training (Probetraining) with us is free of charge, no registration and no prior experience required. Just come by during one of our regular training times."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Capoeira a martial art, a dance or movement and acrobatics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Capoeira is all of these. It is an Afro-Brazilian art that combines movement, acrobatics, music, dance and martial arts in a single practice. In our Berlin classes you train coordination, strength, flexibility, rhythm and body awareness while learning the Ginga, kicks, esquivas and acrobatic floreios."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I bring to my first Capoeira class?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Comfortable sports clothes (long pants are recommended), clean indoor sports shoes, a water bottle and a good mood. No special equipment is needed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need any prior experience to start Capoeira?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No prior experience is required — we welcome complete beginners. You will learn the fundamentals (Ginga, Esquiva, basic kicks, music and songs) step by step in a friendly group."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What languages are training held in?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Training is bilingual in German and English; Capoeira songs are sung in Portuguese."
+            "text": {{ partial "sc/faq_text.html" (dict "text" $f.a) }}
           }
         }
+        {{- end }}
       ]
     }
   ]

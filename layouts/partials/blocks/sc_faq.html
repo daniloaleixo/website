@@ -1,0 +1,7 @@
+{{/* General FAQ from data/faq.toml (also the source of the FAQPage JSON-LD). */}}
+{{ $c := .wcBlock.content }}
+<div class="sc-faq-section">
+  {{ with $c.kicker }}<div class="sc-kicker">{{ . }}</div>{{ end }}
+  {{ with $c.title }}<h2 class="sc-title">{{ . }}</h2>{{ end }}
+  {{ partial "sc/faq_list.html" (dict "page" $.wcPage "group" "general") }}
+</div>

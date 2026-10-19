@@ -21,7 +21,7 @@ VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "met
 def setUpModule():
     global PUBLIC
     PUBLIC = Path(tempfile.mkdtemp(prefix="sc-site-"))
-    r = subprocess.run(["hugo", "--minify", "--quiet", "-d", str(PUBLIC)], cwd=REPO, capture_output=True, text=True)
+    r = subprocess.run(["hugo", "--minify", "-d", str(PUBLIC)], cwd=REPO, capture_output=True, text=True)
     if r.returncode != 0:
         raise RuntimeError("hugo build failed:\n" + r.stdout + r.stderr)
 
@@ -199,6 +199,31 @@ class TrainingSection(unittest.TestCase):
             ksg = next(l for l in locs if "KSG" in l["text"])
             self.assertIn("18:00–19:30", ksg["text"])
             self.assertNotIn("wg-contact", by_id(h, "trainings")["attrs"].get("class", ""))
+
+
+class Faq(unittest.TestCase):
+    def test_faq_jsonld_matches_page(self):
+        for lang in ("en", "de"):
+            h = home(lang)
+            g = [x for d in jsonld(h) for x in d.get("@graph", [d])]
+            faq = next(x for x in g if x.get("@type") == "FAQPage")
+            page_qs = [i["text"].strip() for i in by_class(h, "sc-faq__q")]
+            self.assertEqual(sorted(q["name"] for q in faq["mainEntity"]), sorted(page_qs))
+            self.assertEqual(len(faq["mainEntity"]), len(data("faq")[lang]))
+
+    def test_no_unreplaced_placeholders(self):
+        for lang in ("en", "de"):
+            self.assertNotIn("%", "".join(i["text"] for i in by_class(home(lang), "sc-faq__a")))
+
+    def test_kids_anchor(self):
+        self.assertIsNotNone(by_id(home("en"), "kids"))
+        self.assertIsNotNone(by_id(home("de"), "kinder"))
+
+    def test_kids_times_from_data(self):
+        h = home("en")
+        answer = next(a["text"] for q, a in zip(by_class(h, "sc-faq__q"), by_class(h, "sc-faq__a"))
+                      if "kids in Berlin" in q["text"])
+        self.assertIn("Tuesday and Thursday 17:00–18:30 at MELO (Schöneberg)", answer)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,116 @@
+# FAQ, per language: the single source for the FAQ on the homepage and the FAQPage JSON-LD.
+# group = "general" (FAQ section) or "kids" (under the kids section).
+# Placeholders, filled from data/trainings.toml by layouts/partials/sc/faq_text.html:
+#   %locations%     all locations with school, street, postcode and district
+#   %kids_times%    kids sessions, e.g. "Tuesday and Thursday 17:00–18:30 at MELO (Schöneberg)"
+#   %adults_times%  adults sessions, same format
+
+[[en]]
+group = "general"
+q = "Where can I do Capoeira in Berlin?"
+a = "Simplesmente Capoeira Berlin e.V. trains at three locations in Berlin: %locations%."
+
+[[en]]
+group = "general"
+q = "Do you offer Capoeira for kids in Berlin?"
+a = "Yes — we offer dedicated Capoeira classes for children in Berlin. Kids train %kids_times%. Children typically join from around age 6. The first month of training is free."
+
+[[en]]
+group = "general"
+q = "Is the trial period really a whole month? (Probetraining)"
+a = "Yes — your first month of training (Probetraining) with us is free of charge, no registration and no prior experience required. Just come by during one of our regular training times."
+
+[[en]]
+group = "general"
+q = "Is Capoeira a martial art, a dance or movement and acrobatics?"
+a = "Capoeira is all of these. It is an Afro-Brazilian art that combines movement, acrobatics, music, dance and martial arts in a single practice. In our Berlin classes you train coordination, strength, flexibility, rhythm and body awareness while learning the Ginga, kicks, esquivas and acrobatic floreios."
+
+[[en]]
+group = "general"
+q = "What should I bring to my first Capoeira class?"
+a = "Comfortable sports clothes (long pants are recommended), clean indoor sports shoes, a water bottle and a good mood. No special equipment is needed."
+
+[[en]]
+group = "general"
+q = "Do I need any prior experience to start Capoeira?"
+a = "No prior experience is required — we welcome complete beginners. You will learn the fundamentals (Ginga, Esquiva, basic kicks, music and songs) step by step in a friendly group."
+
+[[en]]
+group = "general"
+q = "What languages are training held in?"
+a = "Training is bilingual in German and English; Capoeira songs are sung in Portuguese."
+
+[[en]]
+group = "kids"
+q = "From what age can my child join?"
+a = "Children typically start from around 6 years old. Younger siblings are welcome to try with a parent."
+
+[[en]]
+group = "kids"
+q = "Is the first class free?"
+a = "Even better – the first month of training (Probetraining) is free, no registration needed."
+
+[[en]]
+group = "kids"
+q = "What language is the class in?"
+a = "Bilingual German & English – Capoeira songs are sung in Portuguese."
+
+[[en]]
+group = "kids"
+q = "What should my child wear?"
+a = "Comfortable sports clothes (long pants recommended) and clean indoor sports shoes. Bring a water bottle."
+
+[[de]]
+group = "general"
+q = "Wo kann ich in Berlin Capoeira machen?"
+a = "Simplesmente Capoeira Berlin e.V. trainiert an drei Orten in Berlin: %locations%."
+
+[[de]]
+group = "general"
+q = "Gibt es Capoeira für Kinder in Berlin?"
+a = "Ja – wir bieten eigene Capoeira-Kurse für Kinder in Berlin an. Die Kinder trainieren %kids_times%. Die meisten Kinder steigen ab etwa 6 Jahren ein. Der erste Monat Training ist kostenlos."
+
+[[de]]
+group = "general"
+q = "Ist das Probetraining wirklich einen ganzen Monat lang?"
+a = "Ja – Dein erster Monat Training (Probetraining) bei uns ist kostenlos, ohne Anmeldung und ohne Vorerfahrung. Komm einfach zu einem unserer regulären Trainingstermine vorbei."
+
+[[de]]
+group = "general"
+q = "Ist Capoeira Kampfkunst, Tanz oder Bewegung und Akrobatik?"
+a = "Capoeira ist all das. Es ist eine afro-brasilianische Kunst, die Bewegung, Akrobatik, Musik, Tanz und Kampfkunst in einer Praxis verbindet. In unserem Training in Berlin übst Du Koordination, Kraft, Beweglichkeit, Rhythmus und Körpergefühl und lernst dabei die Ginga, Tritte, Esquivas und akrobatische Floreios."
+
+[[de]]
+group = "general"
+q = "Was sollte ich zu meinem ersten Capoeira-Training mitbringen?"
+a = "Bequeme Sportkleidung (lange Hose empfohlen), saubere Hallenschuhe, eine Wasserflasche und gute Laune. Besondere Ausrüstung brauchst Du nicht."
+
+[[de]]
+group = "general"
+q = "Brauche ich Vorerfahrung, um mit Capoeira anzufangen?"
+a = "Nein, Vorerfahrung ist nicht nötig – Anfänger sind herzlich willkommen. Du lernst die Grundlagen (Ginga, Esquiva, einfache Tritte, Musik und Lieder) Schritt für Schritt in einer freundlichen Gruppe."
+
+[[de]]
+group = "general"
+q = "In welchen Sprachen wird trainiert?"
+a = "Das Training ist zweisprachig auf Deutsch und Englisch; die Capoeira-Lieder werden auf Portugiesisch gesungen."
+
+[[de]]
+group = "kids"
+q = "Ab welchem Alter kann mein Kind mitmachen?"
+a = "Üblicherweise ab ca. 6 Jahren. Jüngere Geschwister können gerne mit einer Begleitperson schnuppern."
+
+[[de]]
+group = "kids"
+q = "Ist die erste Einheit kostenlos?"
+a = "Sogar besser – der erste Monat Training (Probetraining) ist kostenlos, ohne vorherige Anmeldung."
+
+[[de]]
+group = "kids"
+q = "In welcher Sprache findet das Training statt?"
+a = "Bilingual Deutsch & Englisch – Capoeira-Lieder werden auf Portugiesisch gesungen."
+
+[[de]]
+group = "kids"
+q = "Was sollte mein Kind mitbringen?"
+a = "Bequeme Sportkleidung (lange Hose empfohlen), saubere Hallenschuhe und eine Wasserflasche."

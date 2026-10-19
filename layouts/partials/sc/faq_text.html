@@ -1,0 +1,22 @@
+{{/* Fills the placeholders in an FAQ answer from data/trainings.toml.
+     Usage: partial "sc/faq_text.html" (dict "text" $answer) */}}
+{{- $text := .text -}}
+{{- $times := dict -}}
+{{- range $group := slice "kids" "adults" -}}
+  {{- $parts := slice -}}
+  {{- range partial "sc/sessions.html" (dict "group" $group) -}}
+    {{- $days := slice -}}
+    {{- range .days -}}{{- $days = $days | append (i18n (printf "sc_day_%s" .)) -}}{{- end -}}
+    {{- $l := .location -}}
+    {{- $parts = $parts | append (printf "%s %s–%s %s %s (%s)" (partial "sc/join.html" $days) .opens .closes (i18n "sc_at") $l.key ($l.area | default $l.district)) -}}
+  {{- end -}}
+  {{- $times = merge $times (dict $group (partial "sc/join.html" $parts)) -}}
+{{- end -}}
+{{- $locs := slice -}}
+{{- range hugo.Data.trainings.locations -}}
+  {{- $locs = $locs | append (printf "%s (%s, %s, %s Berlin-%s)" .key .name .street .postal_code (.area | default .district)) -}}
+{{- end -}}
+{{- $text = replace $text "%kids_times%" $times.kids -}}
+{{- $text = replace $text "%adults_times%" $times.adults -}}
+{{- $text = replace $text "%locations%" (partial "sc/join.html" $locs) -}}
+{{- return $text -}}

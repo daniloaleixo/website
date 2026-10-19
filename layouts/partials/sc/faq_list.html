@@ -1,0 +1,10 @@
+{{/* FAQ entries of one group from data/faq.toml as <details>, in the page's language.
+     Usage: partial "sc/faq_list.html" (dict "page" .wcPage "group" "kids") */}}
+<div class="sc-faq">
+  {{ range where (index hugo.Data.faq .page.Language.Lang) "group" .group }}
+  <details class="sc-faq__item">
+    <summary class="sc-faq__q">{{ .q }}</summary>
+    <p class="sc-faq__a">{{ partial "sc/faq_text.html" (dict "text" .a) }}</p>
+  </details>
+  {{ end }}
+</div>
