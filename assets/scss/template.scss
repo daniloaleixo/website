@@ -792,3 +792,22 @@ div.videowrapper {
     color: #3d2e00;
   }
 }
+
+/* Section and search-modal titles: only the first is an <h1>, the rest were demoted to <h2> for SEO
+   (layouts/partials/functions/parse_block_v2.html, search.html). They keep the theme's <h1> look. */
+.sc-section-title {
+  font-size: 2.25rem;
+}
+
+.section-heading h2 {
+  margin: 0 0 10px;
+}
+
+.search-header h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+.home-section.light h2.sc-section-title {
+  color: #000;
+}

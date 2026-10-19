@@ -310,5 +310,57 @@ class ReviewFixes(unittest.TestCase):
         self.assertNotEqual(ids[0], ids[1])
 
 
+INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
+         "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html"]
+
+
+def meta(html, attr, value):
+    return [e["attrs"].get("content", "") for e in _elements(html)
+            if e["tag"] == "meta" and e["attrs"].get(attr) == value]
+
+
+class Seo(unittest.TestCase):
+    def pages(self):
+        for path in ["index.html"] + INNER:
+            for lang in ("en", "de"):
+                yield f"{lang}: {path}", read(path if lang == "en" else f"de/{path}")
+
+    def test_one_h1_per_page(self):
+        for name, html in self.pages():
+            with self.subTest(name):
+                self.assertEqual(len([e for e in _elements(html) if e["tag"] == "h1"]), 1)
+
+    def test_descriptions_are_own_and_plain(self):
+        site_desc = meta(read("tags/index.html"), "name", "description")[0]
+        for name, html in self.pages():
+            with self.subTest(name):
+                desc = meta(html, "name", "description")[0]
+                self.assertTrue(desc)
+                self.assertNotEqual(desc, site_desc)
+                self.assertNotIn("**", desc)
+
+    def test_hreflang_pairs_and_x_default(self):
+        alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read("de/contact/index.html"))
+                if e["tag"] == "link" and "hreflang" in e["attrs"]}
+        self.assertEqual(alts, {"en": "https://sc-capoeira.de/contact/", "de": "https://sc-capoeira.de/de/contact/",
+                                "x-default": "https://sc-capoeira.de/contact/"})
+
+    def test_og_locale(self):
+        self.assertEqual(meta(home("en"), "property", "og:locale"), ["en_US"])
+        self.assertEqual(meta(home("de"), "property", "og:locale"), ["de_DE"])
+        self.assertEqual(meta(home("en"), "property", "og:updated_time"), [])
+
+    def test_sitemap_has_only_real_pages(self):
+        for lang in ("en", "de"):
+            locs = read(f"{lang}/sitemap.xml")
+            for junk in ("/admin/", "/tags/", "/categories/", "/authors/", "/publication-type/", "/publication_types/"):
+                self.assertNotIn(junk, locs)
+            self.assertIn("/contact/", locs)
+
+    def test_listing_pages_noindex(self):
+        for path in ("tags/index.html", "authors/index.html", "publication-type/paper-conference/index.html"):
+            self.assertEqual(meta(read(path), "name", "robots"), ["noindex"], path)
+
+
 if __name__ == "__main__":
     unittest.main()

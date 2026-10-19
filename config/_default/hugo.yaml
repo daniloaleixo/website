@@ -64,3 +64,18 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+# Keep empty or auto-generated listing pages out of the sitemap and search results.
+cascade:
+  - target:
+      kind: taxonomy
+    sitemap:
+      disable: true
+    params:
+      private: true
+  - target:
+      kind: term
+      path: '{/tags/**,/categories/**,/publication_types/**}'
+    sitemap:
+      disable: true
+    params:
+      private: true

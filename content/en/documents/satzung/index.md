@@ -70,7 +70,7 @@ slides: ""
 ---
 ---
 
-  # SATZUNG von Simplesmente Capoeira Berlin (SiCapo Berlin) e.V.
+  ## SATZUNG von Simplesmente Capoeira Berlin (SiCapo Berlin) e.V.
 
 (Stand 23.02.2024)
 ---
