@@ -35,6 +35,7 @@ sections:
         - { key: 'Ich helfe beim Abbau', label: 'Hilfe beim Abbau (So 15 Uhr)' }
         - { key: 'Biertischgarnitur', label: 'Biertischgarnitur fürs Büfett' }
         - { key: 'Kaffee-Situation', label: 'Kaffee (Maschine, Pulver usw.)' }
+        - { key: 'Thermoskannen', label: 'Thermoskannen' }
         - { key: 'Ich bringe Getränke', label: 'Getränke' }
         - { key: 'Servietten', label: 'Servietten' }
         - { key: 'Becher', label: 'Becher' }

@@ -35,6 +35,7 @@ sections:
         - { key: 'Ich helfe beim Abbau', label: 'Teardown help (Sun 15:00)' }
         - { key: 'Biertischgarnitur', label: 'Beer table set for the buffet' }
         - { key: 'Kaffee-Situation', label: 'Coffee (machine, coffee, etc.)' }
+        - { key: 'Thermoskannen', label: 'Thermos flasks' }
         - { key: 'Ich bringe Getränke', label: 'Drinks' }
         - { key: 'Servietten', label: 'Napkins' }
         - { key: 'Becher', label: 'Cups' }
