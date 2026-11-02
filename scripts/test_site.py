@@ -315,7 +315,10 @@ INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/in
          "capoeira/index.html", "capoeira/what-is-capoeira/index.html", "capoeira/history-of-capoeira/index.html",
          "capoeira/zumbi-dos-palmares/index.html", "capoeira/besouro-manganga/index.html",
          "capoeira/berimbau-and-instruments/index.html", "capoeira/capoeira-angola-regional-contemporanea/index.html",
-         "capoeira/mestre-bimba/index.html", "capoeira/mestre-pastinha/index.html"]
+         "capoeira/mestre-bimba/index.html", "capoeira/mestre-pastinha/index.html",
+         "capoeira/maculele/index.html", "capoeira/samba-de-roda/index.html",
+         "capoeira/capoeira-unesco-heritage/index.html", "capoeira/candomble-and-capoeira/index.html",
+         "capoeira/syncretism-orixas-and-saints/index.html"]
 
 
 def meta(html, attr, value):
@@ -377,6 +380,11 @@ IMAGE_CREDITS = {
     "capoeira-angola-regional-contemporanea": "https://creativecommons.org/licenses/by/2.0/",
     "mestre-bimba": "https://creativecommons.org/licenses/by-sa/4.0/",
     "mestre-pastinha": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "maculele": "https://creativecommons.org/licenses/by/2.0/",
+    "samba-de-roda": "https://creativecommons.org/licenses/by/4.0/",
+    "capoeira-unesco-heritage": "https://creativecommons.org/licenses/by/2.0/",
+    "candomble-and-capoeira": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "syncretism-orixas-and-saints": "https://creativecommons.org/licenses/by/2.0/",
 }
 ARTICLES = [f"capoeira/{slug}/index.html" for slug in IMAGE_CREDITS]
 # (from, to): article slugs that must link to each other, in the same language
@@ -396,6 +404,15 @@ CROSS_LINKS = [
     ("capoeira-angola-regional-contemporanea", "berimbau-and-instruments"),
     ("mestre-bimba", "mestre-pastinha"),
     ("mestre-pastinha", "mestre-bimba"),
+    ("berimbau-and-instruments", "candomble-and-capoeira"),
+    ("maculele", "samba-de-roda"),
+    ("samba-de-roda", "maculele"),
+    ("samba-de-roda", "capoeira-unesco-heritage"),
+    ("capoeira-unesco-heritage", "samba-de-roda"),
+    ("capoeira-unesco-heritage", "history-of-capoeira"),
+    ("candomble-and-capoeira", "besouro-manganga"),
+    ("candomble-and-capoeira", "syncretism-orixas-and-saints"),
+    ("syncretism-orixas-and-saints", "candomble-and-capoeira"),
 ]
 
 

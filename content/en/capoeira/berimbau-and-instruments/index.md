@@ -1,7 +1,7 @@
 ---
 title: 'The Berimbau and the Instruments of Capoeira'
 weight: 5
-date: 2026-10-13
+date: 2026-09-08
 summary: 'Capoeira is played to live music. Meet the berimbau, the one-string bow that leads the roda, and the pandeiro, atabaque, agogô and reco-reco that make up the bateria.'
 seo:
   title: 'The Berimbau and Capoeira Instruments Explained | Capoeira Berlin'
@@ -60,7 +60,7 @@ The **pandeiro** is a frame drum with metal jingles (*platinelas*) around the ri
 
 ## The atabaque
 
-The **atabaque** is a tall wooden drum played with the hands. The same drum is used in the ceremonies of Afro-Brazilian religions such as Candomblé, and in capoeira it gives the roda a deep, powerful pulse. It's played carefully, supporting the berimbaus rather than covering them.
+The **atabaque** is a tall wooden drum played with the hands. The same drum is used in the ceremonies of Afro-Brazilian religions such as Candomblé, and in capoeira it gives the roda a deep, powerful pulse. It's played carefully, supporting the berimbaus rather than covering them. Read more about this link in [Candomblé and Capoeira]({{< relref "/capoeira/candomble-and-capoeira" >}}).
 
 ## The agogô and the reco-reco
 

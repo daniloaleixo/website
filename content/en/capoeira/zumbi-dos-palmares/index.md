@@ -1,7 +1,7 @@
 ---
 title: Who was Zumbi dos Palmares?
 weight: 3
-date: 2026-09-29
+date: 2026-08-25
 summary: 'Zumbi dos Palmares led the largest community of escaped slaves in Brazil and died fighting for freedom on 20 November 1695. Who he was, what Palmares was, and why capoeira sings his name.'
 seo:
   title: 'Who was Zumbi dos Palmares? Hero of Palmares & Capoeira | Capoeira Berlin'

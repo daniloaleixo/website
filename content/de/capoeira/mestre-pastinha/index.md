@@ -1,7 +1,7 @@
 ---
 title: 'Wer war Mestre Pastinha?'
 weight: 8
-date: 2026-11-02
+date: 2026-10-01
 summary: 'Mestre Pastinha (1889–1981) war der große Hüter der Capoeira Angola: Lehrer, Philosoph und Künstler, der die erste Schule der Capoeira Angola gründete und sie in die Welt trug. Sein Leben, seine Gedanken und sein Erbe.'
 seo:
   title: 'Wer war Mestre Pastinha? Der Hüter der Capoeira Angola | Capoeira Berlin'

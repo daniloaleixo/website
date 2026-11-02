@@ -1,7 +1,7 @@
 ---
 title: 'Wer war Mestre Bimba?'
 weight: 7
-date: 2026-10-27
+date: 2026-09-22
 summary: 'Mestre Bimba (1899–1974) schuf die Capoeira Regional, eröffnete eine der ersten Capoeira-Schulen und half der Capoeira, von einer verbotenen Straßenpraxis zu einer anerkannten brasilianischen Kunst zu werden. Sein Leben, seine Methode und sein Erbe.'
 seo:
   title: 'Wer war Mestre Bimba? Der Schöpfer der Capoeira Regional | Capoeira Berlin'

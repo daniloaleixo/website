@@ -1,7 +1,7 @@
 ---
 title: 'Der Berimbau und die Instrumente der Capoeira'
 weight: 5
-date: 2026-10-13
+date: 2026-09-08
 summary: 'Capoeira wird zu Live-Musik gespielt. Lerne den Berimbau kennen, den einsaitigen Bogen, der die Roda anführt, und Pandeiro, Atabaque, Agogô und Reco-reco, die zusammen die Bateria bilden.'
 seo:
   title: 'Berimbau und Capoeira-Instrumente erklärt | Capoeira Berlin'
@@ -60,7 +60,7 @@ Das **Pandeiro** ist eine Rahmentrommel mit Metallschellen (*Platinelas*) am Ran
 
 ## Das Atabaque
 
-Das **Atabaque** ist eine hohe Holztrommel, die mit den Händen gespielt wird. Dieselbe Trommel wird in den Zeremonien afrobrasilianischer Religionen wie dem Candomblé verwendet, und in der Capoeira gibt sie der Roda einen tiefen, kraftvollen Puls. Sie wird behutsam gespielt und unterstützt die Berimbaus, statt sie zu übertönen.
+Das **Atabaque** ist eine hohe Holztrommel, die mit den Händen gespielt wird. Dieselbe Trommel wird in den Zeremonien afrobrasilianischer Religionen wie dem Candomblé verwendet, und in der Capoeira gibt sie der Roda einen tiefen, kraftvollen Puls. Sie wird behutsam gespielt und unterstützt die Berimbaus, statt sie zu übertönen. Mehr über diese Verbindung liest du in [Candomblé und Capoeira]({{< relref "/capoeira/candomble-and-capoeira" >}}).
 
 ## Agogô und Reco-reco
 
