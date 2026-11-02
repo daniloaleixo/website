@@ -56,6 +56,8 @@ Without music there is no roda. The main instruments are:
 - **Atabaque**: a tall hand drum.
 - **Agogô** (double bell) and **reco-reco** (a scraper).
 
+More about each one in [The Berimbau and the Instruments of Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}).
+
 The songs are sung in Portuguese as call and response: a soloist sings a line and the circle answers in chorus. There are long solo songs called **ladainhas** that open the roda and short **corridos** sung during the game. Many of them tell the history of capoeira, its masters and the struggle against slavery. In our classes everyone learns to play the instruments and sing, not only to move.
 
 ## Where does capoeira come from?
@@ -73,6 +75,8 @@ Today you will hear about three main styles:
 - **Capoeira Angola**: slower, lower to the ground, strategic and deeply rooted in ritual and tradition.
 - **Capoeira Regional**: faster and more upright, with a structured training method created by Mestre Bimba.
 - **Capoeira Contemporânea**: the style of most groups today, combining elements of both.
+
+Read more in [Capoeira Angola vs Regional vs Contemporânea]({{< relref "/capoeira/capoeira-angola-regional-contemporanea" >}}).
 
 ## Cords, batizado and capoeira names
 

@@ -56,6 +56,8 @@ Ohne Musik keine Roda. Die wichtigsten Instrumente sind:
 - **Atabaque**: eine große Handtrommel.
 - **Agogô** (Doppelglocke) und **Reco-reco** (Schrapinstrument).
 
+Mehr über jedes Instrument in [Der Berimbau und die Instrumente der Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}).
+
 Die Lieder werden auf Portugiesisch im Wechselgesang gesungen: Eine Person singt vor, der Kreis antwortet im Chor. Lange Sologesänge, die **Ladainhas**, eröffnen die Roda, kurze **Corridos** begleiten das Spiel. Viele davon erzählen die Geschichte der Capoeira, ihrer Meister und des Widerstands gegen die Sklaverei. Bei uns lernen alle, die Instrumente zu spielen und zu singen, nicht nur sich zu bewegen.
 
 ## Woher kommt Capoeira?
@@ -73,6 +75,8 @@ Heute begegnen dir vor allem drei Stile:
 - **Capoeira Angola**: langsamer, bodennah, strategisch und tief in Ritual und Tradition verwurzelt.
 - **Capoeira Regional**: schneller und aufrechter, mit einer strukturierten Trainingsmethode von Mestre Bimba.
 - **Capoeira Contemporânea**: der Stil der meisten Gruppen heute, der Elemente aus beiden verbindet.
+
+Mehr dazu in [Capoeira Angola, Regional und Contemporânea]({{< relref "/capoeira/capoeira-angola-regional-contemporanea" >}}).
 
 ## Cordas, Batizado und Capoeira-Namen
 

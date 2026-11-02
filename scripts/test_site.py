@@ -313,7 +313,9 @@ class ReviewFixes(unittest.TestCase):
 INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
          "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html",
          "capoeira/index.html", "capoeira/what-is-capoeira/index.html", "capoeira/history-of-capoeira/index.html",
-         "capoeira/zumbi-dos-palmares/index.html", "capoeira/besouro-manganga/index.html"]
+         "capoeira/zumbi-dos-palmares/index.html", "capoeira/besouro-manganga/index.html",
+         "capoeira/berimbau-and-instruments/index.html", "capoeira/capoeira-angola-regional-contemporanea/index.html",
+         "capoeira/mestre-bimba/index.html", "capoeira/mestre-pastinha/index.html"]
 
 
 def meta(html, attr, value):
@@ -365,8 +367,36 @@ class Seo(unittest.TestCase):
 
 
 ARTICLE = "capoeira/what-is-capoeira/index.html"
-ARTICLES = [ARTICLE, "capoeira/history-of-capoeira/index.html", "capoeira/zumbi-dos-palmares/index.html",
-            "capoeira/besouro-manganga/index.html"]
+# article slug -> licence (or source) link its image caption must credit
+IMAGE_CREDITS = {
+    "what-is-capoeira": "https://creativecommons.org/licenses/by/2.0/",
+    "history-of-capoeira": "https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg",
+    "zumbi-dos-palmares": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "besouro-manganga": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "berimbau-and-instruments": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "capoeira-angola-regional-contemporanea": "https://creativecommons.org/licenses/by/2.0/",
+    "mestre-bimba": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "mestre-pastinha": "https://creativecommons.org/licenses/by-sa/4.0/",
+}
+ARTICLES = [f"capoeira/{slug}/index.html" for slug in IMAGE_CREDITS]
+# (from, to): article slugs that must link to each other, in the same language
+CROSS_LINKS = [
+    ("what-is-capoeira", "history-of-capoeira"),
+    ("what-is-capoeira", "berimbau-and-instruments"),
+    ("what-is-capoeira", "capoeira-angola-regional-contemporanea"),
+    ("history-of-capoeira", "what-is-capoeira"),
+    ("history-of-capoeira", "zumbi-dos-palmares"),
+    ("history-of-capoeira", "besouro-manganga"),
+    ("history-of-capoeira", "mestre-bimba"),
+    ("history-of-capoeira", "mestre-pastinha"),
+    ("zumbi-dos-palmares", "history-of-capoeira"),
+    ("besouro-manganga", "history-of-capoeira"),
+    ("berimbau-and-instruments", "capoeira-angola-regional-contemporanea"),
+    ("capoeira-angola-regional-contemporanea", "mestre-bimba"),
+    ("capoeira-angola-regional-contemporanea", "berimbau-and-instruments"),
+    ("mestre-bimba", "mestre-pastinha"),
+    ("mestre-pastinha", "mestre-bimba"),
+]
 
 
 def lang_path(lang, path):
@@ -404,22 +434,13 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertEqual(meta(html, "property", "og:type"), ["article"])
 
     def test_featured_image_has_alt_and_credit(self):
-        for lang in ("en", "de"):
-            with self.subTest(lang):
-                html = read(lang_path(lang, ARTICLE))
+        for lang, (slug, credit) in [(l, c) for l in ("en", "de") for c in IMAGE_CREDITS.items()]:
+            with self.subTest(lang=lang, article=slug):
+                html = read(lang_path(lang, f"capoeira/{slug}/index.html"))
                 img = by_class(html, "featured-image")
                 self.assertEqual(len(img), 1)
                 self.assertTrue(img[0]["attrs"].get("alt"))
-                self.assertIn("https://creativecommons.org/licenses/by/2.0/", hrefs(html))
-                hist = read(lang_path(lang, ARTICLES[1]))
-                self.assertTrue(by_class(hist, "featured-image")[0]["attrs"].get("alt"))
-                self.assertIn("https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg", hrefs(hist))
-                zumbi = read(lang_path(lang, ARTICLES[2]))
-                self.assertTrue(by_class(zumbi, "featured-image")[0]["attrs"].get("alt"))
-                self.assertIn("https://creativecommons.org/licenses/by-sa/4.0/", hrefs(zumbi))
-                besouro = read(lang_path(lang, ARTICLES[3]))
-                self.assertTrue(by_class(besouro, "featured-image")[0]["attrs"].get("alt"))
-                self.assertIn("https://creativecommons.org/licenses/by-sa/2.0/", hrefs(besouro))
+                self.assertIn(credit, hrefs(html))
 
     def test_article_hreflang(self):
         alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
@@ -433,15 +454,18 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertIn("/" + a.removesuffix("index.html"), read(f"{lang}/sitemap.xml"))
 
     def test_articles_link_each_other_in_same_language(self):
-        for lang in ("en", "de"):
-            with self.subTest(lang):
+        for lang, (src, dst) in [(l, c) for l in ("en", "de") for c in CROSS_LINKS]:
+            with self.subTest(lang=lang, src=src, dst=dst):
                 prefix = "" if lang == "en" else "/de"
-                self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLE))))
-                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", hrefs(read(lang_path(lang, ARTICLES[1]))))
-                self.assertIn(f"{prefix}/capoeira/zumbi-dos-palmares/", hrefs(read(lang_path(lang, ARTICLES[1]))))
-                self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLES[2]))))
-                self.assertIn(f"{prefix}/capoeira/besouro-manganga/", hrefs(read(lang_path(lang, ARTICLES[1]))))
-                self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLES[3]))))
+                self.assertIn(f"{prefix}/capoeira/{dst}/", hrefs(read(lang_path(lang, f"capoeira/{src}/index.html"))))
+
+    def test_articles_link_group_anthem(self):
+        for lang in ("en", "de"):
+            prefix = "" if lang == "en" else "/de"
+            for slug in ("berimbau-and-instruments", "capoeira-angola-regional-contemporanea", "mestre-bimba"):
+                with self.subTest(lang=lang, article=slug):
+                    html = read(lang_path(lang, f"capoeira/{slug}/index.html"))
+                    self.assertIn(f"{prefix}/songs/himno-simplesmente-capoeira/", hrefs(html))
 
     def test_links_into_section(self):
         for lang in ("en", "de"):

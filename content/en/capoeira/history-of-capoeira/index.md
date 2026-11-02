@@ -46,9 +46,9 @@ For decades capoeira survived underground, especially in **Bahia**. It was playe
 
 In the 1930s the political climate in Brazil changed, and two masters from Salvador da Bahia brought capoeira out of the shadows.
 
-**Mestre Bimba** (Manoel dos Reis Machado, 1899–1974) created a new, more athletic and systematic style he called *Luta Regional Baiana*, today known as **Capoeira Regional**. In **1932** he opened one of the first capoeira academies, and in 1937 his school received official recognition from the state authorities. Bimba introduced structured teaching sequences, graduation ceremonies and the idea of capoeira as a sport for students from all social classes.
+**Mestre Bimba** (Manoel dos Reis Machado, 1899–1974) created a new, more athletic and systematic style he called *Luta Regional Baiana*, today known as **Capoeira Regional**. In **1932** he opened one of the first capoeira academies, and in 1937 his school received official recognition from the state authorities. Bimba introduced structured teaching sequences, graduation ceremonies and the idea of capoeira as a sport for students from all social classes. Read his story in [Who was Mestre Bimba?]({{< relref "/capoeira/mestre-bimba" >}})
 
-**Mestre Pastinha** (Vicente Ferreira Pastinha, 1889–1981) set out to preserve the older tradition, which became known as **Capoeira Angola**. In **1941** he founded the *Centro Esportivo de Capoeira Angola* in Salvador. Pastinha was a philosopher of capoeira as much as a teacher, and in 1966 he travelled with his students to the First World Festival of Negro Arts in Dakar, Senegal.
+**Mestre Pastinha** (Vicente Ferreira Pastinha, 1889–1981) set out to preserve the older tradition, which became known as **Capoeira Angola**. In **1941** he founded the *Centro Esportivo de Capoeira Angola* in Salvador. Pastinha was a philosopher of capoeira as much as a teacher, and in 1966 he travelled with his students to the First World Festival of Negro Arts in Dakar, Senegal. Read his story in [Who was Mestre Pastinha?]({{< relref "/capoeira/mestre-pastinha" >}})
 
 When Brazil's new penal code came into force in 1940, capoeira was no longer listed as a crime. Within a few decades it went from being persecuted to being celebrated as a symbol of Brazilian culture.
 
