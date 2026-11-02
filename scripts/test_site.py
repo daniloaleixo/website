@@ -311,7 +311,8 @@ class ReviewFixes(unittest.TestCase):
 
 
 INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
-         "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html"]
+         "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html",
+         "capoeira/index.html", "capoeira/what-is-capoeira/index.html"]
 
 
 def meta(html, attr, value):
@@ -360,6 +361,60 @@ class Seo(unittest.TestCase):
     def test_listing_pages_noindex(self):
         for path in ("tags/index.html", "authors/index.html", "publication-type/paper-conference/index.html"):
             self.assertEqual(meta(read(path), "name", "robots"), ["noindex"], path)
+
+
+ARTICLE = "capoeira/what-is-capoeira/index.html"
+
+
+def lang_path(lang, path):
+    return path if lang == "en" else f"{lang}/{path}"
+
+
+class LearnCapoeira(unittest.TestCase):
+    def test_hub_lists_article(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                prefix = "" if lang == "en" else "/de"
+                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", hrefs(read(lang_path(lang, "capoeira/index.html"))))
+
+    def test_article_has_train_with_us_box(self):
+        sessions = data("trainings")["sessions"]
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                html = read(lang_path(lang, ARTICLE))
+                box = by_class(html, "sc-join")
+                self.assertEqual(len(box), 1)
+                self.assertEqual(len(by_class(html, "sc-join__row")), len(sessions))
+                home_url = "/#trainings" if lang == "en" else "/de/#trainings"
+                self.assertEqual([b["attrs"]["href"] for b in by_class(html, "sc-join__btn")], [home_url])
+
+    def test_article_jsonld(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                html = read(lang_path(lang, ARTICLE))
+                arts = [j for j in jsonld(html) if j.get("@type") == "Article"]
+                self.assertEqual(len(arts), 1)
+                self.assertEqual(arts[0]["author"]["@type"], "Organization")
+                self.assertTrue(arts[0]["image"])
+                self.assertEqual(meta(html, "property", "og:type"), ["article"])
+
+    def test_article_hreflang(self):
+        alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
+                if e["tag"] == "link" and "hreflang" in e["attrs"]}
+        self.assertEqual(alts["de"], "https://sc-capoeira.de/de/capoeira/what-is-capoeira/")
+        self.assertEqual(alts["en"], "https://sc-capoeira.de/capoeira/what-is-capoeira/")
+
+    def test_article_in_sitemap(self):
+        for lang in ("en", "de"):
+            self.assertIn("/capoeira/what-is-capoeira/", read(f"{lang}/sitemap.xml"))
+
+    def test_links_into_section(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                prefix = "" if lang == "en" else "/de"
+                links = hrefs(home(lang))
+                self.assertIn(f"{prefix}/capoeira/", links)
+                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", links)
 
 
 if __name__ == "__main__":

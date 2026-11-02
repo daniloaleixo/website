@@ -118,7 +118,7 @@
   {{ else }}
     {{ $og_type = "website" }}
   {{ end }}
-{{ else if .IsPage | and (in (slice "post" "publication" "project" "book") .Type ) }}
+{{ else if .IsPage | and (in (slice "post" "publication" "project" "book" "capoeira") .Type ) }}
   {{ $og_type = "article" }}
 {{ else }}
   {{ $og_type = "website" }}

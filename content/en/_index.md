@@ -47,6 +47,9 @@ sections:
       kicker: What is capoeira?
       title: An Afro-Brazilian art you play, not just train.
       lead: Two players meet in the roda, a circle of people singing and clapping, led by the berimbau.
+      more:
+        text: 'Read more: What is capoeira? →'
+        url: capoeira/what-is-capoeira/
       items:
         - title: Movement
           text: Ginga, kicks and escapes. Strength, flexibility and flow.

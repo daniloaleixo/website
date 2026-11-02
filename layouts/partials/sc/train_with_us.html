@@ -1,0 +1,13 @@
+{{/* "Train with us" box at the end of every Learn-about-Capoeira article.
+     Times: data/trainings.toml. Copy: i18n/*.yaml (sc_join_*). */}}
+<aside class="sc-join" aria-labelledby="sc-join-title">
+  <div class="sc-kicker">{{ i18n "sc_join_kicker" }}</div>
+  <h2 class="sc-join__title" id="sc-join-title">{{ i18n "sc_join_title" }}</h2>
+  <p class="sc-join__lead">{{ i18n "sc_join_lead" }}</p>
+  <ul class="sc-join__times">
+    {{- range partial "sc/sessions.html" dict }}
+    <li class="sc-join__row"><span>{{ i18n (printf "sc_group_%s" .group) }} · {{ .location.district }}</span><b>{{ partial "sc/days_short.html" .days }} {{ .opens }}–{{ .closes }}</b></li>
+    {{- end }}
+  </ul>
+  <a class="sc-btn sc-join__btn" href="{{ "/" | relLangURL }}#trainings">{{ i18n "sc_join_button" }}</a>
+</aside>
