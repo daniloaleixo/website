@@ -9,7 +9,7 @@ seo:
 image:
   caption: 'A roda de capoeira at sunset in Salvador da Bahia, 2019. Photo: Clara Angeleas, [Secretaria Especial da Cultura](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188734536).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Silhouettes of capoeiristas playing and clapping by the sea at sunset, one of them in mid-air doing a kick'
-  focal_point: Center
+  focal_point: Top
 ---
 
 On **26 November 2014**, UNESCO added the **roda de capoeira** to the Representative List of the **Intangible Cultural Heritage of Humanity**. For an art that had been a crime in Brazil less than a century earlier, it was a historic moment. Here's what was recognised, how it came about and what it means for capoeiristas everywhere, including here in Berlin.

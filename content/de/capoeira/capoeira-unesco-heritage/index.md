@@ -9,7 +9,7 @@ seo:
 image:
   caption: 'Eine Roda de Capoeira bei Sonnenuntergang in Salvador da Bahia, 2019. Foto: Clara Angeleas, [Secretaria Especial da Cultura](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188734536).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Silhouetten von Capoeiristas, die bei Sonnenuntergang am Meer spielen und klatschen, einer von ihnen mitten in der Luft bei einem Tritt'
-  focal_point: Center
+  focal_point: Top
 ---
 
 Am **26. November 2014** nahm die UNESCO die **Roda de Capoeira** in die Repräsentative Liste des **Immateriellen Kulturerbes der Menschheit** auf. Für eine Kunst, die in Brasilien weniger als ein Jahrhundert zuvor noch eine Straftat war, war das ein historischer Moment. Hier erfährst du, was anerkannt wurde, wie es dazu kam und was es für Capoeiristas überall bedeutet, auch hier in Berlin.

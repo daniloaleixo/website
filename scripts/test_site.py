@@ -434,6 +434,26 @@ class LearnCapoeira(unittest.TestCase):
                     self.assertLessEqual(len(title), 60, title)
                     self.assertLessEqual(len(desc), 160, desc)
 
+    def test_social_sharing_tags(self):
+        # WhatsApp, Facebook, LinkedIn and X read these for the link preview
+        other = {"en": "de_DE", "de": "en_US"}
+        for lang in ("en", "de"):
+            for page in ARTICLES:
+                with self.subTest(lang=lang, page=page):
+                    h = read(lang_path(lang, page))
+                    image = meta(h, "property", "og:image")[0]
+                    self.assertTrue(image.startswith("https://sc-capoeira.de/") and image.endswith(".jpg"), image)
+                    self.assertEqual(meta(h, "property", "og:image:width"), ["1200"])
+                    self.assertEqual(meta(h, "property", "og:image:height"), ["630"])
+                    self.assertTrue(meta(h, "property", "og:image:alt")[0])
+                    # WhatsApp drops preview images that are too large
+                    self.assertLess((PUBLIC / image.removeprefix("https://sc-capoeira.de/")).stat().st_size, 300_000)
+                    self.assertEqual(meta(h, "name", "twitter:card"), ["summary_large_image"])
+                    self.assertEqual(meta(h, "name", "twitter:image"), [image])
+                    self.assertEqual(meta(h, "name", "twitter:title"), meta(h, "property", "og:title"))
+                    self.assertEqual(meta(h, "property", "og:locale:alternate"), [other[lang]])
+                    self.assertTrue(meta(h, "property", "article:published_time"))
+
     def test_hub_lists_article(self):
         for lang in ("en", "de"):
             with self.subTest(lang):
