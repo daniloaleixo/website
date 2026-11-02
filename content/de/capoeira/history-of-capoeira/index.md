@@ -28,7 +28,7 @@ Auch die Herkunft des Namens ist umstritten. Eine verbreitete Erklärung leitet 
 
 Versklavten Menschen war es verboten, für den Kampf zu trainieren. Der Überlieferung der Capoeira nach tarnten sie ihr Kämpfen als Tanz: Tritte und Ausweichbewegungen, versteckt in Rhythmus, Musik und Spiel. Ob es genau so war oder nicht, diese Idee zieht sich bis heute durch die Capoeira. *Malícia* (List) und *Mandinga* (eine Art Magie und Verschlagenheit) sind noch immer das Herz des Spiels: Zeig nie, was du wirklich vorhast.
 
-Capoeira lebte auch in den **Quilombos**, Gemeinschaften von Menschen, die der Sklaverei entkommen waren. Der größte und bekannteste war **Palmares** im Nordosten Brasiliens, der den Portugiesen fast das ganze 17. Jahrhundert lang standhielt, unter Anführern wie **Zumbi dos Palmares**. Capoeira-Lieder und -Geschichten feiern Zumbi als Symbol der Freiheit, und sein Todestag, der 20. November, wird in Brasilien als Tag des Schwarzen Bewusstseins begangen.
+Capoeira lebte auch in den **Quilombos**, Gemeinschaften von Menschen, die der Sklaverei entkommen waren. Der größte und bekannteste war **Palmares** im Nordosten Brasiliens, der den Portugiesen fast das ganze 17. Jahrhundert lang standhielt, unter Anführern wie **Zumbi dos Palmares**. Capoeira-Lieder und -Geschichten feiern Zumbi als Symbol der Freiheit, und sein Todestag, der 20. November, wird in Brasilien als Tag des Schwarzen Bewusstseins begangen. Seine Geschichte erzählen wir in [Wer war Zumbi dos Palmares?]({{< relref "/capoeira/zumbi-dos-palmares" >}})
 
 ## Auf den Straßen von Rio und Salvador
 

@@ -28,7 +28,7 @@ Where the name comes from is also debated. One popular explanation is a word fro
 
 Enslaved people were forbidden to train for combat. According to capoeira tradition, they disguised their fighting as a dance: kicks and escapes hidden in rhythm, music and play. Whether or not it happened exactly like that, the idea runs through capoeira to this day. *Malícia* (cunning) and *mandinga* (a kind of magic and trickery) are still at the heart of the game: never show what you are really going to do.
 
-Capoeira also lived in the **quilombos**, communities founded by people who had escaped slavery. The largest and most famous was **Palmares** in north-eastern Brazil, which resisted the Portuguese for most of the 17th century under leaders like **Zumbi dos Palmares**. Capoeira songs and stories celebrate Zumbi as a symbol of freedom, and the day of his death, 20 November, is commemorated in Brazil as the Day of Black Consciousness.
+Capoeira also lived in the **quilombos**, communities founded by people who had escaped slavery. The largest and most famous was **Palmares** in north-eastern Brazil, which resisted the Portuguese for most of the 17th century under leaders like **Zumbi dos Palmares**. Capoeira songs and stories celebrate Zumbi as a symbol of freedom, and the day of his death, 20 November, is commemorated in Brazil as the Day of Black Consciousness. Read his story in [Who was Zumbi dos Palmares?]({{< relref "/capoeira/zumbi-dos-palmares" >}})
 
 ## In the streets of Rio and Salvador
 
