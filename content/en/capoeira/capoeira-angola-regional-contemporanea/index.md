@@ -4,8 +4,8 @@ weight: 6
 date: 2026-09-16
 summary: 'Low and strategic, fast and direct, or a mix of both? The three main styles of capoeira explained: where Capoeira Angola, Capoeira Regional and Capoeira Contemporânea come from, and how they differ in the roda.'
 seo:
-  title: 'Capoeira Angola vs Regional vs Contemporânea: the Styles Explained | Capoeira Berlin'
-  description: 'What is the difference between Capoeira Angola, Capoeira Regional and Capoeira Contemporânea? Their history, how each style plays, its music and rituals, plus videos to watch.'
+  title: 'Angola vs Regional vs Contemporânea | Capoeira Berlin'
+  description: 'The difference between Capoeira Angola, Regional and Contemporânea: their history, how each style plays, its music and rituals. With a table and videos.'
 image:
   caption: 'A Capoeira Angola game, with the bateria playing behind the players. Photo: [TheTurducken](https://commons.wikimedia.org/wiki/File:Capoeira_Angola_Palmares.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Two capoeiristas play a low game inside a roda while musicians with berimbaus and an atabaque sit along the wall'

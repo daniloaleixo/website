@@ -4,8 +4,8 @@ weight: 13
 date: 2026-11-02
 summary: 'Why is Ogum linked to Saint Anthony in Bahia and Iemanjá to Our Lady of the Conception? How enslaved Africans connected their orixás to Catholic saints, festivals like the Lavagem do Bonfim, and how syncretism echoes in capoeira''s songs.'
 seo:
-  title: 'Orixás and Catholic Saints: Syncretism in Bahia and Capoeira | Capoeira Berlin'
-  description: 'Religious syncretism in Bahia explained: how orixás came to be linked with Catholic saints, a table of the best-known pairs, the Lavagem do Bonfim, the debate about syncretism and its traces in capoeira.'
+  title: 'Orixás and Saints: Syncretism in Bahia | Capoeira Berlin'
+  description: 'How orixás came to be linked with Catholic saints in Bahia: a table of the best-known pairs, the Lavagem do Bonfim, the debate and its traces in capoeira.'
 image:
   caption: 'Baianas at the Lavagem do Bonfim in Salvador da Bahia, 2010. Photo: [Adenilson Nunes/AGECOM](https://commons.wikimedia.org/wiki/File:Lavagem_do_Bomfim_(2010)_(a).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Women dressed all in white lace and bead necklaces pour water and lay white flowers on stone steps, surrounded by a crowd'

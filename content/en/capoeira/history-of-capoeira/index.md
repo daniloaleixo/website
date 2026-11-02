@@ -4,8 +4,8 @@ weight: 2
 date: 2026-08-19
 summary: 'From the resistance of enslaved Africans in Brazil to a ban in 1890, the first academies of Mestre Bimba and Mestre Pastinha and UNESCO world heritage: the history of capoeira.'
 seo:
-  title: 'History of Capoeira: From Slavery to World Heritage | Capoeira Berlin'
-  description: 'The history of capoeira: its African roots, resistance during slavery, the 1890 ban, Mestre Bimba and Mestre Pastinha, and how capoeira spread from Bahia to the world and to Berlin.'
+  title: 'The History of Capoeira: Origins to Today | Capoeira Berlin'
+  description: 'The history of capoeira: from enslaved Africans in Brazil and the 1890 ban to the academies of Mestre Bimba and Mestre Pastinha and UNESCO world heritage.'
 image:
   caption: 'Johann Moritz Rugendas, *Jogar Capoëira ou danse de la guerre* (around 1830), one of the oldest known images of capoeira. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg).'
   alt_text: 'Painting by Rugendas: two men play capoeira in a street in Brazil while people watch and one plays a drum'
@@ -56,7 +56,7 @@ When Brazil's new penal code came into force in 1940, capoeira was no longer lis
 
 From Salvador, capoeira spread to Rio de Janeiro, São Paulo and across Brazil. Many groups combined elements of Angola and Regional into what is now called **Capoeira Contemporânea**. From the 1970s onwards, Brazilian mestres began to emigrate and teach in the United States and Europe, and capoeira grew into a global community.
 
-Recognition followed. In 2008 Brazil's national heritage institute, IPHAN, registered the capoeira circle and the craft of the capoeira masters as Brazilian cultural heritage. In **2014 UNESCO** inscribed the capoeira circle on the list of the **Intangible Cultural Heritage of Humanity**.
+Recognition followed. In 2008 Brazil's national heritage institute, IPHAN, registered the capoeira circle and the craft of the capoeira masters as Brazilian cultural heritage. In **2014 UNESCO** inscribed the capoeira circle on the list of the **Intangible Cultural Heritage of Humanity**. Read more in [Capoeira as UNESCO Intangible Cultural Heritage]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
 ## Capoeira today, and in Berlin
 

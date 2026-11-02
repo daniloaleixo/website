@@ -4,8 +4,8 @@ weight: 7
 date: 2026-09-22
 summary: 'Mestre Bimba (1899–1974) schuf die Capoeira Regional, eröffnete eine der ersten Capoeira-Schulen und half der Capoeira, von einer verbotenen Straßenpraxis zu einer anerkannten brasilianischen Kunst zu werden. Sein Leben, seine Methode und sein Erbe.'
 seo:
-  title: 'Wer war Mestre Bimba? Der Schöpfer der Capoeira Regional | Capoeira Berlin'
-  description: 'Mestre Bimba (Manoel dos Reis Machado, 1899–1974) schuf in Salvador da Bahia die Capoeira Regional und eröffnete 1932 eine der ersten Capoeira-Akademien. Sein Leben, seine Lehrmethode und sein Erbe.'
+  title: 'Mestre Bimba und die Capoeira Regional | Capoeira Berlin'
+  description: 'Mestre Bimba (1899–1974) schuf in Salvador die Capoeira Regional und eröffnete 1932 eine der ersten Capoeira-Akademien. Sein Leben, seine Methode, sein Erbe.'
 image:
   caption: 'Statue von Mestre Bimba mit seinem Berimbau in der Arena da Capoeira in Salvador da Bahia. Foto: [Sturm](https://commons.wikimedia.org/wiki/File:Salvador_-_BA_(Sep_2024)_0598.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
   alt_text: 'Bronzebüste von Mestre Bimba, ein älterer Mann mit ernstem Gesichtsausdruck, der einen Berimbau hält, vor Bäumen und blauem Himmel'

@@ -4,8 +4,8 @@ weight: 11
 date: 2026-10-20
 summary: 'In 2014 UNESCO added the roda de capoeira to the Representative List of the Intangible Cultural Heritage of Humanity. What was recognised, how it happened and what it means for capoeiristas around the world.'
 seo:
-  title: 'Capoeira and UNESCO: the Roda as World Heritage | Capoeira Berlin'
-  description: 'In 2014 UNESCO inscribed the roda de capoeira on the Representative List of the Intangible Cultural Heritage of Humanity. The road from a banned practice to world heritage, what was recognised and why it matters.'
+  title: 'Capoeira and UNESCO: the Roda as Heritage | Capoeira Berlin'
+  description: 'In 2014 UNESCO listed the roda de capoeira as Intangible Cultural Heritage of Humanity. The road from a banned practice to world heritage, and why it matters.'
 image:
   caption: 'A roda de capoeira at sunset in Salvador da Bahia, 2019. Photo: Clara Angeleas, [Secretaria Especial da Cultura](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188734536).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Silhouettes of capoeiristas playing and clapping by the sea at sunset, one of them in mid-air doing a kick'

@@ -4,8 +4,8 @@ weight: 12
 date: 2026-10-27
 summary: 'Capoeira and Candomblé grew up side by side in Bahia, shared the same communities and were persecuted together. How the Afro-Brazilian religion lives on in capoeira''s songs, words and stories, and what that means for capoeiristas today.'
 seo:
-  title: 'Candomblé and Capoeira: Orixás, Axé and Afro-Brazilian Roots | Capoeira Berlin'
-  description: 'What is Candomblé and how is it linked to capoeira? The shared history of the two in Bahia, the orixás in capoeira songs, words like axé, stories like Besouro''s closed body, and capoeira as a game open to everyone.'
+  title: 'Candomblé and Capoeira: Orixás and Axé | Capoeira Berlin'
+  description: 'How is Candomblé linked to capoeira? Their shared history in Bahia, the orixás in capoeira songs, words like axé and stories like Besouro''s closed body.'
 image:
   caption: 'Greeting Iemanjá at the Rio Vermelho beach in Salvador da Bahia on 2 February. Photo: [Fabio Rodrigues Pozzebom/Agência Brasil](https://commons.wikimedia.org/wiki/File:Praia_do_Rio_Vermelho_sauda%C3%A7%C3%A3o_a_Iemanja.jpg), [CC BY 3.0 BR](https://creativecommons.org/licenses/by/3.0/br/deed.en)'
   alt_text: 'A man in white clothes and a hat stands at the edge of the sea with open arms, holding white flowers, with boats and a hillside town behind him'

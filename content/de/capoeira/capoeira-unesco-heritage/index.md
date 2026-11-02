@@ -4,8 +4,8 @@ weight: 11
 date: 2026-10-20
 summary: '2014 nahm die UNESCO die Roda de Capoeira in die Repräsentative Liste des Immateriellen Kulturerbes der Menschheit auf. Was anerkannt wurde, wie es dazu kam und was es für Capoeiristas auf der ganzen Welt bedeutet.'
 seo:
-  title: 'Capoeira und die UNESCO: die Roda als Welterbe | Capoeira Berlin'
-  description: '2014 nahm die UNESCO die Roda de Capoeira in die Repräsentative Liste des Immateriellen Kulturerbes der Menschheit auf. Der Weg von einer verbotenen Praxis zum Welterbe, was anerkannt wurde und warum es wichtig ist.'
+  title: 'Capoeira und die UNESCO: Roda als Welterbe | Capoeira Berlin'
+  description: '2014 nahm die UNESCO die Roda de Capoeira ins Immaterielle Kulturerbe der Menschheit auf. Der Weg vom Verbot zum Welterbe und warum es wichtig ist.'
 image:
   caption: 'Eine Roda de Capoeira bei Sonnenuntergang in Salvador da Bahia, 2019. Foto: Clara Angeleas, [Secretaria Especial da Cultura](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188734536).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Silhouetten von Capoeiristas, die bei Sonnenuntergang am Meer spielen und klatschen, einer von ihnen mitten in der Luft bei einem Tritt'

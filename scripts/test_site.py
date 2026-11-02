@@ -413,6 +413,8 @@ CROSS_LINKS = [
     ("candomble-and-capoeira", "besouro-manganga"),
     ("candomble-and-capoeira", "syncretism-orixas-and-saints"),
     ("syncretism-orixas-and-saints", "candomble-and-capoeira"),
+    ("what-is-capoeira", "capoeira-unesco-heritage"),
+    ("history-of-capoeira", "capoeira-unesco-heritage"),
 ]
 
 
@@ -421,6 +423,17 @@ def lang_path(lang, path):
 
 
 class LearnCapoeira(unittest.TestCase):
+    def test_seo_title_and_description_fit_search_results(self):
+        # Google cuts titles at about 60 characters and descriptions at about 160
+        for lang in ("en", "de"):
+            for page in ARTICLES + ["capoeira/index.html"]:
+                with self.subTest(lang=lang, page=page):
+                    h = read(lang_path(lang, page))
+                    title = [e["text"] for e in _elements(h) if e["tag"] == "title"][0]
+                    desc = meta(h, "name", "description")[0]
+                    self.assertLessEqual(len(title), 60, title)
+                    self.assertLessEqual(len(desc), 160, desc)
+
     def test_hub_lists_article(self):
         for lang in ("en", "de"):
             with self.subTest(lang):

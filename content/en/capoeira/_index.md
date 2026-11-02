@@ -2,8 +2,8 @@
 title: Learn about Capoeira
 summary: 'What capoeira is, where it comes from and the people and traditions behind it – explained by Simplesmente Capoeira Berlin.'
 seo:
-  title: 'Learn about Capoeira – History, Music & Culture | Simplesmente Capoeira Berlin'
-  description: 'Learn about capoeira: what it is, its Afro-Brazilian history, its music and the people behind it. Guides by Simplesmente Capoeira Berlin, where you can also train with us.'
+  title: 'Learn about Capoeira: History & Culture | Capoeira Berlin'
+  description: 'Learn about capoeira: what it is, its Afro-Brazilian history, its music, people and traditions. Guides by Simplesmente Capoeira Berlin, where you can train.'
 
 # Listing view
 view: card

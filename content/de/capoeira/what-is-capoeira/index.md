@@ -4,8 +4,8 @@ weight: 1
 date: 2026-08-11
 summary: 'Capoeira ist eine afro-brasilianische Kunst aus Kampf, Tanz, Akrobatik und Musik. Erfahre, wie die Roda funktioniert, was der Berimbau macht und woher Capoeira kommt.'
 seo:
-  title: 'Was ist Capoeira? Kampfkunst, Tanz & Musik erklärt | Capoeira Berlin'
-  description: 'Was ist Capoeira? Eine afro-brasilianische Kunst aus Kampf, Tanz, Akrobatik und Musik, gespielt im Kreis, der Roda. Wurzeln, Musik und Stile – und Probetraining in Berlin.'
+  title: 'Was ist Capoeira? Kampf, Tanz & Musik | Capoeira Berlin'
+  description: 'Capoeira ist eine afrobrasilianische Kunst aus Kampf, Tanz, Akrobatik und Musik. Wie die Roda funktioniert, der Berimbau, die Stile und Training in Berlin.'
 image:
   caption: 'Eine Capoeira-Roda bei Sonnenuntergang in Salvador da Bahia, Brasilien. Foto: [Clara Angeleas / Ministério da Cidadania](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188735861).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Capoeira-Roda bei Sonnenuntergang am Meer in Salvador, Brasilien: ein hoher Tritt über eine Ausweichbewegung'
@@ -14,7 +14,7 @@ image:
 
 Capoeira ist eine afro-brasilianische Kunst, die **Kampf, Tanz, Akrobatik und Musik** in einer Praxis vereint. Zwei Menschen spielen in der Mitte eines Kreises aus singenden und klatschenden Leuten, während ein einsaitiges Instrument, der Berimbau, den Rhythmus vorgibt. Es ist kein Kampf, den man gewinnt, und auch kein einstudierter Tanz. Es ist ein Gespräch in Bewegung.
 
-Entstanden ist Capoeira in Brasilien, entwickelt von versklavten Afrikanerinnen und Afrikanern und ihren Nachkommen. Heute wird sie weltweit praktiziert, von Salvador da Bahia bis Berlin. 2014 hat die UNESCO die Capoeira-Roda in die Liste des **Immateriellen Kulturerbes der Menschheit** aufgenommen.
+Entstanden ist Capoeira in Brasilien, entwickelt von versklavten Afrikanerinnen und Afrikanern und ihren Nachkommen. Heute wird sie weltweit praktiziert, von Salvador da Bahia bis Berlin. 2014 hat die UNESCO die Capoeira-Roda in die Liste des **Immateriellen Kulturerbes der Menschheit** aufgenommen. Mehr dazu in [Capoeira als Immaterielles Kulturerbe der UNESCO]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
 <!--more-->
 

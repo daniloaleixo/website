@@ -4,8 +4,8 @@ weight: 1
 date: 2026-08-11
 summary: 'Capoeira is an Afro-Brazilian art that combines fight, dance, acrobatics and music. Learn how the roda works, what the berimbau does and where capoeira comes from.'
 seo:
-  title: 'What is Capoeira? Martial Art, Dance & Music Explained | Capoeira Berlin'
-  description: 'What is capoeira? An Afro-Brazilian art of fight, dance, acrobatics and music, played in a circle called the roda. Learn its roots, music and styles – and try it in Berlin.'
+  title: 'What is Capoeira? Fight, Dance & Music | Capoeira Berlin'
+  description: 'Capoeira is an Afro-Brazilian art that mixes fight, dance, acrobatics and music. How the roda works, the berimbau, the styles and where to train in Berlin.'
 image:
   caption: 'A capoeira roda at sunset in Salvador da Bahia, Brazil. Photo: [Clara Angeleas / Ministério da Cidadania](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188735861).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Capoeira roda by the sea at sunset in Salvador, Brazil: a high kick passes over a ducking player'
@@ -14,7 +14,7 @@ image:
 
 Capoeira is an Afro-Brazilian art that combines **fight, dance, acrobatics and music** in one practice. Two people play a game in the middle of a circle of singing, clapping people, while a single-string instrument called the berimbau sets the rhythm. It isn't a fight to win and it isn't a choreographed dance. It's a conversation in movement.
 
-Capoeira was created in Brazil by enslaved Africans and their descendants. Today it is practised all over the world, from Salvador da Bahia to Berlin. In 2014 UNESCO recognised the capoeira circle as part of the **Intangible Cultural Heritage of Humanity**.
+Capoeira was created in Brazil by enslaved Africans and their descendants. Today it is practised all over the world, from Salvador da Bahia to Berlin. In 2014 UNESCO recognised the capoeira circle as part of the **Intangible Cultural Heritage of Humanity**. Read more in [Capoeira as UNESCO Intangible Cultural Heritage]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
 <!--more-->
 

@@ -4,8 +4,8 @@ weight: 6
 date: 2026-09-16
 summary: 'Niedrig und strategisch, schnell und direkt oder eine Mischung aus beidem? Die drei wichtigsten Stile der Capoeira erklärt: woher Capoeira Angola, Capoeira Regional und Capoeira Contemporânea kommen und wie sie sich in der Roda unterscheiden.'
 seo:
-  title: 'Capoeira Angola, Regional und Contemporânea: die Stile erklärt | Capoeira Berlin'
-  description: 'Was ist der Unterschied zwischen Capoeira Angola, Capoeira Regional und Capoeira Contemporânea? Ihre Geschichte, wie jeder Stil gespielt wird, seine Musik und Rituale, dazu Videos zum Anschauen.'
+  title: 'Angola, Regional und Contemporânea | Capoeira Berlin'
+  description: 'Der Unterschied zwischen Capoeira Angola, Regional und Contemporânea: Geschichte, Spielweise, Musik und Rituale jedes Stils. Mit Vergleichstabelle und Videos.'
 image:
   caption: 'Ein Spiel der Capoeira Angola, im Hintergrund spielt die Bateria. Foto: [TheTurducken](https://commons.wikimedia.org/wiki/File:Capoeira_Angola_Palmares.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Zwei Capoeiristas spielen ein niedriges Spiel in einer Roda, während Musiker mit Berimbaus und einem Atabaque an der Wand sitzen'

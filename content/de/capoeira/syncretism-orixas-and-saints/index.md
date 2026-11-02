@@ -4,8 +4,8 @@ weight: 13
 date: 2026-11-02
 summary: 'Warum ist Ogum in Bahia mit dem heiligen Antonius verbunden und Iemanjá mit der Unbefleckten Empfängnis? Wie versklavte Afrikaner ihre Orixás mit katholischen Heiligen verbanden, Feste wie die Lavagem do Bonfim und wie Synkretismus in Capoeira-Liedern nachklingt.'
 seo:
-  title: 'Orixás und katholische Heilige: Synkretismus in Bahia und in der Capoeira | Capoeira Berlin'
-  description: 'Religiöser Synkretismus in Bahia erklärt: wie Orixás mit katholischen Heiligen verbunden wurden, eine Tabelle der bekanntesten Paare, die Lavagem do Bonfim, die Debatte um den Synkretismus und seine Spuren in der Capoeira.'
+  title: 'Orixás und Heilige: Synkretismus in Bahia | Capoeira Berlin'
+  description: 'Wie Orixás in Bahia mit katholischen Heiligen verbunden wurden: die bekanntesten Paare, die Lavagem do Bonfim, die Debatte und die Spuren in der Capoeira.'
 image:
   caption: 'Baianas bei der Lavagem do Bonfim in Salvador da Bahia, 2010. Foto: [Adenilson Nunes/AGECOM](https://commons.wikimedia.org/wiki/File:Lavagem_do_Bomfim_(2010)_(a).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Frauen ganz in weißer Spitze und mit Perlenketten gießen Wasser und legen weiße Blumen auf Steinstufen, umgeben von einer Menschenmenge'

@@ -4,8 +4,8 @@ weight: 5
 date: 2026-09-08
 summary: 'Capoeira wird zu Live-Musik gespielt. Lerne den Berimbau kennen, den einsaitigen Bogen, der die Roda anführt, und Pandeiro, Atabaque, Agogô und Reco-reco, die zusammen die Bateria bilden.'
 seo:
-  title: 'Berimbau und Capoeira-Instrumente erklärt | Capoeira Berlin'
-  description: 'Was ist ein Berimbau und wie funktioniert er? Die Instrumente der Capoeira erklärt: Berimbau Gunga, Médio und Viola, Pandeiro, Atabaque, Agogô und Reco-reco, und wie die Musik das Spiel leitet.'
+  title: 'Berimbau und Instrumente der Capoeira | Capoeira Berlin'
+  description: 'Was ist ein Berimbau? Die Instrumente der Capoeira erklärt: Berimbau, Pandeiro, Atabaque, Agogô und Reco-reco, die Toques und wie die Musik das Spiel führt.'
 image:
   caption: 'Berimbaus und ein Pandeiro, bereit für eine Roda der Capoeira Angola. Foto: [virtual comandante](https://commons.wikimedia.org/wiki/File:Capoeira_Angola_instruments.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)'
   alt_text: 'Zwei bemalte Berimbaus mit Kalebassen und bunten Bändern liegen auf einem Tisch neben einem Pandeiro'

@@ -4,8 +4,8 @@ weight: 10
 date: 2026-10-14
 summary: 'Samba de Roda ist der Kreis-Samba des Recôncavo Baiano: Gesang, Klatschen, Pandeiro und der Miudinho-Schritt. Eine Tradition auf der UNESCO-Liste, eine Wurzel des brasilianischen Samba und oft der Tanz, mit dem eine Capoeira-Roda endet.'
 seo:
-  title: 'Was ist Samba de Roda? Der Kreis-Samba aus Bahia erklärt | Capoeira Berlin'
-  description: 'Samba de Roda stammt aus dem Recôncavo in Bahia und gehört zum Immateriellen Kulturerbe der UNESCO. Seine Geschichte, die Musik, die Umbigada, der Miudinho und die Verbindung zur Capoeira.'
+  title: 'Samba de Roda: der Kreis-Samba aus Bahia | Capoeira Berlin'
+  description: 'Samba de Roda aus dem Recôncavo in Bahia ist UNESCO-Kulturerbe und eine Wurzel des Samba. Geschichte, Musik, Umbigada, Miudinho und die Verbindung zur Capoeira.'
 image:
   caption: 'Samba de Roda im Recôncavo Baiano. Foto: [Maria Eugenia Tita](https://commons.wikimedia.org/wiki/File:Samba_de_Roda_do_Rec%C3%B4ncavo_-_Bahia_-_3909_005.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   alt_text: 'Eine Frau in einem bunten langen Rock tanzt in der Mitte eines Kreises im Freien, während Frauen singen und Männer in Weiß Gitarre und Percussion spielen'

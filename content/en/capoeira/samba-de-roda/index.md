@@ -4,8 +4,8 @@ weight: 10
 date: 2026-10-14
 summary: 'Samba de roda is the circle samba of the Recôncavo Baiano: song, clapping, pandeiro and the miudinho step. A UNESCO-listed tradition and a root of Brazilian samba, it is also the dance that often closes a capoeira roda.'
 seo:
-  title: 'What is Samba de Roda? Bahia''s Circle Samba Explained | Capoeira Berlin'
-  description: 'Samba de roda comes from the Recôncavo region of Bahia and is on the UNESCO list of Intangible Cultural Heritage. Its history, music, the umbigada and the miudinho, and its link to capoeira.'
+  title: 'Samba de Roda: Bahia''s Circle Samba | Capoeira Berlin'
+  description: 'Samba de roda from the Recôncavo, Bahia, is UNESCO heritage and a root of samba. Its history, music, umbigada and miudinho, and its link to capoeira.'
 image:
   caption: 'Samba de roda in the Recôncavo Baiano. Photo: [Maria Eugenia Tita](https://commons.wikimedia.org/wiki/File:Samba_de_Roda_do_Rec%C3%B4ncavo_-_Bahia_-_3909_005.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
   alt_text: 'A woman in a colourful long skirt dances in the middle of a circle in the open air, while women sing and men in white play guitars and percussion'

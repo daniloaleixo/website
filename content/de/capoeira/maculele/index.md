@@ -4,8 +4,8 @@ weight: 9
 date: 2026-10-06
 summary: 'Maculelê ist ein afrobrasilianischer Stocktanz aus Santo Amaro in Bahia, getanzt zum Atabaque mit zwei Holzstöcken. Woher er kommt, wie er gespielt wird und warum so viele Capoeira-Gruppen ihn lernen.'
 seo:
-  title: 'Was ist Maculelê? Der afrobrasilianische Stocktanz erklärt | Capoeira Berlin'
-  description: 'Maculelê ist ein afrobrasilianischer Stocktanz aus Santo Amaro da Purificação in Bahia. Seine Geschichte, die Legende hinter dem Namen, Mestre Popó, die Musik und die Verbindung zur Capoeira.'
+  title: 'Maculelê: der afrobrasilianische Stocktanz | Capoeira Berlin'
+  description: 'Maculelê ist ein afrobrasilianischer Stocktanz aus Santo Amaro in Bahia. Seine Geschichte, die Legende, Mestre Popó, die Musik und die Verbindung zur Capoeira.'
 image:
   caption: 'Maculelê bei einer Batizado in Brasilien. Foto: [Beverly Trayner](https://commons.wikimedia.org/wiki/File:Maculel%C3%AA_Batizada.1.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Drei Tänzer in Strohröcken schlagen Holzstöcke gegeneinander, vor Publikum und in warmem Bühnenlicht'

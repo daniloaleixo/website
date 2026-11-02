@@ -4,8 +4,8 @@ weight: 2
 date: 2026-08-19
 summary: 'Vom Widerstand versklavter Afrikanerinnen und Afrikaner in Brasilien über das Verbot von 1890 und die ersten Akademien von Mestre Bimba und Mestre Pastinha bis zum UNESCO-Welterbe: die Geschichte der Capoeira.'
 seo:
-  title: 'Geschichte der Capoeira: Von der Sklaverei zum Welterbe | Capoeira Berlin'
-  description: 'Die Geschichte der Capoeira: afrikanische Wurzeln, Widerstand in der Sklaverei, das Verbot von 1890, Mestre Bimba und Mestre Pastinha und wie Capoeira von Bahia in die Welt und nach Berlin kam.'
+  title: 'Die Geschichte der Capoeira erklärt | Capoeira Berlin'
+  description: 'Die Geschichte der Capoeira: von versklavten Afrikanern in Brasilien und dem Verbot 1890 über Mestre Bimba und Mestre Pastinha bis zum UNESCO-Welterbe.'
 image:
   caption: 'Johann Moritz Rugendas, *Jogar Capoëira ou danse de la guerre* (um 1830), eine der ältesten bekannten Darstellungen der Capoeira. Gemeinfrei, über [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg).'
   alt_text: 'Gemälde von Rugendas: Zwei Männer spielen Capoeira auf einer Straße in Brasilien, Menschen schauen zu, einer spielt eine Trommel'
@@ -56,7 +56,7 @@ Als 1940 Brasiliens neues Strafgesetzbuch in Kraft trat, war Capoeira dort nicht
 
 Von Salvador aus verbreitete sich Capoeira nach Rio de Janeiro, São Paulo und in ganz Brasilien. Viele Gruppen verbanden Elemente aus Angola und Regional zu dem, was heute **Capoeira Contemporânea** heißt. Ab den 1970er-Jahren wanderten brasilianische Mestres aus und unterrichteten in den USA und Europa, und Capoeira wuchs zu einer weltweiten Gemeinschaft.
 
-Die Anerkennung folgte. 2008 nahm Brasiliens nationales Denkmalinstitut IPHAN die Capoeira-Roda und das Handwerk der Capoeira-Meister in das brasilianische Kulturerbe auf. **2014** nahm die **UNESCO** die Capoeira-Roda in die Liste des **Immateriellen Kulturerbes der Menschheit** auf.
+Die Anerkennung folgte. 2008 nahm Brasiliens nationales Denkmalinstitut IPHAN die Capoeira-Roda und das Handwerk der Capoeira-Meister in das brasilianische Kulturerbe auf. **2014** nahm die **UNESCO** die Capoeira-Roda in die Liste des **Immateriellen Kulturerbes der Menschheit** auf. Mehr dazu in [Capoeira als Immaterielles Kulturerbe der UNESCO]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
 ## Capoeira heute und in Berlin
 

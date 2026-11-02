@@ -4,8 +4,8 @@ weight: 9
 date: 2026-10-06
 summary: 'Maculelê is an Afro-Brazilian stick dance from Santo Amaro, Bahia, danced to the atabaque with two wooden sticks. Where it comes from, how it is played and why so many capoeira groups learn it.'
 seo:
-  title: 'What is Maculelê? The Afro-Brazilian Stick Dance Explained | Capoeira Berlin'
-  description: 'Maculelê is an Afro-Brazilian stick dance from Santo Amaro da Purificação in Bahia. Its history, the legend behind the name, Mestre Popó, the music and how maculelê is linked to capoeira.'
+  title: 'Maculelê: the Afro-Brazilian Stick Dance | Capoeira Berlin'
+  description: 'Maculelê is an Afro-Brazilian stick dance from Santo Amaro, Bahia. Its history, the legend behind the name, Mestre Popó, the music and its link to capoeira.'
 image:
   caption: 'Maculelê at a batizado in Brazil. Photo: [Beverly Trayner](https://commons.wikimedia.org/wiki/File:Maculel%C3%AA_Batizada.1.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
   alt_text: 'Three dancers in straw skirts strike wooden sticks together in front of an audience, lit by warm stage light'

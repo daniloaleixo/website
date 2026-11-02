@@ -4,8 +4,8 @@ weight: 8
 date: 2026-10-01
 summary: 'Mestre Pastinha (1889–1981) was the great guardian of Capoeira Angola: a teacher, philosopher and artist who founded the first Capoeira Angola school and carried it to the world. His life, his ideas and his legacy.'
 seo:
-  title: 'Who was Mestre Pastinha? The Guardian of Capoeira Angola | Capoeira Berlin'
-  description: 'Mestre Pastinha (Vicente Ferreira Pastinha, 1889–1981) founded the Centro Esportivo de Capoeira Angola in Salvador and became the symbol of Capoeira Angola. His life, his philosophy and his legacy.'
+  title: 'Mestre Pastinha and Capoeira Angola | Capoeira Berlin'
+  description: 'Mestre Pastinha (1889–1981) founded the Centro Esportivo de Capoeira Angola in Salvador and became its great symbol. His life, his philosophy and his legacy.'
 image:
   caption: 'Statue of Mestre Pastinha at the Arena da Capoeira in Salvador da Bahia. Photo: [Sturm](https://commons.wikimedia.org/wiki/File:Salvador_-_BA_(Sep_2024)_0595.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
   alt_text: 'Bronze bust of Mestre Pastinha, an older man with a moustache and a warm smile, against a clear blue sky'

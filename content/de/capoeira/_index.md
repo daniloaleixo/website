@@ -2,8 +2,8 @@
 title: Capoeira verstehen
 summary: 'Was Capoeira ist, woher sie kommt und welche Menschen und Traditionen dahinterstehen – erklärt von Simplesmente Capoeira Berlin.'
 seo:
-  title: 'Capoeira verstehen – Geschichte, Musik & Kultur | Simplesmente Capoeira Berlin'
-  description: 'Alles über Capoeira: was sie ist, ihre afro-brasilianische Geschichte, ihre Musik und die Menschen dahinter. Erklärt von Simplesmente Capoeira Berlin – trainiere auch mit uns.'
+  title: 'Capoeira verstehen: Geschichte & Kultur | Capoeira Berlin'
+  description: 'Capoeira verstehen: was sie ist, ihre afrobrasilianische Geschichte, Musik, Menschen und Traditionen. Von Simplesmente Capoeira Berlin, wo du mittrainierst.'
 
 # Listing view
 view: card

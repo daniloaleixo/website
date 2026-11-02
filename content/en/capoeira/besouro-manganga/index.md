@@ -4,8 +4,8 @@ weight: 4
 date: 2026-09-03
 summary: 'Besouro Mangangá was a legendary capoeirista from Santo Amaro in Bahia who stood up to the police and the powerful in the years when capoeira was a crime. His life, his legends and why capoeira still sings about him.'
 seo:
-  title: 'Who was Besouro Mangangá? The Legend of Capoeira | Capoeira Berlin'
-  description: 'Besouro Mangangá (1895–1924) was the most legendary capoeirista of Bahia: a defender of the poor with a "closed body" who fought the police while capoeira was banned. His story and his legacy.'
+  title: 'Who was Besouro Mangangá? Life & Legend | Capoeira Berlin'
+  description: 'Besouro Mangangá, the legendary capoeirista of Santo Amaro, Bahia: his life, the legends of his closed body, his death in 1924 and why capoeira sings about him.'
 image:
   caption: 'A roda of veteran mestres in Bahia, 2012. Photo: [Rita Barreto / Setur Bahia](https://commons.wikimedia.org/wiki/File:Roda_de_Capoeira_dos_Mestres_veteranos.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)'
   alt_text: 'Veteran capoeira mestres dressed in white with white hats sing and play instruments in a roda in Bahia'

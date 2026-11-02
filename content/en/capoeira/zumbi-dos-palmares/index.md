@@ -4,8 +4,8 @@ weight: 3
 date: 2026-08-25
 summary: 'Zumbi dos Palmares led the largest community of escaped slaves in Brazil and died fighting for freedom on 20 November 1695. Who he was, what Palmares was, and why capoeira sings his name.'
 seo:
-  title: 'Who was Zumbi dos Palmares? Hero of Palmares & Capoeira | Capoeira Berlin'
-  description: 'Zumbi dos Palmares led the quilombo of Palmares against slavery in 17th-century Brazil and was killed on 20 November 1695. His story, his legacy and why capoeira still sings his name.'
+  title: 'Who was Zumbi dos Palmares? | Capoeira Berlin'
+  description: 'Zumbi dos Palmares led the largest community of escaped slaves in Brazil and died on 20 November 1695. His life, Palmares and why capoeira sings his name.'
 image:
   caption: 'Statue of Zumbi dos Palmares on Praça da Sé in Salvador da Bahia. Photo: [Wellington Da Costa Gomez](https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico_de_Salvador_Pra%C3%A7a_da_S%C3%A9_Zumbi_dos_Palmares_2019-6614.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
   alt_text: 'Bronze statue of Zumbi dos Palmares, bare-chested and looking into the distance, on a square in Salvador, Brazil'
