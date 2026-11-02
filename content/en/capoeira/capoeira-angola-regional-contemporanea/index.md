@@ -1,7 +1,7 @@
 ---
 title: 'Capoeira Angola vs Regional vs Contemporânea'
 weight: 6
-date: 2026-11-02
+date: 2026-10-21
 summary: 'Low and strategic, fast and direct, or a mix of both? The three main styles of capoeira explained: where Capoeira Angola, Capoeira Regional and Capoeira Contemporânea come from, and how they differ in the roda.'
 seo:
   title: 'Capoeira Angola vs Regional vs Contemporânea: the Styles Explained | Capoeira Berlin'

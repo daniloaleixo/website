@@ -1,7 +1,7 @@
 ---
 title: Who was Besouro Mangangá?
 weight: 4
-date: 2026-11-02
+date: 2026-10-08
 summary: 'Besouro Mangangá was a legendary capoeirista from Santo Amaro in Bahia who stood up to the police and the powerful in the years when capoeira was a crime. His life, his legends and why capoeira still sings about him.'
 seo:
   title: 'Who was Besouro Mangangá? The Legend of Capoeira | Capoeira Berlin'

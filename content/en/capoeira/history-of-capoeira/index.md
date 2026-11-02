@@ -1,7 +1,7 @@
 ---
 title: The History of Capoeira
 weight: 2
-date: 2026-11-02
+date: 2026-09-23
 summary: 'From the resistance of enslaved Africans in Brazil to a ban in 1890, the first academies of Mestre Bimba and Mestre Pastinha and UNESCO world heritage: the history of capoeira.'
 seo:
   title: 'History of Capoeira: From Slavery to World Heritage | Capoeira Berlin'

@@ -1,7 +1,7 @@
 ---
 title: 'The Berimbau and the Instruments of Capoeira'
 weight: 5
-date: 2026-11-02
+date: 2026-10-13
 summary: 'Capoeira is played to live music. Meet the berimbau, the one-string bow that leads the roda, and the pandeiro, atabaque, agogô and reco-reco that make up the bateria.'
 seo:
   title: 'The Berimbau and Capoeira Instruments Explained | Capoeira Berlin'

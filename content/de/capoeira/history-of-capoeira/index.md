@@ -1,7 +1,7 @@
 ---
 title: Die Geschichte der Capoeira
 weight: 2
-date: 2026-11-02
+date: 2026-09-23
 summary: 'Vom Widerstand versklavter Afrikanerinnen und Afrikaner in Brasilien über das Verbot von 1890 und die ersten Akademien von Mestre Bimba und Mestre Pastinha bis zum UNESCO-Welterbe: die Geschichte der Capoeira.'
 seo:
   title: 'Geschichte der Capoeira: Von der Sklaverei zum Welterbe | Capoeira Berlin'

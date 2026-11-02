@@ -1,7 +1,7 @@
 ---
 title: What is Capoeira?
 weight: 1
-date: 2026-11-02
+date: 2026-09-15
 summary: 'Capoeira is an Afro-Brazilian art that combines fight, dance, acrobatics and music. Learn how the roda works, what the berimbau does and where capoeira comes from.'
 seo:
   title: 'What is Capoeira? Martial Art, Dance & Music Explained | Capoeira Berlin'
