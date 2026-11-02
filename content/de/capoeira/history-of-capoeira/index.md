@@ -40,7 +40,7 @@ Im 19. Jahrhundert wurde Capoeira Teil des städtischen Lebens. In Rio beherrsch
 
 Brasilien schaffte als letztes Land Amerikas die Sklaverei ab, mit der **Lei Áurea** vom 13. Mai 1888. Freiheit bedeutete aber keine Gleichheit. Nur zwei Jahre später machte das **Strafgesetzbuch von 1890** Capoeira zur Straftat: Wer auf der Straße dabei erwischt wurde, konnte ins Gefängnis kommen, Anführern von Gruppen drohten härtere Strafen.
 
-Jahrzehntelang überlebte Capoeira im Untergrund, vor allem in **Bahia**. Gespielt wurde an versteckten Orten und auf religiösen Festen, mit Wachposten und einem besonderen Berimbau-Rhythmus, der *Cavalaria*, der die Spieler gewarnt haben soll, wenn die berittene Polizei kam. Aus dieser Zeit stammen legendäre Figuren wie **Besouro Mangangá** (1895–1924) aus Santo Amaro in Bahia, ein Capoeirista, der dafür berühmt war, sich gegen Polizei und Mächtige zu stellen, und über den bis heute viele Capoeira-Lieder gesungen werden.
+Jahrzehntelang überlebte Capoeira im Untergrund, vor allem in **Bahia**. Gespielt wurde an versteckten Orten und auf religiösen Festen, mit Wachposten und einem besonderen Berimbau-Rhythmus, der *Cavalaria*, der die Spieler gewarnt haben soll, wenn die berittene Polizei kam. Aus dieser Zeit stammen legendäre Figuren wie **Besouro Mangangá** (1895–1924) aus Santo Amaro in Bahia, ein Capoeirista, der dafür berühmt war, sich gegen Polizei und Mächtige zu stellen, und über den bis heute viele Capoeira-Lieder gesungen werden. Seine Geschichte erzählen wir in [Wer war Besouro Mangangá?]({{< relref "/capoeira/besouro-manganga" >}})
 
 ## Mestre Bimba, Mestre Pastinha und die ersten Akademien
 

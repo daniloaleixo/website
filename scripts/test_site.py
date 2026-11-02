@@ -313,7 +313,7 @@ class ReviewFixes(unittest.TestCase):
 INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
          "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html",
          "capoeira/index.html", "capoeira/what-is-capoeira/index.html", "capoeira/history-of-capoeira/index.html",
-         "capoeira/zumbi-dos-palmares/index.html"]
+         "capoeira/zumbi-dos-palmares/index.html", "capoeira/besouro-manganga/index.html"]
 
 
 def meta(html, attr, value):
@@ -365,7 +365,8 @@ class Seo(unittest.TestCase):
 
 
 ARTICLE = "capoeira/what-is-capoeira/index.html"
-ARTICLES = [ARTICLE, "capoeira/history-of-capoeira/index.html", "capoeira/zumbi-dos-palmares/index.html"]
+ARTICLES = [ARTICLE, "capoeira/history-of-capoeira/index.html", "capoeira/zumbi-dos-palmares/index.html",
+            "capoeira/besouro-manganga/index.html"]
 
 
 def lang_path(lang, path):
@@ -416,6 +417,9 @@ class LearnCapoeira(unittest.TestCase):
                 zumbi = read(lang_path(lang, ARTICLES[2]))
                 self.assertTrue(by_class(zumbi, "featured-image")[0]["attrs"].get("alt"))
                 self.assertIn("https://creativecommons.org/licenses/by-sa/4.0/", hrefs(zumbi))
+                besouro = read(lang_path(lang, ARTICLES[3]))
+                self.assertTrue(by_class(besouro, "featured-image")[0]["attrs"].get("alt"))
+                self.assertIn("https://creativecommons.org/licenses/by-sa/2.0/", hrefs(besouro))
 
     def test_article_hreflang(self):
         alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
@@ -436,6 +440,8 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", hrefs(read(lang_path(lang, ARTICLES[1]))))
                 self.assertIn(f"{prefix}/capoeira/zumbi-dos-palmares/", hrefs(read(lang_path(lang, ARTICLES[1]))))
                 self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLES[2]))))
+                self.assertIn(f"{prefix}/capoeira/besouro-manganga/", hrefs(read(lang_path(lang, ARTICLES[1]))))
+                self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLES[3]))))
 
     def test_links_into_section(self):
         for lang in ("en", "de"):

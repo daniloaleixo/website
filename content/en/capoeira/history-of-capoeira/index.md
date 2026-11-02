@@ -40,7 +40,7 @@ During the 19th century capoeira became part of urban life. In Rio, gangs of cap
 
 Brazil was the last country in the Americas to abolish slavery, with the **Lei Áurea** of 13 May 1888. Freedom did not bring equality. Just two years later, the **penal code of 1890** made capoeira a crime: anyone caught practising it in the streets could be imprisoned, and leaders of groups faced harsher punishment.
 
-For decades capoeira survived underground, especially in **Bahia**. It was played in hidden places and at religious festivals, with lookouts and a special berimbau rhythm, the *cavalaria*, that is said to have warned players when the mounted police were coming. This is the era of legendary figures like **Besouro Mangangá** (1895–1924) from Santo Amaro in Bahia, a capoeirista famous for standing up to the police and the powerful, about whom many capoeira songs are still sung.
+For decades capoeira survived underground, especially in **Bahia**. It was played in hidden places and at religious festivals, with lookouts and a special berimbau rhythm, the *cavalaria*, that is said to have warned players when the mounted police were coming. This is the era of legendary figures like **Besouro Mangangá** (1895–1924) from Santo Amaro in Bahia, a capoeirista famous for standing up to the police and the powerful, about whom many capoeira songs are still sung. Read his story in [Who was Besouro Mangangá?]({{< relref "/capoeira/besouro-manganga" >}})
 
 ## Mestre Bimba, Mestre Pastinha and the first academies
 
