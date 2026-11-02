@@ -6,8 +6,9 @@ seo:
   title: 'What is Capoeira? Martial Art, Dance & Music Explained | Capoeira Berlin'
   description: 'What is capoeira? An Afro-Brazilian art of fight, dance, acrobatics and music, played in a circle called the roda. Learn its roots, music and styles – and try it in Berlin.'
 image:
-  caption: 'Two players in the roda at our Batizado in Berlin'
-  alt: 'Two capoeiristas play in the roda: a high kick passes over a ducking player'
+  caption: 'A capoeira roda at sunset in Salvador da Bahia, Brazil. Photo: [Clara Angeleas / Ministério da Cidadania](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188735861).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
+  alt_text: 'Capoeira roda by the sea at sunset in Salvador, Brazil: a high kick passes over a ducking player'
+  focal_point: Top
 ---
 
 Capoeira is an Afro-Brazilian art that combines **fight, dance, acrobatics and music** in one practice. Two people play a game in the middle of a circle of singing, clapping people, while a single-string instrument called the berimbau sets the rhythm. It isn't a fight to win and it isn't a choreographed dance. It's a conversation in movement.

@@ -398,6 +398,15 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertTrue(arts[0]["image"])
                 self.assertEqual(meta(html, "property", "og:type"), ["article"])
 
+    def test_featured_image_has_alt_and_credit(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                html = read(lang_path(lang, ARTICLE))
+                img = by_class(html, "featured-image")
+                self.assertEqual(len(img), 1)
+                self.assertTrue(img[0]["attrs"].get("alt"))
+                self.assertIn("https://creativecommons.org/licenses/by/2.0/", hrefs(html))
+
     def test_article_hreflang(self):
         alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
                 if e["tag"] == "link" and "hreflang" in e["attrs"]}

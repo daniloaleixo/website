@@ -6,8 +6,9 @@ seo:
   title: 'Was ist Capoeira? Kampfkunst, Tanz & Musik erklärt | Capoeira Berlin'
   description: 'Was ist Capoeira? Eine afro-brasilianische Kunst aus Kampf, Tanz, Akrobatik und Musik, gespielt im Kreis, der Roda. Wurzeln, Musik und Stile – und Probetraining in Berlin.'
 image:
-  caption: 'Zwei Spieler in der Roda bei unserem Batizado in Berlin'
-  alt: 'Zwei Capoeiristas spielen in der Roda: ein hoher Tritt geht über einen sich duckenden Spieler'
+  caption: 'Eine Capoeira-Roda bei Sonnenuntergang in Salvador da Bahia, Brasilien. Foto: [Clara Angeleas / Ministério da Cidadania](https://commons.wikimedia.org/wiki/File:Patrim%C3%B4nio_Imaterial_Capoeira_(49188735861).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)'
+  alt_text: 'Capoeira-Roda bei Sonnenuntergang am Meer in Salvador, Brasilien: ein hoher Tritt über eine Ausweichbewegung'
+  focal_point: Top
 ---
 
 Capoeira ist eine afro-brasilianische Kunst, die **Kampf, Tanz, Akrobatik und Musik** in einer Praxis vereint. Zwei Menschen spielen in der Mitte eines Kreises aus singenden und klatschenden Leuten, während ein einsaitiges Instrument, der Berimbau, den Rhythmus vorgibt. Es ist kein Kampf, den man gewinnt, und auch kein einstudierter Tanz. Es ist ein Gespräch in Bewegung.
