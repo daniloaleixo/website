@@ -1,5 +1,6 @@
 ---
 title: Was ist Capoeira?
+weight: 1
 date: 2026-11-02
 summary: 'Capoeira ist eine afro-brasilianische Kunst aus Kampf, Tanz, Akrobatik und Musik. Erfahre, wie die Roda funktioniert, was der Berimbau macht und woher Capoeira kommt.'
 seo:
@@ -62,6 +63,8 @@ Die Lieder werden auf Portugiesisch im Wechselgesang gesungen: Eine Person singt
 Capoeira entstand aus den Traditionen der Menschen, die als Sklaven aus Afrika nach Brasilien verschleppt wurden, viele davon aus der Region des heutigen Angola. Ihre genauen Anfänge sind nicht überliefert, aber über Jahrhunderte entwickelte sie sich zu einer Art, den Körper zu trainieren, Kultur lebendig zu halten und Unterdrückung zu widerstehen, oft getarnt als Tanz.
 
 Nach der Abschaffung der Sklaverei 1888 wurde Capoeira verboten: Das brasilianische Strafgesetzbuch von 1890 stellte sie unter Strafe. In den 1930er-Jahren wurde sie nach und nach anerkannt. 1932 eröffnete **Mestre Bimba** in Salvador da Bahia eine der ersten Capoeira-Schulen und schuf den Stil *Capoeira Regional*. 1941 gründete **Mestre Pastinha** ein Zentrum für die ältere, traditionellere *Capoeira Angola*. Von Bahia aus verbreitete sich Capoeira in ganz Brasilien und ab den 1970er-Jahren in der ganzen Welt.
+
+Die ganze Geschichte erzählen wir in [Die Geschichte der Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}).
 
 ## Capoeira Angola, Regional und Contemporânea
 

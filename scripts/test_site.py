@@ -312,7 +312,7 @@ class ReviewFixes(unittest.TestCase):
 
 INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
          "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html",
-         "capoeira/index.html", "capoeira/what-is-capoeira/index.html"]
+         "capoeira/index.html", "capoeira/what-is-capoeira/index.html", "capoeira/history-of-capoeira/index.html"]
 
 
 def meta(html, attr, value):
@@ -364,6 +364,7 @@ class Seo(unittest.TestCase):
 
 
 ARTICLE = "capoeira/what-is-capoeira/index.html"
+ARTICLES = [ARTICLE, "capoeira/history-of-capoeira/index.html"]
 
 
 def lang_path(lang, path):
@@ -375,13 +376,15 @@ class LearnCapoeira(unittest.TestCase):
         for lang in ("en", "de"):
             with self.subTest(lang):
                 prefix = "" if lang == "en" else "/de"
-                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", hrefs(read(lang_path(lang, "capoeira/index.html"))))
+                links = hrefs(read(lang_path(lang, "capoeira/index.html")))
+                for a in ARTICLES:
+                    self.assertIn(f"{prefix}/{a.removesuffix('index.html')}", links)
 
     def test_article_has_train_with_us_box(self):
         sessions = data("trainings")["sessions"]
-        for lang in ("en", "de"):
-            with self.subTest(lang):
-                html = read(lang_path(lang, ARTICLE))
+        for lang, a in [(l, a) for l in ("en", "de") for a in ARTICLES]:
+            with self.subTest(lang=lang, article=a):
+                html = read(lang_path(lang, a))
                 box = by_class(html, "sc-join")
                 self.assertEqual(len(box), 1)
                 self.assertEqual(len(by_class(html, "sc-join__row")), len(sessions))
@@ -389,9 +392,9 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertEqual([b["attrs"]["href"] for b in by_class(html, "sc-join__btn")], [home_url])
 
     def test_article_jsonld(self):
-        for lang in ("en", "de"):
-            with self.subTest(lang):
-                html = read(lang_path(lang, ARTICLE))
+        for lang, a in [(l, a) for l in ("en", "de") for a in ARTICLES]:
+            with self.subTest(lang=lang, article=a):
+                html = read(lang_path(lang, a))
                 arts = [j for j in jsonld(html) if j.get("@type") == "Article"]
                 self.assertEqual(len(arts), 1)
                 self.assertEqual(arts[0]["author"]["@type"], "Organization")
@@ -406,6 +409,9 @@ class LearnCapoeira(unittest.TestCase):
                 self.assertEqual(len(img), 1)
                 self.assertTrue(img[0]["attrs"].get("alt"))
                 self.assertIn("https://creativecommons.org/licenses/by/2.0/", hrefs(html))
+                hist = read(lang_path(lang, ARTICLES[1]))
+                self.assertTrue(by_class(hist, "featured-image")[0]["attrs"].get("alt"))
+                self.assertIn("https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg", hrefs(hist))
 
     def test_article_hreflang(self):
         alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
@@ -415,7 +421,15 @@ class LearnCapoeira(unittest.TestCase):
 
     def test_article_in_sitemap(self):
         for lang in ("en", "de"):
-            self.assertIn("/capoeira/what-is-capoeira/", read(f"{lang}/sitemap.xml"))
+            for a in ARTICLES:
+                self.assertIn("/" + a.removesuffix("index.html"), read(f"{lang}/sitemap.xml"))
+
+    def test_articles_link_each_other_in_same_language(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                prefix = "" if lang == "en" else "/de"
+                self.assertIn(f"{prefix}/capoeira/history-of-capoeira/", hrefs(read(lang_path(lang, ARTICLE))))
+                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", hrefs(read(lang_path(lang, ARTICLES[1]))))
 
     def test_links_into_section(self):
         for lang in ("en", "de"):
