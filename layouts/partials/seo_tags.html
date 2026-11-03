@@ -3,7 +3,12 @@
      - descriptions are plain text: markdown in a summary is rendered and stripped
      - hreflang uses the same code for every language, plus x-default (the default language)
      - og:locale is in the en_US form Open Graph expects
-     - no og:updated_time on list pages: it came from the front-matter date, not a real update */}}
+     - no og:updated_time on list pages: it came from the front-matter date, not a real update
+     - share image: a landscape featured photo is cropped to 1200x630 JPEG (the size Facebook, WhatsApp,
+       LinkedIn and X expect, and small enough for WhatsApp); a portrait one (a poster) is kept whole as a
+       1200px-high JPEG. With og:image width, height, type and alt
+     - Twitter/X tags use `name` (as X documents), with title, description and image alt
+     - og:locale:alternate for each translation, and article:section */}}
 
 {{ $scr := .Scratch }}
 
@@ -77,13 +82,25 @@
 {{ $avatar_image := (.Resources.ByType "image").GetMatch "avatar*" }}
 {{ $has_logo := fileExists "assets/media/logo.png" | or (fileExists "assets/media/logo.svg") }}
 {{ $og_image := "" }}
+{{ $og_image_res := false }}
 {{ $twitter_card := "summary_large_image" }}
 {{ if (and (eq .Kind "term") $avatar_image) }}
   {{/* Match image processing in About widget to prevent generating more images than necessary. */}}
   {{ $og_image = ($avatar_image.Fill "270x270 Center").Permalink }}
   {{ $twitter_card = "summary" }}
 {{ else if $featured_image }}
-  {{ $og_image = $featured_image.Permalink }}
+  {{ if in (slice "jpeg" "png" "webp") $featured_image.MediaType.SubType }}
+    {{ if ge $featured_image.Width $featured_image.Height }}
+      {{ $anchor := replace (.Params.image.focal_point | default "Smart") " " "" }}
+      {{ $og_image_res = $featured_image.Fill (printf "1200x630 %s q80 jpg" $anchor) }}
+    {{ else }}
+      {{/* Portrait images, like event posters, are kept whole so no text is cut off. */}}
+      {{ $og_image_res = $featured_image.Resize "x1200 q80 jpg" }}
+    {{ end }}
+    {{ $og_image = $og_image_res.Permalink }}
+  {{ else }}
+    {{ $og_image = $featured_image.Permalink }}
+  {{ end }}
 {{ else if $sharing_image }}
   {{ $og_image = $sharing_image.Permalink }}
 {{ else if $has_logo }}
@@ -97,14 +114,19 @@
 
 {{ $title := partial "blox-core/functions/get_page_title" . }}
 
-{{/* Twitter metadata. */}}
-<meta property="twitter:card" content="{{ $twitter_card }}" />
+{{ $image_alt := .Params.image.alt_text | default $title }}
+
+{{/* Twitter/X metadata. */}}
+<meta name="twitter:card" content="{{ $twitter_card }}" />
 {{ with site.Params.marketing.seo.twitter }}
-  <meta property="twitter:site" content="@{{ . }}" />
-  <meta property="twitter:creator" content="@{{ . }}" />
+  <meta name="twitter:site" content="@{{ . }}" />
+  <meta name="twitter:creator" content="@{{ . }}" />
 {{ end }}
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
 {{- with $og_image -}}
-  <meta property="twitter:image" content="{{ . }}" />
+  <meta name="twitter:image" content="{{ . }}" />
+  <meta name="twitter:image:alt" content="{{ $image_alt }}" />
 {{- end -}}
 
 {{/* Open Graph metadata. */}}
@@ -118,7 +140,7 @@
   {{ else }}
     {{ $og_type = "website" }}
   {{ end }}
-{{ else if .IsPage | and (in (slice "post" "publication" "project" "book") .Type ) }}
+{{ else if .IsPage | and (in (slice "post" "publication" "project" "book" "capoeira") .Type ) }}
   {{ $og_type = "article" }}
 {{ else }}
   {{ $og_type = "website" }}
@@ -130,9 +152,22 @@
 <meta property="og:description" content="{{ $desc }}" />
 {{- with $og_image -}}
   <meta property="og:image" content="{{ . }}" />
+  <meta property="og:image:alt" content="{{ $image_alt }}" />
 {{- end -}}
+{{ with $og_image_res }}
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="{{ .Width }}" />
+  <meta property="og:image:height" content="{{ .Height }}" />
+{{ end }}
 {{ $locale := split (site.LanguageCode | default "en-us") "-" }}
 <meta property="og:locale" content="{{ index $locale 0 | lower }}{{ if gt (len $locale) 1 }}_{{ index $locale 1 | upper }}{{ end }}" />
+{{ range .Translations }}
+  {{ $alt := split (.Site.LanguageCode | default .Lang) "-" }}
+  <meta property="og:locale:alternate" content="{{ index $alt 0 | lower }}{{ if gt (len $alt) 1 }}_{{ index $alt 1 | upper }}{{ end }}" />
+{{ end }}
+{{ if eq $og_type "article" }}
+  <meta property="article:section" content="{{ (.Site.GetPage .Section).Title }}" />
+{{ end }}
 {{ if .IsPage }}
   {{ if not .PublishDate.IsZero }}
     <meta

@@ -311,7 +311,14 @@ class ReviewFixes(unittest.TestCase):
 
 
 INNER = ["contact/index.html", "people/index.html", "event/index.html", "post/index.html",
-         "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html"]
+         "songs/index.html", "documents/index.html", "documents/satzung/index.html", "event/batizado2026/index.html",
+         "capoeira/index.html", "capoeira/what-is-capoeira/index.html", "capoeira/history-of-capoeira/index.html",
+         "capoeira/zumbi-dos-palmares/index.html", "capoeira/besouro-manganga/index.html",
+         "capoeira/berimbau-and-instruments/index.html", "capoeira/capoeira-angola-regional-contemporanea/index.html",
+         "capoeira/mestre-bimba/index.html", "capoeira/mestre-pastinha/index.html",
+         "capoeira/maculele/index.html", "capoeira/samba-de-roda/index.html",
+         "capoeira/capoeira-unesco-heritage/index.html", "capoeira/candomble-and-capoeira/index.html",
+         "capoeira/syncretism-orixas-and-saints/index.html"]
 
 
 def meta(html, attr, value):
@@ -360,6 +367,163 @@ class Seo(unittest.TestCase):
     def test_listing_pages_noindex(self):
         for path in ("tags/index.html", "authors/index.html", "publication-type/paper-conference/index.html"):
             self.assertEqual(meta(read(path), "name", "robots"), ["noindex"], path)
+
+
+ARTICLE = "capoeira/what-is-capoeira/index.html"
+# article slug -> licence (or source) link its image caption must credit
+IMAGE_CREDITS = {
+    "what-is-capoeira": "https://creativecommons.org/licenses/by/2.0/",
+    "history-of-capoeira": "https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg",
+    "zumbi-dos-palmares": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "besouro-manganga": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "berimbau-and-instruments": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "capoeira-angola-regional-contemporanea": "https://creativecommons.org/licenses/by/2.0/",
+    "mestre-bimba": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "mestre-pastinha": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "maculele": "https://creativecommons.org/licenses/by/2.0/",
+    "samba-de-roda": "https://creativecommons.org/licenses/by/4.0/",
+    "capoeira-unesco-heritage": "https://creativecommons.org/licenses/by/2.0/",
+    "candomble-and-capoeira": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "syncretism-orixas-and-saints": "https://creativecommons.org/licenses/by/2.0/",
+}
+ARTICLES = [f"capoeira/{slug}/index.html" for slug in IMAGE_CREDITS]
+# (from, to): article slugs that must link to each other, in the same language
+CROSS_LINKS = [
+    ("what-is-capoeira", "history-of-capoeira"),
+    ("what-is-capoeira", "berimbau-and-instruments"),
+    ("what-is-capoeira", "capoeira-angola-regional-contemporanea"),
+    ("history-of-capoeira", "what-is-capoeira"),
+    ("history-of-capoeira", "zumbi-dos-palmares"),
+    ("history-of-capoeira", "besouro-manganga"),
+    ("history-of-capoeira", "mestre-bimba"),
+    ("history-of-capoeira", "mestre-pastinha"),
+    ("zumbi-dos-palmares", "history-of-capoeira"),
+    ("besouro-manganga", "history-of-capoeira"),
+    ("berimbau-and-instruments", "capoeira-angola-regional-contemporanea"),
+    ("capoeira-angola-regional-contemporanea", "mestre-bimba"),
+    ("capoeira-angola-regional-contemporanea", "berimbau-and-instruments"),
+    ("mestre-bimba", "mestre-pastinha"),
+    ("mestre-pastinha", "mestre-bimba"),
+    ("berimbau-and-instruments", "candomble-and-capoeira"),
+    ("maculele", "samba-de-roda"),
+    ("samba-de-roda", "maculele"),
+    ("samba-de-roda", "capoeira-unesco-heritage"),
+    ("capoeira-unesco-heritage", "samba-de-roda"),
+    ("capoeira-unesco-heritage", "history-of-capoeira"),
+    ("candomble-and-capoeira", "besouro-manganga"),
+    ("candomble-and-capoeira", "syncretism-orixas-and-saints"),
+    ("syncretism-orixas-and-saints", "candomble-and-capoeira"),
+    ("what-is-capoeira", "capoeira-unesco-heritage"),
+    ("history-of-capoeira", "capoeira-unesco-heritage"),
+]
+
+
+def lang_path(lang, path):
+    return path if lang == "en" else f"{lang}/{path}"
+
+
+class LearnCapoeira(unittest.TestCase):
+    def test_seo_title_and_description_fit_search_results(self):
+        # Google cuts titles at about 60 characters and descriptions at about 160
+        for lang in ("en", "de"):
+            for page in ARTICLES + ["capoeira/index.html"]:
+                with self.subTest(lang=lang, page=page):
+                    h = read(lang_path(lang, page))
+                    title = [e["text"] for e in _elements(h) if e["tag"] == "title"][0]
+                    desc = meta(h, "name", "description")[0]
+                    self.assertLessEqual(len(title), 60, title)
+                    self.assertLessEqual(len(desc), 160, desc)
+
+    def test_social_sharing_tags(self):
+        # WhatsApp, Facebook, LinkedIn and X read these for the link preview
+        other = {"en": "de_DE", "de": "en_US"}
+        for lang in ("en", "de"):
+            for page in ARTICLES:
+                with self.subTest(lang=lang, page=page):
+                    h = read(lang_path(lang, page))
+                    image = meta(h, "property", "og:image")[0]
+                    self.assertTrue(image.startswith("https://sc-capoeira.de/") and image.endswith(".jpg"), image)
+                    self.assertEqual(meta(h, "property", "og:image:width"), ["1200"])
+                    self.assertEqual(meta(h, "property", "og:image:height"), ["630"])
+                    self.assertTrue(meta(h, "property", "og:image:alt")[0])
+                    # WhatsApp drops preview images that are too large
+                    self.assertLess((PUBLIC / image.removeprefix("https://sc-capoeira.de/")).stat().st_size, 300_000)
+                    self.assertEqual(meta(h, "name", "twitter:card"), ["summary_large_image"])
+                    self.assertEqual(meta(h, "name", "twitter:image"), [image])
+                    self.assertEqual(meta(h, "name", "twitter:title"), meta(h, "property", "og:title"))
+                    self.assertEqual(meta(h, "property", "og:locale:alternate"), [other[lang]])
+                    self.assertTrue(meta(h, "property", "article:published_time"))
+
+    def test_hub_lists_article(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                prefix = "" if lang == "en" else "/de"
+                links = hrefs(read(lang_path(lang, "capoeira/index.html")))
+                for a in ARTICLES:
+                    self.assertIn(f"{prefix}/{a.removesuffix('index.html')}", links)
+
+    def test_article_has_train_with_us_box(self):
+        sessions = data("trainings")["sessions"]
+        for lang, a in [(l, a) for l in ("en", "de") for a in ARTICLES]:
+            with self.subTest(lang=lang, article=a):
+                html = read(lang_path(lang, a))
+                box = by_class(html, "sc-join")
+                self.assertEqual(len(box), 1)
+                self.assertEqual(len(by_class(html, "sc-join__row")), len(sessions))
+                home_url = "/#trainings" if lang == "en" else "/de/#trainings"
+                self.assertEqual([b["attrs"]["href"] for b in by_class(html, "sc-join__btn")], [home_url])
+
+    def test_article_jsonld(self):
+        for lang, a in [(l, a) for l in ("en", "de") for a in ARTICLES]:
+            with self.subTest(lang=lang, article=a):
+                html = read(lang_path(lang, a))
+                arts = [j for j in jsonld(html) if j.get("@type") == "Article"]
+                self.assertEqual(len(arts), 1)
+                self.assertEqual(arts[0]["author"]["@type"], "Organization")
+                self.assertTrue(arts[0]["image"])
+                self.assertEqual(meta(html, "property", "og:type"), ["article"])
+
+    def test_featured_image_has_alt_and_credit(self):
+        for lang, (slug, credit) in [(l, c) for l in ("en", "de") for c in IMAGE_CREDITS.items()]:
+            with self.subTest(lang=lang, article=slug):
+                html = read(lang_path(lang, f"capoeira/{slug}/index.html"))
+                img = by_class(html, "featured-image")
+                self.assertEqual(len(img), 1)
+                self.assertTrue(img[0]["attrs"].get("alt"))
+                self.assertIn(credit, hrefs(html))
+
+    def test_article_hreflang(self):
+        alts = {e["attrs"]["hreflang"]: e["attrs"]["href"] for e in _elements(read(ARTICLE))
+                if e["tag"] == "link" and "hreflang" in e["attrs"]}
+        self.assertEqual(alts["de"], "https://sc-capoeira.de/de/capoeira/what-is-capoeira/")
+        self.assertEqual(alts["en"], "https://sc-capoeira.de/capoeira/what-is-capoeira/")
+
+    def test_article_in_sitemap(self):
+        for lang in ("en", "de"):
+            for a in ARTICLES:
+                self.assertIn("/" + a.removesuffix("index.html"), read(f"{lang}/sitemap.xml"))
+
+    def test_articles_link_each_other_in_same_language(self):
+        for lang, (src, dst) in [(l, c) for l in ("en", "de") for c in CROSS_LINKS]:
+            with self.subTest(lang=lang, src=src, dst=dst):
+                prefix = "" if lang == "en" else "/de"
+                self.assertIn(f"{prefix}/capoeira/{dst}/", hrefs(read(lang_path(lang, f"capoeira/{src}/index.html"))))
+
+    def test_articles_link_group_anthem(self):
+        for lang in ("en", "de"):
+            prefix = "" if lang == "en" else "/de"
+            for slug in ("berimbau-and-instruments", "capoeira-angola-regional-contemporanea", "mestre-bimba"):
+                with self.subTest(lang=lang, article=slug):
+                    html = read(lang_path(lang, f"capoeira/{slug}/index.html"))
+                    self.assertIn(f"{prefix}/songs/himno-simplesmente-capoeira/", hrefs(html))
+
+    def test_links_into_section(self):
+        for lang in ("en", "de"):
+            with self.subTest(lang):
+                prefix = "" if lang == "en" else "/de"
+                links = hrefs(home(lang))
+                self.assertIn(f"{prefix}/capoeira/", links)
+                self.assertIn(f"{prefix}/capoeira/what-is-capoeira/", links)
 
 
 if __name__ == "__main__":

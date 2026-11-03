@@ -1034,3 +1034,72 @@ div.videowrapper {
     height: 2300px;
   }
 }
+
+// Learn about Capoeira: link from the homepage tiles and the "Train with us" box
+.sc-tiles__more {
+  margin: 1.25rem 0 0;
+  font-weight: 700;
+}
+
+.sc-join {
+  margin: 3rem 0 2rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--sc-radius);
+  background: var(--sc-yellow);
+  color: var(--sc-black);
+
+  .sc-kicker {
+    color: var(--sc-black);
+  }
+}
+
+.article-style .sc-join__title,
+.sc-join__title {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0.4rem 0 0.5rem;
+}
+
+.sc-join__lead {
+  margin: 0 0 1rem;
+}
+
+.sc-join__times {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  max-width: 420px;
+}
+
+.sc-join__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 0.95rem;
+
+  b {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 0.85rem;
+  }
+}
+
+.sc-btn.sc-join__btn {
+  background: var(--sc-black);
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.sc-learn-hub,
+.sc-learn-article {
+  padding-bottom: 4rem;
+}

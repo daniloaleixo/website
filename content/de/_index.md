@@ -46,6 +46,9 @@ sections:
       kicker: Was ist Capoeira?
       title: Eine afro-brasilianische Kunst, die man spielt – nicht nur trainiert.
       lead: Zwei Spieler begegnen sich in der Roda, einem Kreis aus singenden und klatschenden Menschen, angeführt vom Berimbau.
+      more:
+        text: 'Weiterlesen: Was ist Capoeira? →'
+        url: capoeira/what-is-capoeira/
       items:
         - title: Bewegung
           text: Ginga, Tritte und Ausweichbewegungen. Kraft, Beweglichkeit und Flow.

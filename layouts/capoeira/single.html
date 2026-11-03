@@ -1,0 +1,21 @@
+{{/* "Learn about Capoeira" article: the theme's single layout plus the "Train with us" box. */}}
+{{- define "main" -}}
+
+<article class="article sc-learn-article">
+
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+
+    <div class="article-style">
+      {{ .Content }}
+    </div>
+
+    {{ partial "sc/train_with_us.html" . }}
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</article>
+
+{{- end -}}

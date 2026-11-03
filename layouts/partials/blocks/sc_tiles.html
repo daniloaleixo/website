@@ -13,4 +13,5 @@
     </div>
     {{ end }}
   </div>
+  {{ with $c.more }}<p class="sc-tiles__more"><a href="{{ .url | relLangURL }}">{{ .text }}</a></p>{{ end }}
 </div>

@@ -1,0 +1,21 @@
+{{/* "Learn about Capoeira" hub: the theme section list with a wrapper class for spacing. */}}
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper sc-learn-hub">
+
+  {{ with .Content }}
+  <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+  {{ $paginator := .Paginate .Data.Pages 24 }}
+  {{ range $index, $item := $paginator.Pages }}
+    {{ partial "functions/render_view" (dict "page" $ "item" . "view" ($.Params.view | default "compact") "index" $index) }}
+  {{end}}
+
+  {{ partial "pagination" . }}
+
+</div>
+
+{{- end -}}
