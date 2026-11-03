@@ -3,6 +3,26 @@ derived from [Hugo Research Group Theme](https://github.com/wowchemy/starter-hug
 
 ![Screenshot](preview.png)
 
+## Run locally
+
+This project requires [Hugo Extended 0.160.1](https://github.com/gohugoio/hugo/releases/tag/v0.160.1), the version used by CI and Netlify. Older releases, including `v0.131.0+extended`, are incompatible with the HugoBlox module.
+
+If you use [Hugo Version Manager (HVM)](https://github.com/jmooring/hvm), first update HVM: older builds cannot install Hugo 0.160.1 on Apple Silicon because Hugo distributes it as a universal macOS package. Then select the extended edition:
+
+```sh
+go install github.com/jmooring/hvm@latest
+hvm use 0.160.1/extended
+```
+
+Confirm the version and start the development server from the repository root:
+
+```sh
+hugo version # should report v0.160.1+extended
+hugo server
+```
+
+Open [http://localhost:1313/](http://localhost:1313/) in your browser. Hugo watches the project and reloads the site after changes.
+
 ## developer notes
 
 For costumization add scss code in [./assets/scss/template.scss](./assets/scss/template.scss)

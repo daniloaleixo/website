@@ -21,6 +21,9 @@ main:
   - name: Kontakt
     url: contact
     weight: 60
+  - name: Dokumente
+    url: documents
+    weight: 65
   - name: Probetraining
     url: /#trainings
     weight: 70
