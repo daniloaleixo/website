@@ -5,6 +5,7 @@ Run: python3 scripts/test_site.py -v
 """
 
 import json
+import re
 import shutil
 import subprocess
 import tempfile
@@ -247,7 +248,8 @@ class Chrome(unittest.TestCase):
         self.assertNotIn("Impressum", f)
 
     def test_announcement_still_rendered(self):
-        if "announcement:" not in (REPO / "content/en/_index.md").read_text():
+        # only when a banner is set; a commented-out one doesn't count
+        if not re.search(r"^announcement:", (REPO / "content/en/_index.md").read_text(), re.M):
             self.skipTest("no banner set")
         for p in ["index.html", "de/index.html", "event/index.html", "de/songs/index.html"]:
             self.assertIsNotNone(by_id(read(p), "announcement"), p)
@@ -453,6 +455,13 @@ class LearnCapoeira(unittest.TestCase):
                     self.assertEqual(meta(h, "name", "twitter:title"), meta(h, "property", "og:title"))
                     self.assertEqual(meta(h, "property", "og:locale:alternate"), [other[lang]])
                     self.assertTrue(meta(h, "property", "article:published_time"))
+
+    def test_articles_link_capoeirawiki(self):
+        for lang in ("en", "de"):
+            for page in ARTICLES:
+                with self.subTest(lang=lang, page=page):
+                    wiki = [u for u in hrefs(read(lang_path(lang, page))) if u.startswith("https://capoeirawiki.org/wiki/")]
+                    self.assertGreaterEqual(len(wiki), 2, wiki)
 
     def test_hub_lists_article(self):
         for lang in ("en", "de"):

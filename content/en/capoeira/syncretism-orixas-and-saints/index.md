@@ -71,6 +71,14 @@ These videos are in Portuguese:
 - [Documentário Festa do Bonfim (2004)](https://www.youtube.com/watch?v=VIZ6B4l1NfA): a documentary about the Festa do Bonfim and its washing, by the Bahian public broadcaster TVE Bahia.
 - [Sincretismo: qual a relação entre santos católicos, orixás e colonialismo?](https://www.youtube.com/watch?v=27Ol_l4BulE): a short explainer by the Brazilian news site UOL.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Candomblé](https://capoeirawiki.org/wiki/Candombl%C3%A9): including its history of syncretism
+- [Ogum](https://capoeirawiki.org/wiki/Ogum), [Oxóssi](https://capoeirawiki.org/wiki/Ox%C3%B3ssi)
+- [Orixá](https://capoeirawiki.org/wiki/Orix%C3%A1): the orixás and their attributes
+
 ## Sing it in Berlin
 
 To learn more about the songs and the instruments, read [The Berimbau and the Instruments of Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}) or go back to [The History of Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}).

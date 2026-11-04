@@ -68,6 +68,16 @@ Diese Videos sind auf Portugiesisch:
 - [Mestre Bimba – De Lá Pra Cá](https://www.youtube.com/watch?v=bDkghEO_QAs): eine Sendung über Mestre Bimba des brasilianischen öffentlich-rechtlichen Senders TV Brasil (Teil 1 von 2).
 - [Mestre Nenel: filho de Mestre Bimba mantém viva a Capoeira Regional](https://www.youtube.com/watch?v=YIoxDtUelFo): ein Bericht von TVE Bahia über Bimbas Sohn und seine Arbeit in Salvador.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Mestre Bimba (Manuel dos Reis Machado)](https://capoeirawiki.org/wiki/Manuel_dos_Reis_Machado): die Biografie von Mestre Bimba
+- [Capoeira Regional](https://capoeirawiki.org/wiki/Capoeira_Regional): der Stil, den er schuf
+- [Mestre Nenel](https://capoeirawiki.org/wiki/Mestre_Nenel): sein Sohn, der seine Arbeit fortführt
+- [Mestre Decânio](https://capoeirawiki.org/wiki/Mestre_Dec%C3%A2nio): einer seiner bekanntesten Schüler
+- [Getúlio Vargas](https://capoeirawiki.org/wiki/Get%C3%BAlio_Vargas): der Präsident, der Bimbas Schülern zusah
+
 ## Training in Berlin
 
 Wie wird Capoeira heute gespielt und unterrichtet? Lies [Capoeira Angola, Regional und Contemporânea]({{< relref "/capoeira/capoeira-angola-regional-contemporanea" >}}) oder [Die Geschichte der Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}). Unsere Gruppenhymne, der [Himno Simplesmente Capoeira]({{< relref "/songs/himno-simplesmente-capoeira" >}}), singt sogar von „Bimba da Regional“.

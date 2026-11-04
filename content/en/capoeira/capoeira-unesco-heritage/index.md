@@ -59,6 +59,14 @@ Capoeira isn't the only Afro-Brazilian tradition on the list. **Samba de roda** 
 - [Unesco reconhece as tradicionais rodas de capoeira como patrimônio cultural imaterial da humanidade](https://www.youtube.com/watch?v=-nKDTYLL_Rs): a news report by Brazil's public broadcaster TV Brasil, in Portuguese.
 - [Roda de Capoeira: Patrimônio Cultural Imaterial da Humanidade](https://www.youtube.com/watch?v=_HeWO3vmCXY): a documentary by IPHAN, in Portuguese.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [UNESCO: Capoeira as Intangible Cultural Heritage](https://capoeirawiki.org/wiki/UNESCO#Capoeira_as_Intangible_Cultural_Heritage): the 2014 listing
+- [IPHAN](https://capoeirawiki.org/wiki/IPHAN): the 2008 registration in Brazil
+- [Roda](https://capoeirawiki.org/wiki/Roda): the circle that was recognised
+
 ## Join a roda in Berlin
 
 The best way to understand a living heritage is to take part in it. New to capoeira? Start with [What is Capoeira?]({{< relref "/capoeira/what-is-capoeira" >}})

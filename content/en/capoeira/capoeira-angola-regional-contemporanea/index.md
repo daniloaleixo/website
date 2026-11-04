@@ -89,6 +89,15 @@ These videos are in Portuguese, except the UNESCO film:
 - [Capoeira circle](https://www.youtube.com/watch?v=Vhgot9H7vZw): UNESCO's film about the roda, which it added to the list of the Intangible Cultural Heritage of Humanity in 2014.
 - [Roda de Capoeira: Patrimônio Cultural Imaterial da Humanidade](https://www.youtube.com/watch?v=_HeWO3vmCXY): a documentary by IPHAN, Brazil's national heritage institute.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Capoeira Angola](https://capoeirawiki.org/wiki/Capoeira_Angola), [Capoeira Regional](https://capoeirawiki.org/wiki/Capoeira_Regional), [Capoeira Contemporânea](https://capoeirawiki.org/wiki/Capoeira_Contempor%C3%A2nea)
+- [Malícia](https://capoeirawiki.org/wiki/Mal%C3%ADcia): the cunning that every style values
+- [Mestre Moraes](https://capoeirawiki.org/wiki/Mestre_Moraes): a leader of the Angola revival
+- [Cobra Mansa](https://capoeirawiki.org/wiki/Cobra_Mansa): another leader of the Angola revival
+
 ## Try it in Berlin
 
 Our group anthem, [Himno Simplesmente Capoeira]({{< relref "/songs/himno-simplesmente-capoeira" >}}), sings *"Rápido como São Bento, ou Angola devagar"*: fast like São Bento, or slow like Angola. The best way to feel the difference is to play.

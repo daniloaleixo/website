@@ -66,6 +66,16 @@ Diese Videos sind auf Portugiesisch:
 - [O Candomblé e a Capoeira por Mestre Amen Santo](https://www.youtube.com/watch?v=kkZzpDk6Y2A): Mestre Amen Santo spricht über Candomblé, Capoeira und die afrikanische Diaspora in Brasilien, veröffentlicht vom Museu da Capoeira.
 - [Candomblé na Bahia (1977)](https://www.youtube.com/watch?v=vN91rffY_hI): ein historischer Film aus der Sammlung des brasilianischen Nationalarchivs (Arquivo Nacional).
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Candomblé](https://capoeirawiki.org/wiki/Candombl%C3%A9): die Religion im Detail
+- [Ogum](https://capoeirawiki.org/wiki/Ogum), [Oxóssi](https://capoeirawiki.org/wiki/Ox%C3%B3ssi)
+- [Orixá](https://capoeirawiki.org/wiki/Orix%C3%A1): die Orixás
+- [Mandinga](https://capoeirawiki.org/wiki/Mandinga): Magie und List in der Capoeira
+- [Patuá](https://capoeirawiki.org/wiki/Patu%C3%A1): das schützende Amulett
+
 ## Capoeira in Berlin entdecken
 
 Mehr über Musik und Geschichte liest du in [Der Berimbau und die Instrumente der Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}) und [Die Geschichte der Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}).

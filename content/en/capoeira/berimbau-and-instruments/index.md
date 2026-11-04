@@ -89,6 +89,16 @@ These videos are in Portuguese, but the music speaks for itself:
 - [Toques de berimbau: gunga, médio, viola](https://www.youtube.com/watch?v=8wowXAM8B_Y): what each of the three berimbaus should play (Saber Capoeira).
 - [Bateria da capoeira: atabaque](https://www.youtube.com/watch?v=i3rEhNrS6uc) and [pandeiro](https://www.youtube.com/watch?v=rcxN0GZ7OJw): how the drum and the pandeiro accompany the main toques (Mestre Koioty).
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Berimbau](https://capoeirawiki.org/wiki/Berimbau): its history and how it is built
+- [Pandeiro](https://capoeirawiki.org/wiki/Pandeiro), [Atabaque](https://capoeirawiki.org/wiki/Atabaque), [Agogô](https://capoeirawiki.org/wiki/Agog%C3%B4), [Reco-reco](https://capoeirawiki.org/wiki/Reco-reco), [Caxixi](https://capoeirawiki.org/wiki/Caxixi)
+- [Bateria](https://capoeirawiki.org/wiki/Bateria): the orchestra of the roda
+- [Capoeira toques](https://capoeirawiki.org/wiki/Capoeira_toques): the rhythms, one by one
+- [Capoeira songs](https://capoeirawiki.org/wiki/Capoeira_songs): ladainhas, chulas and corridos
+
 ## Learn to play in Berlin
 
 In capoeira, music isn't something you leave to others. Every capoeirista learns to play the berimbau, the pandeiro and the atabaque, and to sing. Our own group anthem, [Himno Simplesmente Capoeira]({{< relref "/songs/himno-simplesmente-capoeira" >}}), names toques like São Bento, Benguela and Iúna.

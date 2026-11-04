@@ -55,6 +55,13 @@ These videos are in Portuguese:
 - [Maculelê (1972)](https://www.youtube.com/watch?v=VHI-XPnK2n8): a short historical film from the collection of Brazil's National Archives (Arquivo Nacional).
 - [História do Maculelê](https://www.youtube.com/watch?v=xD0eqcad-3I): the historian Antônio Liberac talks about the history of maculelê, published by the Museu da Capoeira.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Maculelê](https://capoeirawiki.org/wiki/Maculel%C3%AA): its history and music
+- [Mestre Popó](https://capoeirawiki.org/wiki/Pop%C3%B3_do_Maculel%C3%AA): Mestre Popó, who revived it
+
 ## Discover Afro-Brazilian culture in Berlin
 
 Capoeira is more than a game: it carries music, dances and stories from Bahia. To see where it all started, read [The History of Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}) or learn about the drums in [The Berimbau and the Instruments of Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}).

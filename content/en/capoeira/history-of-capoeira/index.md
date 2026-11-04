@@ -58,6 +58,16 @@ From Salvador, capoeira spread to Rio de Janeiro, São Paulo and across Brazil. 
 
 Recognition followed. In 2008 Brazil's national heritage institute, IPHAN, registered the capoeira circle and the craft of the capoeira masters as Brazilian cultural heritage. In **2014 UNESCO** inscribed the capoeira circle on the list of the **Intangible Cultural Heritage of Humanity**. Read more in [Capoeira as UNESCO Intangible Cultural Heritage]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [History of capoeira](https://capoeirawiki.org/wiki/History_of_capoeira): the long version, with sources
+- [Slavery in Brazil](https://capoeirawiki.org/wiki/Slavery_in_Brazil): the background of capoeira's origins
+- [Quilombo](https://capoeirawiki.org/wiki/Quilombo): communities of people who escaped slavery
+- [Capoeira carioca](https://capoeirawiki.org/wiki/Capoeira_carioca): the capoeira gangs of 19th-century Rio de Janeiro
+- [IPHAN](https://capoeirawiki.org/wiki/IPHAN): Brazil's heritage institute and capoeira
+
 ## Capoeira today, and in Berlin
 
 Today capoeira is practised in well over a hundred countries, and every roda still carries its history. The songs in Portuguese tell of slavery and freedom, of Zumbi, Besouro, Bimba and Pastinha. The berimbau rhythms, the ritual at the foot of the berimbau and the respect for the mestres connect every capoeirista to the people who kept this art alive when it was forbidden.

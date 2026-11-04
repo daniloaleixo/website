@@ -57,6 +57,15 @@ Besouro's most famous student, according to tradition, was his cousin **Rafael A
 
 Today Besouro is a symbol of resistance, courage and *mandinga*, the mix of cunning, magic and spirit that capoeiristas try to bring into the game. He's often called **Besouro Cordão de Ouro** ("golden cord") in songs and stories. In 2009 his life was turned into a Brazilian feature film, *Besouro*.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Besouro Mangangá](https://capoeirawiki.org/wiki/Besouro_Mangang%C3%A1): his biography
+- [Cobrinha Verde](https://capoeirawiki.org/wiki/Cobrinha_Verde): his cousin and student
+- [Mandinga](https://capoeirawiki.org/wiki/Mandinga): the magic and cunning of capoeira
+- [Patuá](https://capoeirawiki.org/wiki/Patu%C3%A1): the protective amulet
+
 ## Besouro in capoeira songs
 
 Besouro is one of the people sung about most in capoeira. Ladainhas and corridos tell of his courage, his closed body, the beetle that flew away and his death at Maracangalha. When the roda sings about Besouro, it remembers a time when playing capoeira could cost you your freedom, and the people who kept playing anyway.

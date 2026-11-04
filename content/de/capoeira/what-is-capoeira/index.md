@@ -86,6 +86,17 @@ Die meisten Capoeira-Gruppen nutzen farbige Kordeln (*Cordas*), die um die Hüft
 
 Beides, und noch mehr. Capoeira ist eine Kampfkunst, weil sie Angriffe, Ausweichbewegungen und Würfe trainiert. Sie sieht aus wie Tanz, weil sie sich zur Musik bewegt und ohne Pause fließt. Und sie ist eine kulturelle Tradition mit eigener Sprache, eigenen Liedern, eigener Geschichte und Gemeinschaft. Genau diese Mischung macht sie einzigartig: Du trainierst Körper, Musikalität und Kreativität zugleich.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Capoeira](https://capoeirawiki.org/wiki/Capoeira): der ausführliche Überblick über die Kunst
+- [Roda](https://capoeirawiki.org/wiki/Roda): wie der Kreis funktioniert
+- [Ginga](https://capoeirawiki.org/wiki/Ginga): die Grundbewegung der Capoeira
+- [Capoeira movements](https://capoeirawiki.org/wiki/Capoeira_movements): Tritte, Ausweichbewegungen und Akrobatik im Einzelnen
+- [Ranks in capoeira](https://capoeirawiki.org/wiki/Ranks_in_capoeira): Kordeln und Graduierungssysteme
+- [Beginner’s guide to capoeira](https://capoeirawiki.org/wiki/Beginner%E2%80%99s_guide_to_capoeira): Tipps für deine ersten Trainings
+
 ## Capoeira in Berlin
 
 Berlin hat eine lebendige Capoeira-Szene mit Gruppen aus vielen Stilen. Bei **Simplesmente Capoeira Berlin** trainieren Kinder und Erwachsene in **Schöneberg, Kreuzberg und Mitte**. Anfängerinnen und Anfänger sind in jedem Training willkommen, und du lernst Bewegungen, Instrumente und Lieder Schritt für Schritt. Das Training ist zweisprachig auf Deutsch und Englisch, gesungen wird auf Portugiesisch, und die Gruppe ist so international wie die Stadt.

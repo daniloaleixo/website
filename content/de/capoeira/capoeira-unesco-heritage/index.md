@@ -59,6 +59,14 @@ Capoeira ist nicht die einzige afrobrasilianische Tradition auf der Liste. Der *
 - [Unesco reconhece as tradicionais rodas de capoeira como patrimônio cultural imaterial da humanidade](https://www.youtube.com/watch?v=-nKDTYLL_Rs): ein Nachrichtenbeitrag des brasilianischen öffentlich-rechtlichen Senders TV Brasil, auf Portugiesisch.
 - [Roda de Capoeira: Patrimônio Cultural Imaterial da Humanidade](https://www.youtube.com/watch?v=_HeWO3vmCXY): eine Dokumentation von IPHAN, auf Portugiesisch.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [UNESCO: Capoeira as Intangible Cultural Heritage](https://capoeirawiki.org/wiki/UNESCO#Capoeira_as_Intangible_Cultural_Heritage): die Aufnahme 2014
+- [IPHAN](https://capoeirawiki.org/wiki/IPHAN): die Registrierung 2008 in Brasilien
+- [Roda](https://capoeirawiki.org/wiki/Roda): der Kreis, der anerkannt wurde
+
 ## Mach mit in einer Roda in Berlin
 
 Ein lebendiges Erbe versteht man am besten, wenn man selbst mitmacht. Neu bei Capoeira? Fang an mit [Was ist Capoeira?]({{< relref "/capoeira/what-is-capoeira" >}})

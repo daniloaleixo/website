@@ -53,6 +53,13 @@ These videos are in Portuguese, but you'll catch the rhythm:
 - [Samba de Roda do Recôncavo Baiano](https://www.youtube.com/watch?v=z42pA3xaegk): a documentary by IPHAN, Brazil's national heritage institute.
 - [Samba de Roda, Patrimônio Imaterial da Humanidade: 15 Anos de Salvaguarda e Conquistas](https://www.youtube.com/watch?v=068cfxUvP8s): a documentary by ASSEBA, the association of samba de roda players of Bahia.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Samba](https://capoeirawiki.org/wiki/Samba): the roots of samba, including samba de roda
+- [Capoeira music](https://capoeirawiki.org/wiki/Capoeira_music): the music samba and capoeira share
+
 ## Feel the rhythm in Berlin
 
 Want to know more about the music behind the roda? Read [The Berimbau and the Instruments of Capoeira]({{< relref "/capoeira/berimbau-and-instruments" >}}) or start with [What is Capoeira?]({{< relref "/capoeira/what-is-capoeira" >}})

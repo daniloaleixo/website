@@ -58,6 +58,16 @@ Von Salvador aus verbreitete sich Capoeira nach Rio de Janeiro, São Paulo und i
 
 Die Anerkennung folgte. 2008 nahm Brasiliens nationales Denkmalinstitut IPHAN die Capoeira-Roda und das Handwerk der Capoeira-Meister in das brasilianische Kulturerbe auf. **2014** nahm die **UNESCO** die Capoeira-Roda in die Liste des **Immateriellen Kulturerbes der Menschheit** auf. Mehr dazu in [Capoeira als Immaterielles Kulturerbe der UNESCO]({{< relref "/capoeira/capoeira-unesco-heritage" >}}).
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [History of capoeira](https://capoeirawiki.org/wiki/History_of_capoeira): die ausführliche Fassung mit Quellen
+- [Slavery in Brazil](https://capoeirawiki.org/wiki/Slavery_in_Brazil): der Hintergrund der Entstehung der Capoeira
+- [Quilombo](https://capoeirawiki.org/wiki/Quilombo): Gemeinschaften von Menschen, die der Sklaverei entkamen
+- [Capoeira carioca](https://capoeirawiki.org/wiki/Capoeira_carioca): die Capoeira-Banden im Rio de Janeiro des 19. Jahrhunderts
+- [IPHAN](https://capoeirawiki.org/wiki/IPHAN): Brasiliens Denkmalinstitut und die Capoeira
+
 ## Capoeira heute und in Berlin
 
 Heute wird Capoeira in weit über hundert Ländern praktiziert, und jede Roda trägt ihre Geschichte in sich. Die Lieder auf Portugiesisch erzählen von Sklaverei und Freiheit, von Zumbi, Besouro, Bimba und Pastinha. Die Berimbau-Rhythmen, das Ritual am Fuß des Berimbau und der Respekt vor den Mestres verbinden jeden Capoeirista mit den Menschen, die diese Kunst am Leben hielten, als sie verboten war.

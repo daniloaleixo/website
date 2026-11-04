@@ -59,6 +59,15 @@ Lange Zeit erwähnte die offizielle Geschichtsschreibung Brasiliens Zumbi kaum. 
 
 Die Überlieferung erinnert auch an **Dandara**, Zumbis Partnerin, als Kämpferin für Palmares. Wie vieles aus Zumbis persönlichem Leben stammt ihre Geschichte vor allem aus mündlicher Überlieferung, aber sie ist zum Symbol für die Rolle Schwarzer Frauen im Kampf gegen die Sklaverei geworden.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Zumbi dos Palmares](https://capoeirawiki.org/wiki/Zumbi): sein Leben und Tod
+- [Palmares](https://capoeirawiki.org/wiki/Palmares_(quilombo)): die Geschichte von Palmares
+- [Dandara dos Palmares](https://capoeirawiki.org/wiki/Dandara_dos_Palmares): die Kämpferin, an die als Zumbis Partnerin erinnert wird
+- [Quilombo](https://capoeirawiki.org/wiki/Quilombo): Quilombos in Brasilien
+
 ## Zumbi und die Capoeira
 
 Es gibt keine schriftlichen Quellen, die uns sagen, ob Capoeira, wie wir sie kennen, in Palmares praktiziert wurde. Aber für Capoeiristas steht Zumbi für alles, woraus die Capoeira entstanden ist: die Weigerung, die Sklaverei hinzunehmen, den Willen zur Freiheit und die Stärke einer Gemeinschaft, die sich selbst verteidigt.

@@ -66,6 +66,16 @@ Diese Videos sind auf Portugiesisch:
 - [Mestre Pastinha, Rei da Capoeira](https://www.youtube.com/watch?v=Aiufa8mh9fs): eine Dokumentation des bahianischen öffentlich-rechtlichen Senders TVE Bahia.
 - [Pastinha! Uma Vida pela Capoeira](https://www.youtube.com/watch?v=-unP_tdBiKI): der Dokumentarfilm von Toninho Muricy aus dem Jahr 1998, veröffentlicht auf dem Kanal des Regisseurs.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Mestre Pastinha (Vicente Ferreira Pastinha)](https://capoeirawiki.org/wiki/Vicente_Ferreira_Pastinha): die Biografie von Mestre Pastinha
+- [João Grande](https://capoeirawiki.org/wiki/Jo%C3%A3o_Grande), [João Pequeno](https://capoeirawiki.org/wiki/Jo%C3%A3o_Pequeno): seine beiden bekanntesten Schüler
+- [Centro Esportivo de Capoeira Angola](https://capoeirawiki.org/wiki/Centro_Esportivo_de_Capoeira_Angola): die Schule, die er gründete
+- [Mestre Aberrê](https://capoeirawiki.org/wiki/Mestre_Aberr%C3%AA): der Schüler, der ihn zurück in die Roda brachte
+- [Carybé](https://capoeirawiki.org/wiki/Caryb%C3%A9): der Maler, der die Capoeira in Bahia zeichnete
+
 ## Capoeira Angola in Berlin entdecken
 
 Wie unterscheidet sich Pastinhas Capoeira Angola von anderen Stilen? Lies [Capoeira Angola, Regional und Contemporânea]({{< relref "/capoeira/capoeira-angola-regional-contemporanea" >}}) oder fang ganz vorne an mit [Die Geschichte der Capoeira]({{< relref "/capoeira/history-of-capoeira" >}}).

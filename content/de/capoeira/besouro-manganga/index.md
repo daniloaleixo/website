@@ -57,6 +57,15 @@ Besouros bekanntester Schüler war der Überlieferung nach sein Cousin **Rafael 
 
 Heute ist Besouro ein Symbol für Widerstand, Mut und *Mandinga*, die Mischung aus List, Magie und Geist, die Capoeiristas ins Spiel bringen wollen. In Liedern und Geschichten wird er oft auch **Besouro Cordão de Ouro** („goldene Kordel“) genannt. 2009 wurde sein Leben in dem brasilianischen Spielfilm *Besouro* verfilmt.
 
+## Weiterlesen im CapoeiraWiki
+
+Das [CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) ist eine Gemeinschafts-Enzyklopädie über Capoeira, auf Englisch. Zum Weiterlesen:
+
+- [Besouro Mangangá](https://capoeirawiki.org/wiki/Besouro_Mangang%C3%A1): seine Biografie
+- [Cobrinha Verde](https://capoeirawiki.org/wiki/Cobrinha_Verde): sein Cousin und Schüler
+- [Mandinga](https://capoeirawiki.org/wiki/Mandinga): die Magie und List der Capoeira
+- [Patuá](https://capoeirawiki.org/wiki/Patu%C3%A1): das schützende Amulett
+
 ## Besouro in den Capoeira-Liedern
 
 Besouro ist einer der Menschen, über die in der Capoeira am meisten gesungen wird. Ladainhas und Corridos erzählen von seinem Mut, seinem geschlossenen Körper, dem Käfer, der davonflog, und seinem Tod in Maracangalha. Wenn die Roda über Besouro singt, erinnert sie an eine Zeit, in der Capoeira einen die Freiheit kosten konnte, und an die Menschen, die trotzdem weiterspielten.

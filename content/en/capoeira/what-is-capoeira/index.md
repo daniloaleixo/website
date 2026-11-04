@@ -86,6 +86,17 @@ Most capoeira groups use coloured cords (*cordas*) worn around the waist to show
 
 Both, and more. Capoeira is a martial art because it trains attacks, escapes and takedowns. It looks like a dance because it moves to music and flows without stopping. And it's a cultural tradition with its own language, songs, history and community. That mix is what makes it unique: you train your body, your musicality and your creativity at the same time.
 
+## Further reading on CapoeiraWiki
+
+[CapoeiraWiki](https://capoeirawiki.org/wiki/Main_Page) is a community encyclopedia about capoeira. To go deeper:
+
+- [Capoeira](https://capoeirawiki.org/wiki/Capoeira): the full overview of the art
+- [Roda](https://capoeirawiki.org/wiki/Roda): how the circle works
+- [Ginga](https://capoeirawiki.org/wiki/Ginga): the basic movement of capoeira
+- [Capoeira movements](https://capoeirawiki.org/wiki/Capoeira_movements): kicks, escapes and acrobatics, one by one
+- [Ranks in capoeira](https://capoeirawiki.org/wiki/Ranks_in_capoeira): cords and graduation systems
+- [Beginner’s guide to capoeira](https://capoeirawiki.org/wiki/Beginner%E2%80%99s_guide_to_capoeira): tips for your first classes
+
 ## Capoeira in Berlin
 
 Berlin has a lively capoeira scene with groups from many styles. At **Simplesmente Capoeira Berlin** we train kids and adults in **Schöneberg, Kreuzberg and Mitte**. Beginners are welcome at every class, and you'll learn the movements, the instruments and the songs step by step. Training is bilingual in German and English, the songs are sung in Portuguese, and the group is as international as the city.
